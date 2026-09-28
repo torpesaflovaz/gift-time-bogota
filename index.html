@@ -2,42 +2,464 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="description" content="Gift Time Bogotá: regalos, maquillaje y pedidos por WhatsApp.">
+  <meta name="theme-color" content="#df1d3d">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%23df1d3d%22/%3E%3Cpath%20d%3D%22M32%2050S12%2038%2012%2024.5C12%2017.6%2017.3%2013%2023%2013c4%200%207.2%202.2%209%205.3C33.8%2015.2%2037%2013%2041%2013c5.7%200%2011%204.6%2011%2011.5C52%2038%2032%2050%2032%2050z%22%20fill%3D%22%23fff%22/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" href="data:image/png;base64,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">
   <title>Gift Time Bogotá | Detalles que hacen feliz</title>
   <style>
-    :root{--red:#df1d3d;--dark:#8c102b;--pink:#f45d91;--blush:#fff1f5;--line:#f2c5d3;--ink:#35101d;--shadow:0 15px 40px rgba(116,17,45,.12)}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.45;background:#fffafb}button,a{font:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
-    .top{position:sticky;top:0;background:#fffffff2;backdrop-filter:blur(10px);z-index:10;border-bottom:1px solid #f8dde5}.nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand img{width:205px;height:50px;object-fit:contain;object-position:left}.links{display:flex;gap:22px}.links a{color:#72233a;text-decoration:none;font-weight:bold;font-size:.92rem}.cart-button{border:0;background:var(--red);color:#fff;border-radius:999px;padding:11px 15px;font-weight:bold;cursor:pointer}.badge{display:inline-grid;place-items:center;margin-left:6px;background:#fff;color:var(--red);width:21px;height:21px;border-radius:50%;font-size:.75rem}
-    .hero{min-height:510px;background:#ffdce5 url('gift-time-hero-v2.png') center/cover no-repeat;border-radius:0 0 38px 38px;display:flex;align-items:center}.hero-copy{width:min(610px,100%);padding:58px max(20px,calc((100vw - 1120px)/2))}.pill{display:inline-block;background:#fff;color:var(--red);border-radius:999px;padding:8px 12px;font-size:.77rem;font-weight:bold;letter-spacing:.08em}.hero h1{font-family:Georgia,serif;color:var(--dark);font-size:clamp(3rem,6vw,5.3rem);line-height:.92;margin:18px 0}.hero p{max-width:430px;font-size:1.08rem;color:#6b253a}.button{display:inline-block;padding:14px 18px;text-decoration:none;font-weight:bold;border-radius:12px;margin:8px 7px 0 0}.primary{background:var(--red);color:#fff}.secondary{background:#fff;color:var(--red);border:1px solid #f1b9c8}
-    .benefits{margin:-27px auto 0;position:relative;display:grid;grid-template-columns:repeat(3,1fr);border-radius:17px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}.benefit{background:#fff;padding:17px 20px;display:flex;gap:12px;align-items:center}.benefit+.benefit{border-left:1px solid var(--line)}.icon{width:35px;height:35px;border-radius:50%;background:var(--blush);color:var(--red);display:grid;place-items:center;font-size:1.2rem}.benefit b{display:block}.benefit small{color:#865567}
-    section{padding:72px 0}.section-top{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:24px}.eyebrow{font-size:.76rem;font-weight:bold;letter-spacing:.11em;color:var(--pink);margin:0 0 7px}.title{font-family:Georgia,serif;color:var(--dark);font-size:clamp(2rem,4vw,3rem);line-height:1;margin:0}.intro{color:#805568;margin:9px 0 0}.filters{display:flex;gap:8px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:#fff;color:#8b2642;border-radius:999px;padding:9px 13px;cursor:pointer}.filter.active{background:var(--red);color:#fff;border-color:var(--red)}
-    .products{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.product{background:#fff;border:1px solid #f6d5de;border-radius:19px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 8px 22px #5a10200b}.art{height:150px;padding:15px;display:flex;align-items:flex-end;justify-content:space-between;color:#fff;background:linear-gradient(145deg,#f16295,#df1d3d);position:relative;overflow:hidden}.art:after{content:'♥';position:absolute;right:10px;top:-27px;font-size:7rem;color:#fff2}.product:nth-child(3n+2) .art{background:linear-gradient(145deg,#ffb0ca,#ef3a70)}.product:nth-child(3n) .art{background:linear-gradient(145deg,#bc1339,#631128)}.art small,.art span{z-index:1}.art small{font-weight:bold;letter-spacing:.08em}.art span{font-size:2.4rem}.body{display:flex;flex:1;flex-direction:column;padding:15px}.cat{color:#a15068;font-size:.71rem;font-weight:bold;letter-spacing:.1em;margin:0 0 5px}.product h3{font-size:1rem;line-height:1.2;margin:0}.prices{margin:10px 0 7px}.price{color:var(--red);font-weight:bold;font-size:1.08rem}.old{font-size:.82rem;color:#a77a87;text-decoration:line-through;margin-left:5px}.stock{font-size:.78rem;color:#8b2946;font-weight:bold;margin:0 0 12px}.stock.out{color:#9d7280}.add{border:1px solid var(--red);background:#fff;color:var(--red);border-radius:10px;padding:10px;font-weight:bold;cursor:pointer;margin-top:auto}.add:disabled{background:#f6eef1;border-color:#e6cbd4;color:#9d7280;cursor:not-allowed}
-    .instagram-box{background:linear-gradient(135deg,#fff0f5,#fff);border:1px solid #f7d4df;border-radius:27px;padding:clamp(22px,4vw,45px)}.insta-head{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:23px}.insta-head h2{font:2.3rem Georgia,serif;color:var(--dark);margin:0}.insta-head p{color:#805568;margin:5px 0 0}.instagram{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.ig{aspect-ratio:1;border-radius:15px;color:#fff;text-decoration:none;padding:15px;display:flex;align-items:end;position:relative;overflow:hidden;background:linear-gradient(145deg,#ed3f75,#9b1232)}.ig:before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 75% 15%,#ffd5e1 0 7%,transparent 8%),radial-gradient(circle at 24% 25%,#fff6 0 11%,transparent 12%),linear-gradient(155deg,transparent 48%,#50081d66)}.ig:nth-child(2){background:linear-gradient(145deg,#ffacc5,#e11549)}.ig:nth-child(3){background:linear-gradient(145deg,#a71134,#f15a8b)}.ig:nth-child(4){background:linear-gradient(145deg,#ff709b,#781029)}.ig strong{position:relative;font-size:.9rem}
-    .contact{display:grid;grid-template-columns:1.2fr .8fr;background:var(--red);border-radius:26px;overflow:hidden;color:#fff}.contact-main{padding:clamp(28px,5vw,55px)}.contact h2{font:clamp(2rem,4vw,3.4rem)/1 Georgia,serif;margin:0}.contact p{max-width:500px;color:#fff0f4}.whatsapp{display:inline-block;background:#25d366;color:#103d22;border-radius:12px;padding:14px 18px;text-decoration:none;font-weight:bold}.contact-side{background:#a80e2c;display:grid;place-items:center;text-align:center;padding:30px}.heart{font-size:5.5rem;line-height:1}footer{padding:28px 0 40px;text-align:center;color:#875266;font-size:.9rem}
-    .overlay{position:fixed;inset:0;background:#32101d6e;z-index:20;display:none}.overlay.show{display:block}.cart{position:fixed;z-index:25;right:0;top:0;width:min(405px,100%);height:100dvh;background:#fff;padding:22px;box-shadow:-10px 0 45px #33101d38;transform:translateX(105%);transition:.25s;display:flex;flex-direction:column}.cart.open{transform:translateX(0)}.cart-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:16px}.cart-top h2{font-family:Georgia,serif;color:var(--dark);margin:0}.close{border:0;background:none;font-size:1.8rem;cursor:pointer}.items{flex:1;overflow:auto}.empty{text-align:center;color:#8b6470;padding:60px 15px}.item{display:grid;grid-template-columns:1fr auto;gap:8px;padding:15px 0;border-bottom:1px solid #f4d9e1}.item small{color:#926a77}.qty{display:flex;justify-content:flex-end;align-items:center;gap:7px}.qty button{width:28px;height:28px;border:1px solid var(--line);background:#fff;border-radius:7px;cursor:pointer}.total{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:18px 0 10px;font-size:1.12rem;font-weight:bold}.send{border:0;border-radius:12px;background:#25d366;color:#103d22;padding:14px;font-weight:bold;cursor:pointer}.note{text-align:center;color:#8d6572;font-size:.77rem}
-    @media(max-width:850px){.links{display:none}.hero{min-height:470px;background-position:62%}.hero-copy{padding:52px 30px}.benefits{margin:0;border-radius:0;grid-template-columns:1fr}.benefit+.benefit{border-left:0;border-top:1px solid var(--line)}.products{grid-template-columns:repeat(2,1fr)}.instagram{grid-template-columns:repeat(2,1fr)}.contact{grid-template-columns:1fr}.contact-side{display:none}}@media(max-width:470px){.wrap{width:min(100% - 28px,1160px)}.brand img{width:180px}.nav{height:65px}.cart-button{padding:9px 12px}.hero{min-height:480px}.hero-copy{padding:40px 22px}.hero h1{font-size:3.1rem}.section-top{align-items:start;flex-direction:column}section{padding:50px 0}.products{gap:10px}.art{height:120px}.body{padding:12px}.old{display:block;margin:2px 0 0}.instagram-box{border-radius:20px}}
+    :root{
+      --red:#df1d3d;--dark:#8c102b;--pink:#f45d91;--blush:#fff1f5;--line:#f2c5d3;--ink:#35101d;--muted:#805568;
+      --shadow:0 15px 40px rgba(116,17,45,.12);
+      --header:70px;
+      --gutter:clamp(16px,4vw,40px);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+    body{margin:0;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.45;background:#fffafb;overflow-x:hidden}
+    body.lock{overflow:hidden}
+    img{max-width:100%;display:block}
+    button,a{font:inherit}
+    button{-webkit-tap-highlight-color:transparent}
+    :focus-visible{outline:3px solid var(--pink);outline-offset:2px;border-radius:6px}
+    .wrap{width:min(1160px,100% - var(--gutter)*2);margin-inline:auto}
+    [id]{scroll-margin-top:calc(var(--header) + 12px)}
+
+    /* ---------- Header ---------- */
+    .top{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid #f8dde5;padding-top:env(safe-area-inset-top,0px)}
+    .nav{height:var(--header);display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;min-width:0;text-decoration:none}
+    .brand img{width:205px;height:50px;object-fit:contain;object-position:left}
+    .brand-text{display:none;font:bold 1.3rem Georgia,serif;color:var(--dark);white-space:nowrap}
+    .brand.no-logo img{display:none}.brand.no-logo .brand-text{display:block}
+    .links{display:flex;gap:22px}
+    .links a{color:#72233a;text-decoration:none;font-weight:bold;font-size:.92rem;padding:6px 0}
+    .links a:hover{color:var(--red)}
+    .actions{display:flex;align-items:center;gap:8px;flex-shrink:0}
+    .cart-button{border:0;background:var(--red);color:#fff;border-radius:999px;padding:11px 15px;font-weight:bold;cursor:pointer;display:inline-flex;align-items:center;white-space:nowrap}
+    .badge{display:inline-grid;place-items:center;margin-left:6px;background:#fff;color:var(--red);min-width:21px;height:21px;padding:0 5px;border-radius:999px;font-size:.75rem}
+    .badge.bump{animation:bump .35s ease}
+    @keyframes bump{50%{transform:scale(1.35)}}
+    .menu-button{display:none;width:44px;height:44px;border:1px solid var(--line);background:#fff;border-radius:12px;cursor:pointer;place-items:center;padding:0}
+    .menu-button span,.menu-button span:before,.menu-button span:after{display:block;width:18px;height:2px;background:var(--dark);border-radius:2px;position:relative;transition:.2s}
+    .menu-button span:before,.menu-button span:after{content:'';position:absolute;left:0}
+    .menu-button span:before{top:-6px}.menu-button span:after{top:6px}
+    .menu-button[aria-expanded="true"] span{background:transparent}
+    .menu-button[aria-expanded="true"] span:before{top:0;transform:rotate(45deg)}
+    .menu-button[aria-expanded="true"] span:after{top:0;transform:rotate(-45deg)}
+
+    /* ---------- Hero ---------- */
+    .hero{position:relative;min-height:510px;display:flex;align-items:center;background:#ffdce5 url('gift-time-hero-v2.png') center/cover no-repeat;border-radius:0 0 38px 38px;overflow:hidden}
+    .hero-copy{position:relative;z-index:1;padding:64px 0 80px}
+    .hero-copy>*{max-width:560px}
+    .pill{display:inline-block;background:#fff;color:var(--red);border-radius:999px;padding:8px 12px;font-size:.77rem;font-weight:bold;letter-spacing:.08em}
+    .hero h1{font-family:Georgia,serif;color:var(--dark);font-size:clamp(2.6rem,6vw,5.3rem);line-height:.95;margin:18px 0}
+    .hero p{max-width:430px;font-size:1.08rem;color:#6b253a;margin:0 0 14px}
+    .cta-row{display:flex;flex-wrap:wrap;gap:10px}
+    .button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 18px;text-decoration:none;font-weight:bold;border-radius:12px;text-align:center}
+    .primary{background:var(--red);color:#fff}
+    .primary:hover{background:var(--dark)}
+    .secondary{background:#fff;color:var(--red);border:1px solid #f1b9c8}
+    .secondary:hover{border-color:var(--red)}
+
+    /* ---------- Benefits ---------- */
+    .benefits{margin-top:-30px;position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);border-radius:17px;overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line);background:#fff}
+    .benefit{padding:17px 20px;display:flex;gap:12px;align-items:center}
+    .benefit+.benefit{border-left:1px solid var(--line)}
+    .icon{flex-shrink:0;width:36px;height:36px;border-radius:50%;background:var(--blush);color:var(--red);display:grid;place-items:center;font-size:1.15rem}
+    .benefit b{display:block}.benefit small{color:#865567}
+
+    /* ---------- Sections ---------- */
+    .block{padding:72px 0}
+    .section-top{display:flex;justify-content:space-between;align-items:flex-end;gap:18px;margin-bottom:24px}
+    .eyebrow{font-size:.76rem;font-weight:bold;letter-spacing:.11em;color:var(--pink);margin:0 0 7px}
+    .title{font-family:Georgia,serif;color:var(--dark);font-size:clamp(2rem,4vw,3rem);line-height:1.05;margin:0}
+    .intro{color:var(--muted);margin:9px 0 0;max-width:520px}
+    .filters{display:flex;gap:8px;flex-wrap:wrap}
+    .filter{border:1px solid var(--line);background:#fff;color:#8b2642;border-radius:999px;padding:10px 15px;cursor:pointer;white-space:nowrap}
+    .filter.active{background:var(--red);color:#fff;border-color:var(--red)}
+
+    /* ---------- Products ---------- */
+    .products{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+    .product{background:#fff;border:1px solid #f6d5de;border-radius:19px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 8px 22px rgba(90,16,32,.04)}
+    .art{height:150px;padding:15px;display:flex;align-items:flex-end;justify-content:space-between;color:#fff;background:linear-gradient(145deg,#f16295,#df1d3d);position:relative;overflow:hidden}
+    .art:after{content:'♥';position:absolute;right:10px;top:-27px;font-size:7rem;color:rgba(255,255,255,.13);pointer-events:none}
+    .product:nth-child(3n+2) .art{background:linear-gradient(145deg,#ffb0ca,#ef3a70)}
+    .product:nth-child(3n) .art{background:linear-gradient(145deg,#bc1339,#631128)}
+    .art small,.art span{position:relative;z-index:1}
+    .art small{font-weight:bold;letter-spacing:.08em;font-size:.72rem}
+    .art span{font-size:2.4rem;line-height:1}
+    .body{display:flex;flex:1;flex-direction:column;padding:15px}
+    .cat{color:#a15068;font-size:.71rem;font-weight:bold;letter-spacing:.1em;margin:0 0 5px;text-transform:uppercase}
+    .product h3{font-size:1rem;line-height:1.25;margin:0}
+    .prices{margin:10px 0 7px;display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 6px}
+    .price{color:var(--red);font-weight:bold;font-size:1.08rem}
+    .old{font-size:.82rem;color:#a77a87;text-decoration:line-through}
+    .stock{font-size:.78rem;color:#8b2946;font-weight:bold;margin:0 0 12px}
+    .stock.out{color:#9d7280}
+    .add{border:1px solid var(--red);background:#fff;color:var(--red);border-radius:10px;min-height:44px;padding:10px;font-weight:bold;cursor:pointer;margin-top:auto}
+    .add:hover:not(:disabled){background:var(--red);color:#fff}
+    .add:disabled{background:#f6eef1;border-color:#e6cbd4;color:#9d7280;cursor:not-allowed}
+
+    /* ---------- Instagram ---------- */
+    .instagram-box{background:linear-gradient(135deg,#fff0f5,#fff);border:1px solid #f7d4df;border-radius:27px;padding:clamp(22px,4vw,45px)}
+    .insta-head{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:23px}
+    .insta-head h2{font-family:Georgia,serif;font-size:clamp(1.8rem,3.5vw,2.3rem);line-height:1.05;color:var(--dark);margin:0}
+    .insta-head p{color:var(--muted);margin:5px 0 0}
+    .instagram{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .ig{aspect-ratio:1;border-radius:15px;color:#fff;text-decoration:none;padding:15px;display:flex;align-items:flex-end;position:relative;overflow:hidden;background:linear-gradient(145deg,#ed3f75,#9b1232)}
+    .ig:before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 75% 15%,#ffd5e1 0 7%,transparent 8%),radial-gradient(circle at 24% 25%,rgba(255,255,255,.4) 0 11%,transparent 12%),linear-gradient(155deg,transparent 48%,rgba(80,8,29,.4))}
+    .ig:nth-child(2){background:linear-gradient(145deg,#ffacc5,#e11549)}
+    .ig:nth-child(3){background:linear-gradient(145deg,#a71134,#f15a8b)}
+    .ig:nth-child(4){background:linear-gradient(145deg,#ff709b,#781029)}
+    .ig strong{position:relative;font-size:.9rem;line-height:1.2}
+
+    /* ---------- Contact ---------- */
+    .contact{display:grid;grid-template-columns:1.2fr .8fr;background:var(--red);border-radius:26px;overflow:hidden;color:#fff}
+    .contact-main{padding:clamp(28px,5vw,55px)}
+    .contact .eyebrow{color:#ffd3df}
+    .contact h2{font-family:Georgia,serif;font-size:clamp(1.9rem,4vw,3.4rem);line-height:1.05;margin:0}
+    .contact p{max-width:500px;color:#fff0f4}
+    .whatsapp{display:inline-flex;align-items:center;justify-content:center;min-height:48px;background:#25d366;color:#103d22;border-radius:12px;padding:12px 18px;text-decoration:none;font-weight:bold}
+    .contact-side{background:#a80e2c;display:grid;place-items:center;text-align:center;padding:30px}
+    .heart{font-size:5.5rem;line-height:1}
+    footer{padding:28px 0 calc(40px + env(safe-area-inset-bottom,0px));text-align:center;color:#875266;font-size:.9rem}
+
+    /* ---------- Cart ---------- */
+    .overlay{position:fixed;inset:0;background:rgba(50,16,29,.43);z-index:20;opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}
+    .overlay.show{opacity:1;visibility:visible}
+    .cart{position:fixed;z-index:25;right:0;top:0;width:min(405px,100%);height:100vh;height:100dvh;background:#fff;padding:22px 22px calc(18px + env(safe-area-inset-bottom,0px));padding-top:calc(22px + env(safe-area-inset-top,0px));box-shadow:-10px 0 45px rgba(51,16,29,.22);transform:translateX(105%);visibility:hidden;transition:transform .25s,visibility .25s;display:flex;flex-direction:column}
+    .cart.open{transform:translateX(0);visibility:visible}
+    .cart-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:16px}
+    .cart-top h2{font-family:Georgia,serif;color:var(--dark);margin:0}
+    .close{border:0;background:none;font-size:1.9rem;line-height:1;cursor:pointer;width:44px;height:44px;border-radius:10px;color:var(--ink)}
+    .items{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+    .empty{text-align:center;color:#8b6470;padding:60px 15px}
+    .item{display:grid;grid-template-columns:1fr auto;gap:10px;padding:15px 0;border-bottom:1px solid #f4d9e1}
+    .item small{color:#926a77}
+    .item-right{text-align:right}
+    .qty{display:flex;justify-content:flex-end;align-items:center;gap:8px;margin-bottom:4px}
+    .qty button{width:34px;height:34px;border:1px solid var(--line);background:#fff;border-radius:8px;cursor:pointer;font-size:1rem;color:var(--ink)}
+    .qty button:disabled{opacity:.4;cursor:not-allowed}
+    .total{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:18px 0 10px;font-size:1.12rem;font-weight:bold}
+    .send{border:0;border-radius:12px;background:#25d366;color:#103d22;min-height:50px;padding:14px;font-weight:bold;cursor:pointer}
+    .note{text-align:center;color:#8d6572;font-size:.77rem;margin:10px 0 0}
+
+    /* ---------- Toast ---------- */
+    .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);z-index:30;background:var(--ink);color:#fff;border-radius:14px;padding:10px 10px 10px 16px;display:flex;align-items:center;gap:12px;box-shadow:var(--shadow);opacity:0;visibility:hidden;transition:.25s;width:max-content;max-width:calc(100% - 32px)}
+    .toast.show{opacity:1;visibility:visible;transform:translate(-50%,0)}
+    .toast span{font-size:.9rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .toast button{border:0;background:#fff;color:var(--red);border-radius:10px;padding:9px 12px;font-weight:bold;cursor:pointer;white-space:nowrap}
+
+    /* ---------- Tablet ---------- */
+    @media (max-width:980px){
+      .instagram{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:850px){
+      .menu-button{display:grid}
+      .links{position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;background:#fff;border-bottom:1px solid #f8dde5;box-shadow:0 18px 30px rgba(116,17,45,.08);padding:6px var(--gutter) 14px;display:none}
+      .links.open{display:flex}
+      .links a{padding:14px 0;font-size:1rem;border-bottom:1px solid #fbe7ed}
+      .links a:last-child{border-bottom:0}
+      .hero{min-height:460px;background-position:65% center;border-radius:0 0 28px 28px}
+      .hero:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,236,241,.92) 0%,rgba(255,236,241,.75) 55%,rgba(255,236,241,.2) 100%)}
+      .benefits{grid-template-columns:1fr;margin-top:-24px}
+      .benefit+.benefit{border-left:0;border-top:1px solid var(--line)}
+      .contact{grid-template-columns:1fr}
+      .contact-side{display:none}
+      .block{padding:56px 0}
+    }
+
+    /* ---------- Mobile ---------- */
+    @media (max-width:560px){
+      :root{--header:64px}
+      .brand img{width:160px;height:44px}
+      .cart-button{padding:10px 12px;font-size:.9rem}
+      .hero{min-height:0;background-position:70% center}
+      .hero:before{background:linear-gradient(180deg,rgba(255,236,241,.88) 0%,rgba(255,236,241,.82) 70%,rgba(255,236,241,.6) 100%)}
+      .hero-copy{padding:44px 0 64px}
+      .hero h1{font-size:clamp(2.4rem,11vw,3.1rem)}
+      .hero p{font-size:1rem}
+      .cta-row .button{flex:1 1 100%}
+      .benefit{padding:14px 16px}
+      .section-top{flex-direction:column;align-items:stretch}
+      .filters{flex-wrap:nowrap;overflow-x:auto;margin-inline:calc(var(--gutter)*-1);padding:2px var(--gutter);scrollbar-width:none}
+      .filters::-webkit-scrollbar{display:none}
+      .block{padding:44px 0}
+      .products{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+      .product{border-radius:16px}
+      .art{height:110px;padding:12px}
+      .art span{font-size:2rem}
+      .art:after{font-size:5.5rem;top:-20px}
+      .body{padding:12px}
+      .product h3{font-size:.92rem}
+      .price{font-size:1rem}
+      .add{font-size:.85rem;padding:8px}
+      .insta-head{flex-direction:column;align-items:stretch}
+      .instagram{gap:10px}
+      .ig{padding:12px;border-radius:13px}
+      .ig strong{font-size:.82rem}
+      .instagram-box{border-radius:20px}
+      .contact{border-radius:20px}
+      .whatsapp{width:100%}
+    }
+    @media (max-width:360px){
+      .cart-label{display:none}
+      .badge{margin-left:0}
+      .cart-button:before{content:'🛍';margin-right:6px}
+    }
+    @media (prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}
+      *,*:before,*:after{transition:none!important;animation:none!important}
+    }
   </style>
 </head>
 <body>
-  <header class="top"><div class="wrap nav"><a class="brand" href="#inicio"><img src="gift-time-bogota-logo-transparent.png" alt="Gift Time Bogotá"></a><nav class="links"><a href="#tienda">Tienda</a><a href="#instagram">Instagram</a><a href="#contacto">Contacto</a></nav><button class="cart-button" id="cartButton">Mi pedido <span class="badge" id="count">0</span></button></div></header>
+  <header class="top">
+    <div class="wrap nav">
+      <a class="brand" href="#inicio" aria-label="Gift Time Bogotá, inicio">
+        <img src="gift-time-bogota-logo-transparent.png" alt="Gift Time Bogotá" onerror="this.parentNode.classList.add('no-logo')">
+        <span class="brand-text">Gift Time</span>
+      </a>
+      <nav class="links" id="links" aria-label="Principal">
+        <a href="#tienda">Tienda</a>
+        <a href="#instagram">Instagram</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="actions">
+        <button class="cart-button" id="cartButton" aria-controls="cart"><span class="cart-label">Mi pedido</span> <span class="badge" id="count" aria-label="productos en el pedido">0</span></button>
+        <button class="menu-button" id="menuButton" aria-label="Abrir menú" aria-expanded="false" aria-controls="links"><span></span></button>
+      </div>
+    </div>
+  </header>
+
   <main>
-    <section class="hero" id="inicio"><div class="hero-copy"><span class="pill">HASTA 20% DE DESCUENTO</span><h1>Detalles que hacen feliz.</h1><p>Maquillaje, cuidado personal y regalos bonitos para sorprender o consentirte.</p><a class="button primary" href="#tienda">Ver productos</a><a class="button secondary" href="https://wa.me/573212482015" target="_blank" rel="noopener">Escríbenos por WhatsApp</a></div></section>
-    <div class="wrap benefits"><div class="benefit"><span class="icon">♥</span><div><b>Detalles especiales</b><small>Para regalar o consentirte</small></div></div><div class="benefit"><span class="icon">◌</span><div><b>Compra sin complicaciones</b><small>Arma tu pedido en el carrito</small></div></div><div class="benefit"><span class="icon">☏</span><div><b>Atención por WhatsApp</b><small>Pago y entrega se confirman allí</small></div></div></div>
-    <section class="wrap" id="tienda"><div class="section-top"><div><p class="eyebrow">CATÁLOGO</p><h2 class="title">Elige tus favoritos</h2><p class="intro">Agrégalos al carrito y envía el pedido directamente por WhatsApp.</p></div><div class="filters" id="filters"></div></div><div class="products" id="products"></div></section>
-    <section class="wrap" id="instagram"><div class="instagram-box"><div class="insta-head"><div><p class="eyebrow">@GIFT_TIME_BOGOTA</p><h2>Un toque de Instagram</h2><p>Promos, novedades y detalles para regalar.</p></div><a class="button secondary" href="https://www.instagram.com/gift_time_bogota/" target="_blank" rel="noopener">Ver Instagram ↗</a></div><div class="instagram"><a class="ig" href="https://www.instagram.com/gift_time_bogota/" target="_blank" rel="noopener"><strong>Promociones que enamoran</strong></a><a class="ig" href="https://www.instagram.com/gift_time_bogota/" target="_blank" rel="noopener"><strong>Favoritos de belleza</strong></a><a class="ig" href="https://www.instagram.com/gift_time_bogota/" target="_blank" rel="noopener"><strong>Detalles para ti</strong></a><a class="ig" href="https://www.instagram.com/gift_time_bogota/" target="_blank" rel="noopener"><strong>Novedades Gift Time</strong></a></div></div></section>
-    <section class="wrap" id="contacto"><div class="contact"><div class="contact-main"><p class="eyebrow" style="color:#ffd3df">PEDIDOS PERSONALIZADOS</p><h2>¿Lista para elegir tu detalle favorito?</h2><p>Escríbenos y te ayudamos a confirmar disponibilidad, pago y entrega en Bogotá.</p><a class="whatsapp" href="https://wa.me/573212482015?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Gift%20Time%20Bogot%C3%A1." target="_blank" rel="noopener">◉ Pedir por WhatsApp</a></div><div class="contact-side"><div><div class="heart">♥</div><b>Gift Time Bogotá</b><p>Detalles que hacen feliz</p></div></div></div></section>
+    <section class="hero" id="inicio">
+      <div class="wrap hero-copy">
+        <span class="pill">HASTA 20% DE DESCUENTO</span>
+        <h1>Detalles que hacen feliz.</h1>
+        <p>Maquillaje, cuidado personal y regalos bonitos para sorprender o consentirte.</p>
+        <div class="cta-row">
+          <a class="button primary" href="#tienda">Ver productos</a>
+          <a class="button secondary" href="https://wa.me/573212482015" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap benefits">
+      <div class="benefit"><span class="icon" aria-hidden="true">♥</span><div><b>Detalles especiales</b><small>Para regalar o consentirte</small></div></div>
+      <div class="benefit"><span class="icon" aria-hidden="true">◌</span><div><b>Compra sin complicaciones</b><small>Arma tu pedido en el carrito</small></div></div>
+      <div class="benefit"><span class="icon" aria-hidden="true">☏</span><div><b>Atención por WhatsApp</b><small>Pago y entrega se confirman allí</small></div></div>
+    </div>
+
+    <section class="wrap block" id="tienda">
+      <div class="section-top">
+        <div>
+          <p class="eyebrow">CATÁLOGO</p>
+          <h2 class="title">Elige tus favoritos</h2>
+          <p class="intro">Agrégalos al carrito y envía el pedido directamente por WhatsApp.</p>
+        </div>
+        <div class="filters" id="filters" role="group" aria-label="Filtrar por categoría"></div>
+      </div>
+      <div class="products" id="products"></div>
+    </section>
+
+    <section class="wrap block" id="instagram">
+      <div class="instagram-box">
+        <div class="insta-head">
+          <div>
+            <p class="eyebrow">@GIFT_TIME_BOGOTA</p>
+            <h2>Un toque de Instagram</h2>
+            <p>Promos, novedades y detalles para regalar.</p>
+          </div>
+          <a class="button secondary" href="https://www.instagram.com/gift_time_bogota/" target="_blank" rel="noopener">Ver Instagram ↗</a>
+        </div>
+        <div class="instagram">
+          <a class="ig" href="https://www.instagram.com/gift_time_bogota/" target="_blank" rel="noopener"><strong>Promociones que enamoran</strong></a>
+          <a class="ig" href="https://www.instagram.com/gift_time_bogota/" target="_blank" rel="noopener"><strong>Favoritos de belleza</strong></a>
+          <a class="ig" href="https://www.instagram.com/gift_time_bogota/" target="_blank" rel="noopener"><strong>Detalles para ti</strong></a>
+          <a class="ig" href="https://www.instagram.com/gift_time_bogota/" target="_blank" rel="noopener"><strong>Novedades Gift Time</strong></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap block" id="contacto">
+      <div class="contact">
+        <div class="contact-main">
+          <p class="eyebrow">PEDIDOS PERSONALIZADOS</p>
+          <h2>¿Lista para elegir tu detalle favorito?</h2>
+          <p>Escríbenos y te ayudamos a confirmar disponibilidad, pago y entrega en Bogotá.</p>
+          <a class="whatsapp" href="https://wa.me/573212482015?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20Gift%20Time%20Bogot%C3%A1." target="_blank" rel="noopener">◉ Pedir por WhatsApp</a>
+        </div>
+        <div class="contact-side" aria-hidden="true">
+          <div><div class="heart">♥</div><b>Gift Time Bogotá</b><p>Detalles que hacen feliz</p></div>
+        </div>
+      </div>
+    </section>
   </main>
-  <div class="overlay" id="overlay"></div><aside class="cart" id="cart"><div class="cart-top"><h2>Tu pedido</h2><button class="close" id="closeCart">×</button></div><div class="items" id="items"></div><div class="total"><span>Total</span><span id="total">$0</span></div><button class="send" id="send">Enviar pedido por WhatsApp</button><p class="note">El pago y la entrega se confirman contigo por WhatsApp.</p></aside>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart" id="cart" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true">
+    <div class="cart-top"><h2 id="cartTitle">Tu pedido</h2><button class="close" id="closeCart" aria-label="Cerrar pedido">×</button></div>
+    <div class="items" id="items"></div>
+    <div class="total"><span>Total</span><span id="total">$0</span></div>
+    <button class="send" id="send">Enviar pedido por WhatsApp</button>
+    <p class="note">El pago y la entrega se confirman contigo por WhatsApp.</p>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"><span id="toastText"></span><button id="toastView">Ver pedido</button></div>
+
   <footer class="wrap"><b>Gift Time Bogotá</b> · Maquillaje, cuidado y detalles con amor</footer>
+
   <script>
-    const W='573212482015', products=[
-      {n:'Brochas Bob Esponja',c:'Maquillaje',p:51000,o:60000,stock:1,i:'🖌️'}, {n:'Mini Rugrats',c:'Maquillaje',p:36000,o:40000,i:'💄'}, {n:'HappyBerry',c:'Maquillaje',p:13000,o:15000,i:'🍓'}, {n:'Kit Niñas Magia',c:'Maquillaje',p:16000,o:20000,i:'✨'}, {n:'Desmaquillante',c:'Cuidado',p:20000,o:25000,i:'🫧'}, {n:'Luxe Herramientas',c:'Maquillaje',p:20000,o:25000,i:'🪞'}, {n:'Corrector Rosado',c:'Maquillaje',p:12000,o:15000,i:'🌸'}, {n:'Super Concealer',c:'Maquillaje',p:16000,o:20000,i:'🤍'}, {n:'Primer + Fijador',c:'Maquillaje',p:16000,o:20000,i:'💫'}, {n:'Polvos Teddy',c:'Maquillaje',p:13000,o:15000,i:'🧸'}, {n:'Protector Solar',c:'Cuidado',p:50000,o:50000,i:'☀️'}, {n:'Delineador Cat',c:'Maquillaje',p:12000,o:15000,i:'🐈'}, {n:'Rubor Safari',c:'Maquillaje',p:20000,o:25000,i:'🦋'}];
-    let selected='Todos', cart=[];const $=x=>document.getElementById(x),fmt=x=>x.toLocaleString('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0}),qty=i=>cart.find(x=>x.i===i)?.q||0,remain=(p,i)=>p.stock===undefined?null:Math.max(0,p.stock-qty(i));
-    function renderFilters(){const c=['Todos',...new Set(products.map(p=>p.c))];$('filters').innerHTML=c.map(x=>`<button class="filter ${x===selected?'active':''}" onclick="filterBy('${x}')">${x}</button>`).join('')}function filterBy(x){selected=x;renderFilters();renderProducts()}
-    function renderProducts(){const list=selected==='Todos'?products:products.filter(p=>p.c===selected);$('products').innerHTML=list.map(p=>{const i=products.indexOf(p),r=remain(p,i),out=r===0;return `<article class="product"><div class="art"><small>${p.c==='Cuidado'?'CUIDADO':'BEAUTY'}</small><span>${p.i}</span></div><div class="body"><p class="cat">${p.c}</p><h3>${p.n}</h3><div class="prices"><span class="price">${fmt(p.p)}</span>${p.p!==p.o?`<span class="old">${fmt(p.o)}</span>`:''}</div>${r===null?'':`<p class="stock ${out?'out':''}">${out?'Agotado':`Queda ${r} unidad${r===1?'':'es'}`}</p>`}<button class="add" onclick="add(${i})" ${out?'disabled':''}>${out?'Agotado':'Agregar al pedido'}</button></div></article>`}).join('')}
-    function add(i){const p=products[i],line=cart.find(x=>x.i===i);if(p.stock!==undefined&&qty(i)>=p.stock){alert(`Solo queda ${p.stock} unidad de ${p.n}.`);return}line?line.q++:cart.push({i,q:1});renderCart();renderProducts();openCart()}function change(i,d){const l=cart.find(x=>x.i===i),p=products[i];if(d>0&&p.stock!==undefined&&l.q>=p.stock)return;l.q+=d;if(l.q<1)cart=cart.filter(x=>x.i!==i);renderCart();renderProducts()}
-    function renderCart(){$('count').textContent=cart.reduce((a,x)=>a+x.q,0);$('items').innerHTML=cart.length?cart.map(x=>{const p=products[x.i],max=p.stock!==undefined&&x.q>=p.stock;return `<div class="item"><div><b>${p.n}</b><br><small>${fmt(p.p)} c/u</small></div><div><div class="qty"><button onclick="change(${x.i},-1)">−</button><b>${x.q}</b><button onclick="change(${x.i},1)" ${max?'disabled':''}>+</button></div><small>${fmt(p.p*x.q)}</small></div></div>`}).join(''):'<p class="empty">Tu carrito está vacío.<br>¡Elige tus favoritos!</p>';$('total').textContent=fmt(cart.reduce((a,x)=>a+products[x.i].p*x.q,0))}
-    function openCart(){$('cart').classList.add('open');$('overlay').classList.add('show')}function closeCart(){$('cart').classList.remove('open');$('overlay').classList.remove('show')}$('cartButton').onclick=openCart;$('closeCart').onclick=closeCart;$('overlay').onclick=closeCart;$('send').onclick=()=>{if(!cart.length)return alert('Agrega al menos un producto a tu pedido.');const l=cart.map(x=>`• ${products[x.i].n} x${x.q} — ${fmt(products[x.i].p*x.q)}`).join('\n'),t=fmt(cart.reduce((a,x)=>a+products[x.i].p*x.q,0));window.open(`https://wa.me/${W}?text=${encodeURIComponent(`Hola, quiero hacer este pedido en Gift Time Bogotá:\n\n${l}\n\nTotal: ${t}\n\nMi nombre es:`)}`,'_blank')};renderFilters();renderProducts();renderCart();
+    const W = '573212482015';
+    const products = [
+      {n:'Brochas Bob Esponja',c:'Maquillaje',p:51000,o:60000,stock:1,i:'🖌️'},
+      {n:'Mini Rugrats',c:'Maquillaje',p:36000,o:40000,i:'💄'},
+      {n:'HappyBerry',c:'Maquillaje',p:13000,o:15000,i:'🍓'},
+      {n:'Kit Niñas Magia',c:'Maquillaje',p:16000,o:20000,i:'✨'},
+      {n:'Desmaquillante',c:'Cuidado',p:20000,o:25000,i:'🫧'},
+      {n:'Luxe Herramientas',c:'Maquillaje',p:20000,o:25000,i:'🪞'},
+      {n:'Corrector Rosado',c:'Maquillaje',p:12000,o:15000,i:'🌸'},
+      {n:'Super Concealer',c:'Maquillaje',p:16000,o:20000,i:'🤍'},
+      {n:'Primer + Fijador',c:'Maquillaje',p:16000,o:20000,i:'💫'},
+      {n:'Polvos Teddy',c:'Maquillaje',p:13000,o:15000,i:'🧸'},
+      {n:'Protector Solar',c:'Cuidado',p:50000,o:50000,i:'☀️'},
+      {n:'Delineador Cat',c:'Maquillaje',p:12000,o:15000,i:'🐈'},
+      {n:'Rubor Safari',c:'Maquillaje',p:20000,o:25000,i:'🦋'}
+    ];
+
+    let selected = 'Todos', cart = [], toastTimer;
+    const $ = id => document.getElementById(id);
+    const fmt = x => x.toLocaleString('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0});
+    const qty = i => cart.find(x => x.i === i)?.q || 0;
+    const remain = (p,i) => p.stock === undefined ? null : Math.max(0, p.stock - qty(i));
+    const cartTotal = () => cart.reduce((a,x) => a + products[x.i].p * x.q, 0);
+
+    function renderFilters(){
+      const cats = ['Todos', ...new Set(products.map(p => p.c))];
+      $('filters').innerHTML = cats.map(x =>
+        `<button class="filter ${x===selected?'active':''}" data-cat="${x}" aria-pressed="${x===selected}">${x}</button>`).join('');
+    }
+
+    function renderProducts(){
+      const list = selected === 'Todos' ? products : products.filter(p => p.c === selected);
+      $('products').innerHTML = list.map(p => {
+        const i = products.indexOf(p), r = remain(p,i), out = r === 0;
+        return `<article class="product">
+          <div class="art" aria-hidden="true"><small>${p.c==='Cuidado'?'CUIDADO':'BEAUTY'}</small><span>${p.i}</span></div>
+          <div class="body">
+            <p class="cat">${p.c}</p>
+            <h3>${p.n}</h3>
+            <div class="prices"><span class="price">${fmt(p.p)}</span>${p.p!==p.o?`<span class="old">${fmt(p.o)}</span>`:''}</div>
+            ${r===null?'':`<p class="stock ${out?'out':''}">${out?'Agotado':`Queda ${r} unidad${r===1?'':'es'}`}</p>`}
+            <button class="add" data-add="${i}" ${out?'disabled':''}>${out?'Agotado':'Agregar al pedido'}</button>
+          </div>
+        </article>`;
+      }).join('');
+    }
+
+    function renderCart(){
+      const count = cart.reduce((a,x) => a + x.q, 0);
+      $('count').textContent = count;
+      $('items').innerHTML = cart.length ? cart.map(x => {
+        const p = products[x.i], max = p.stock !== undefined && x.q >= p.stock;
+        return `<div class="item">
+          <div><b>${p.n}</b><br><small>${fmt(p.p)} c/u</small></div>
+          <div class="item-right">
+            <div class="qty">
+              <button data-change="${x.i}" data-d="-1" aria-label="Quitar uno">−</button>
+              <b>${x.q}</b>
+              <button data-change="${x.i}" data-d="1" aria-label="Agregar uno" ${max?'disabled':''}>+</button>
+            </div>
+            <small>${fmt(p.p*x.q)}</small>
+          </div>
+        </div>`;
+      }).join('') : '<p class="empty">Tu carrito está vacío.<br>¡Elige tus favoritos!</p>';
+      $('total').textContent = fmt(cartTotal());
+    }
+
+    function add(i){
+      const p = products[i], line = cart.find(x => x.i === i);
+      if (p.stock !== undefined && qty(i) >= p.stock) return;
+      line ? line.q++ : cart.push({i, q:1});
+      renderCart(); renderProducts();
+      const b = $('count'); b.classList.remove('bump'); void b.offsetWidth; b.classList.add('bump');
+      showToast(`${p.n} agregado`);
+    }
+
+    function change(i, d){
+      const l = cart.find(x => x.i === i), p = products[i];
+      if (!l) return;
+      if (d > 0 && p.stock !== undefined && l.q >= p.stock) return;
+      l.q += d;
+      if (l.q < 1) cart = cart.filter(x => x.i !== i);
+      renderCart(); renderProducts();
+    }
+
+    function showToast(text, action = true){
+      $('toastText').textContent = text;
+      $('toastView').hidden = !action;
+      $('toast').classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => $('toast').classList.remove('show'), 2600);
+    }
+
+    function openCart(){
+      closeMenu();
+      $('toast').classList.remove('show');
+      $('cart').classList.add('open'); $('cart').setAttribute('aria-hidden','false');
+      $('overlay').classList.add('show');
+      document.body.classList.add('lock');
+      setTimeout(() => $('closeCart').focus(), 50);
+    }
+    function closeCart(){
+      $('cart').classList.remove('open'); $('cart').setAttribute('aria-hidden','true');
+      $('overlay').classList.remove('show');
+      document.body.classList.remove('lock');
+      $('cartButton').focus();
+    }
+
+    function toggleMenu(force){
+      const open = typeof force === 'boolean' ? force : !$('links').classList.contains('open');
+      $('links').classList.toggle('open', open);
+      $('menuButton').setAttribute('aria-expanded', open);
+      $('menuButton').setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+    }
+    const closeMenu = () => toggleMenu(false);
+
+    // Eventos
+    $('filters').addEventListener('click', e => {
+      const b = e.target.closest('[data-cat]'); if (!b) return;
+      selected = b.dataset.cat; renderFilters(); renderProducts();
+    });
+    $('products').addEventListener('click', e => {
+      const b = e.target.closest('[data-add]'); if (b) add(+b.dataset.add);
+    });
+    $('items').addEventListener('click', e => {
+      const b = e.target.closest('[data-change]'); if (b) change(+b.dataset.change, +b.dataset.d);
+    });
+    $('cartButton').onclick = openCart;
+    $('toastView').onclick = openCart;
+    $('closeCart').onclick = closeCart;
+    $('overlay').onclick = closeCart;
+    $('menuButton').onclick = () => toggleMenu();
+    $('links').addEventListener('click', e => { if (e.target.closest('a')) closeMenu(); });
+    document.addEventListener('keydown', e => {
+      if (e.key !== 'Escape') return;
+      if ($('cart').classList.contains('open')) closeCart(); else closeMenu();
+    });
+    window.matchMedia('(min-width:851px)').addEventListener('change', e => { if (e.matches) closeMenu(); });
+
+    $('send').onclick = () => {
+      if (!cart.length) return showToast('Agrega al menos un producto', false);
+      const lines = cart.map(x => `• ${products[x.i].n} x${x.q} — ${fmt(products[x.i].p*x.q)}`).join('\n');
+      const msg = `Hola, quiero hacer este pedido en Gift Time Bogotá:\n\n${lines}\n\nTotal: ${fmt(cartTotal())}\n\nMi nombre es:`;
+      window.open(`https://wa.me/${W}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+    };
+
+    renderFilters(); renderProducts(); renderCart();
   </script>
-</body></html>
+</body>
+</html>
