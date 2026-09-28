@@ -1,0 +1,35 @@
+GIFT TIME BOGOTÁ - SITIO WEB
+============================
+
+CONTENIDO
+- index.html ............ El sitio completo. Logo, foto del hero y favicon
+                          ya van incrustados, funciona solo.
+- favicon.ico ........... Favicon para navegadores antiguos.
+- favicon-32x32.png ..... Favicon en PNG.
+- apple-touch-icon.png .. Ícono al guardar el sitio en iPhone.
+- icon-192.png / icon-512.png / site.webmanifest
+                          Ícono y nombre al instalar el sitio en Android.
+- og-image.jpg .......... Imagen de vista previa al compartir el enlace
+                          en WhatsApp, Facebook o Instagram.
+
+CÓMO PUBLICARLO
+1. Sube TODOS los archivos a la misma carpeta raíz del hosting
+   (no los metas en subcarpetas).
+2. Abre tu dominio en el navegador y listo.
+
+Opciones gratuitas: Netlify (arrastra la carpeta a app.netlify.com/drop),
+GitHub Pages o Cloudflare Pages.
+
+VISTA PREVIA EN WHATSAPP (importante)
+Para que al compartir el enlace aparezca la imagen, abre index.html y
+cambia esta línea:
+  <meta property="og:image" content="og-image.jpg">
+por la dirección completa de tu dominio, por ejemplo:
+  <meta property="og:image" content="https://www.tudominio.com/og-image.jpg">
+
+CAMBIOS FRECUENTES (dentro de index.html)
+- Número de WhatsApp: busca 573212482015 (aparece 3 veces) y reemplázalo.
+- Productos, precios y stock: busca "const products" en la parte final.
+  Cada línea es un producto:
+    n = nombre, c = categoría, p = precio actual, o = precio anterior,
+    stock = unidades disponibles (quítalo si no quieres límite), i = emoji.
