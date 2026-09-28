@@ -115,6 +115,8 @@
     .insta-head h2{font-family:Georgia,serif;font-size:clamp(1.8rem,3.5vw,2.3rem);line-height:1.05;color:var(--dark);margin:0}
     .insta-head p{color:var(--muted);margin:5px 0 0}
     .instagram{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .ig-feed{border-radius:15px;overflow:hidden;min-height:200px;background:#fff}
+    .ig-feed iframe{display:block;width:100%}
     .ig{aspect-ratio:1;border-radius:15px;color:#fff;text-decoration:none;padding:15px;display:flex;align-items:flex-end;position:relative;overflow:hidden;background:linear-gradient(145deg,#ed3f75,#9b1232)}
     .ig:before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 75% 15%,#ffd5e1 0 7%,transparent 8%),radial-gradient(circle at 24% 25%,rgba(255,255,255,.4) 0 11%,transparent 12%),linear-gradient(180deg,transparent 35%,rgba(70,6,26,.78) 100%)}
     .ig:nth-child(2){background:linear-gradient(145deg,#ffacc5,#e11549)}
@@ -285,11 +287,8 @@
           </div>
           <a class="button secondary" href="https://www.instagram.com/gift_time_bogota/" target="_blank" rel="noopener">Ver Instagram ↗</a>
         </div>
-        <div class="instagram">
-          <a class="ig" href="https://www.instagram.com/gift_time_bogota/" target="_blank" rel="noopener"><strong>Promociones que enamoran</strong></a>
-          <a class="ig" href="https://www.instagram.com/gift_time_bogota/" target="_blank" rel="noopener"><strong>Favoritos de belleza</strong></a>
-          <a class="ig" href="https://www.instagram.com/gift_time_bogota/" target="_blank" rel="noopener"><strong>Detalles para ti</strong></a>
-          <a class="ig" href="https://www.instagram.com/gift_time_bogota/" target="_blank" rel="noopener"><strong>Novedades Gift Time</strong></a>
+        <div class="ig-feed">
+          <iframe src="https://lightwidget.com/widgets/de5c8eadad8c5cac97f9e577f3617bfd.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" title="Publicaciones recientes de Instagram de Gift Time Bogotá" loading="lazy" style="width:100%;border:0;overflow:hidden;"></iframe>
         </div>
       </div>
     </section>
@@ -320,6 +319,7 @@
 
   <footer class="wrap"><b>Gift Time Bogotá</b> · Maquillaje, cuidado y detalles con amor</footer>
 
+  <script src="https://cdn.lightwidget.com/widgets/lightwidget.js" async></script>
   <script>
     const W = '573212482015';
     const products = [
