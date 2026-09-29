@@ -185,7 +185,7 @@
       .instagram{grid-template-columns:repeat(2,1fr)}
     }
     /* Banner de productos local: funciona sin depender de enlaces externos. */
-    .hero{background:#f7c6cd url('assets/marca/banner-productos-gift-time.png') center/cover no-repeat}
+    .hero{background:#f7c6cd url('assets/marca/banner-productos-gift-time.png') right center/contain no-repeat}
     #instagram{display:none}
 
     @media (max-width:850px){
@@ -242,9 +242,12 @@
       .badge{margin-left:0}
       .cart-button:before{content:'🛍';margin-right:6px}
     }
-    /* Evita que la regla móvil anterior reemplace el nuevo banner. */
+    /* En celular el banner se muestra completo debajo del texto, sin recortarse. */
     @media (max-width:560px){
-      .hero{background-image:url('assets/marca/banner-productos-gift-time.png');background-position:65% bottom}
+      .hero{display:flex;flex-direction:column;align-items:stretch;min-height:0;background:#fadbdc!important}
+      .hero:before{display:none}
+      .hero-copy{padding:40px 0 28px}
+      .hero:after{content:'';display:block;order:2;width:100%;aspect-ratio:1983/793;background:#f7c6cd url('assets/marca/banner-productos-gift-time.png') center/contain no-repeat;border-radius:0 0 28px 28px}
     }
 
     @media (prefers-reduced-motion:reduce){
@@ -364,11 +367,11 @@
       {n:'Corrector y Tratamiento Super Conclear',c:'Maquillaje',p:16000,o:20000,stock:5,img:image('producto-super-concealer.png'),description:'Corrector de cobertura para unificar el aspecto de la piel y disimular imperfecciones. Disponible en tonos 1, 2 y 3; confirma tu tono por WhatsApp.'},
       {n:'Kit Pestañina + Fortalecedora',c:'Maquillaje',p:15000,o:15000,stock:1,img:image('producto-pestanina-fortalecedora.jpg'),description:'Kit para definir las pestañas. Incluye pestañina fortalecedora de fórmula ligera, útil también para fijar suavemente las cejas o como prebase.'},
       {n:'Brillo Retro',c:'Maquillaje',p:8000,o:8000,stock:2,img:image('producto-brillo-retro.jpg'),description:'Gloss ligero con aroma a fresa, brillo saludable y un toque rosado sutil. No se siente pesado ni pegajoso.'},
-      {n:'Pestañina Pastel',c:'Maquillaje',p:12000,o:12000,stock:1,img:image('producto-pestanina-fortalecedora.jpg'),description:'Pestañina de presentación pastel para complementar looks diarios. Consulta por WhatsApp los detalles disponibles de este producto.'},
+      {n:'Pestañina Pastel',c:'Maquillaje',p:12000,o:12000,stock:1,img:image('producto-pestanina-pastel-1.jpg'),gallery:['producto-pestanina-pastel-1.jpg','producto-pestanina-pastel-2.jpg','producto-pestanina-pastel-3.jpg'].map(image),description:'Pestañina a prueba de agua con presentación pastel. Hay tres referencias con cepillos de silicona: azul para alargar, verde para volumen y rosada para mayor largo y volumen. Todas son de color negro.'},
       {n:'Protector Solar',c:'Cuidado',p:43000,o:50000,stock:1,img:image('producto-protector-solar.png'),description:'Protector solar para sumar a tu rutina diaria de cuidado facial. Consulta por WhatsApp la presentación disponible.'},
       {n:'Delineador Cat Eye',c:'Maquillaje',p:12000,o:15000,stock:1,img:image('producto-delineador-cat.png'),description:'Delineador para crear trazos definidos y looks tipo cat eye con mayor precisión.'},
       {n:'Corrector Rosado',c:'Maquillaje',p:12000,o:15000,stock:2,img:image('producto-corrector-rosado.png'),description:'Corrector en tono rosado para complementar tu maquillaje y ayudar a dar un aspecto más uniforme a la piel.'},
-      {n:'Corrector Líquido Rebel Girl',c:'Maquillaje',p:10000,o:10000,stock:2,img:image('producto-super-concealer.png'),description:'Corrector líquido de fácil aplicación. Disponible en tonos 2 y 3; confirma el tono deseado por WhatsApp antes de finalizar el pedido.'},
+      {n:'Corrector Líquido Rebel Girl',c:'Maquillaje',p:10000,o:10000,stock:2,img:image('producto-corrector-rebel-girl.jpg'),description:'Corrector hidratante de cobertura media a alta y acabado mate. Es cremoso, ligero y ayuda a lograr una cobertura uniforme. Disponible en tonos 2 y 3; confirma tu tono por WhatsApp.'},
       {n:'Torre Cat Face',c:'Maquillaje',p:15000,o:15000,stock:1,img:image('producto-torre-cat-face.jpg'),description:'Torre con 4 iluminadores, incluido un glitter en gel tornasol y tres iluminadores de textura horneada. Incluye mini espejo.'},
       {n:'Crema Reparadora Nocturna',c:'Cuidado',p:20000,o:20000,stock:1,img:image('producto-crema-nocturna.png'),description:'Crema facial nocturna en gel, ligera y de rápida absorción. Ayuda a hidratar y suavizar la piel sin dejar sensación grasosa.'},
       {n:'Brillo Happy Berry',c:'Maquillaje',p:13000,o:15000,stock:1,img:image('producto-happy-berry.jpg'),description:'Gloss de brillo intenso y tono rosa muy sutil. Se desliza suavemente y aporta sensación de suavidad en los labios.'}
