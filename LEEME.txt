@@ -26,11 +26,10 @@ Opciones gratuitas: Netlify (arrastra la carpeta a app.netlify.com/drop),
 GitHub Pages o Cloudflare Pages.
 
 VISTA PREVIA EN WHATSAPP (importante)
-Para que al compartir el enlace aparezca la imagen, abre index.html y
-cambia esta línea:
-  <meta property="og:image" content="og-image.jpg">
-por la dirección completa de tu dominio, por ejemplo:
-  <meta property="og:image" content="https://www.tudominio.com/og-image.jpg">
+La imagen og-image.jpg ya tiene el logo sin rectángulo blanco y está
+configurada con la dirección completa de gifttimebogota.com.co.
+Después de subirla, WhatsApp puede conservar la vista previa anterior por
+un rato; envía el enlace con ?v=2 al final para forzar la actualización.
 
 CAMBIOS FRECUENTES (dentro de index.html)
 - Número de WhatsApp: busca 573212482015 (aparece 3 veces) y reemplázalo.
