@@ -2,8 +2,13 @@ GIFT TIME BOGOTÁ - SITIO WEB
 ============================
 
 CONTENIDO
-- index.html ............ El sitio completo. Logo, foto del hero y favicon
-                          ya van incrustados, funciona solo.
+- index.html ............ El sitio completo. Manténlo junto con todos los PNG
+                          de producto para que las fotos se vean correctamente.
+- producto-*.png ........ Fotos de productos incluidas para la tienda.
+
+INTERACCIÓN
+- Toca o haz clic en la foto de un producto para verla ampliada.
+- La sección de Instagram está ocultada por ahora.
 - favicon.ico ........... Favicon para navegadores antiguos.
 - favicon-32x32.png ..... Favicon en PNG.
 - apple-touch-icon.png .. Ícono al guardar el sitio en iPhone.
@@ -13,7 +18,7 @@ CONTENIDO
                           en WhatsApp, Facebook o Instagram.
 
 CÓMO PUBLICARLO
-1. Sube TODOS los archivos a la misma carpeta raíz del hosting
+1. Sube TODOS los archivos de la carpeta gifttime a la misma carpeta raíz del hosting
    (no los metas en subcarpetas).
 2. Abre tu dominio en el navegador y listo.
 

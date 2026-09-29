@@ -90,13 +90,14 @@
     /* ---------- Products ---------- */
     .products{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
     .product{background:#fff;border:1px solid #f6d5de;border-radius:19px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 8px 22px rgba(90,16,32,.04)}
-    .art{height:150px;padding:15px;display:flex;align-items:flex-end;justify-content:space-between;color:#fff;background:linear-gradient(145deg,#f16295,#df1d3d);position:relative;overflow:hidden}
+    .art{height:150px;padding:0;display:block;color:#fff;background:linear-gradient(145deg,#f16295,#df1d3d);position:relative;overflow:hidden}
+    .art img{width:100%;height:100%;display:block;object-fit:cover;object-position:center}
+    .zoom{border:0;width:100%;font:inherit;cursor:zoom-in;text-align:left}
+    .zoom:focus-visible{outline:3px solid var(--red);outline-offset:-3px}
     .art:after{content:'♥';position:absolute;right:10px;top:-27px;font-size:7rem;color:rgba(255,255,255,.13);pointer-events:none}
     .product:nth-child(3n+2) .art{background:linear-gradient(145deg,#ffb0ca,#ef3a70)}
     .product:nth-child(3n) .art{background:linear-gradient(145deg,#bc1339,#631128)}
-    .art small,.art span{position:relative;z-index:1}
-    .art small{font-weight:bold;letter-spacing:.08em;font-size:.7rem;background:rgba(255,255,255,.94);color:var(--dark);padding:5px 9px;border-radius:999px}
-    .art span{font-size:2.4rem;line-height:1}
+    .art small{position:absolute;z-index:2;left:12px;bottom:12px;font-weight:bold;letter-spacing:.08em;font-size:.7rem;background:rgba(255,255,255,.94);color:var(--dark);padding:5px 9px;border-radius:999px}
     .body{display:flex;flex:1;flex-direction:column;padding:15px}
     .cat{color:#94425b;font-size:.71rem;font-weight:bold;letter-spacing:.1em;margin:0 0 5px;text-transform:uppercase}
     .product h3{font-size:1rem;line-height:1.25;margin:0}
@@ -140,6 +141,12 @@
     /* ---------- Cart ---------- */
     .overlay{position:fixed;inset:0;background:rgba(50,16,29,.43);z-index:20;opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}
     .overlay.show{opacity:1;visibility:visible}
+    .image-modal{position:fixed;inset:0;z-index:40;display:grid;place-items:center;padding:24px;background:rgba(28,8,16,.84)}
+    .image-modal[hidden]{display:none}
+    .image-modal figure{position:relative;max-width:min(92vw,680px);max-height:88dvh;margin:0;text-align:center}
+    .image-modal img{display:block;max-width:100%;max-height:80dvh;object-fit:contain;border-radius:18px;background:#fff;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+    .image-modal figcaption{color:#fff;font-weight:bold;margin:12px 50px 0}
+    .image-close{position:absolute;right:-12px;top:-12px;width:44px;height:44px;border:0;border-radius:50%;background:#fff;color:var(--red);font-size:2rem;line-height:1;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25)}
     .cart{position:fixed;z-index:25;right:0;top:0;width:min(405px,100%);height:100vh;height:100dvh;background:#fff;padding:22px 22px calc(18px + env(safe-area-inset-bottom,0px));padding-top:calc(22px + env(safe-area-inset-top,0px));box-shadow:-10px 0 45px rgba(51,16,29,.22);transform:translateX(105%);visibility:hidden;transition:transform .25s,visibility .25s;display:flex;flex-direction:column}
     .cart.open{transform:translateX(0);visibility:visible}
     .cart-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:16px}
@@ -167,6 +174,10 @@
     @media (max-width:980px){
       .instagram{grid-template-columns:repeat(2,1fr)}
     }
+    /* Banner de productos local: funciona sin depender de enlaces externos. */
+    .hero{background:#f7c6cd url('banner-productos-gift-time.png') center/cover no-repeat}
+    #instagram{display:none}
+
     @media (max-width:850px){
       .menu-button{display:grid}
       .links{position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;background:#fff;border-bottom:1px solid #f8dde5;box-shadow:0 18px 30px rgba(116,17,45,.08);padding:6px var(--gutter) 14px;display:none}
@@ -202,8 +213,7 @@
       .block{padding:44px 0}
       .products{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
       .product{border-radius:16px}
-      .art{height:110px;padding:12px}
-      .art span{font-size:2rem}
+      .art{height:110px}
       .art:after{font-size:5.5rem;top:-20px}
       .body{padding:12px}
       .product h3{font-size:.92rem}
@@ -222,6 +232,11 @@
       .badge{margin-left:0}
       .cart-button:before{content:'🛍';margin-right:6px}
     }
+    /* Evita que la regla móvil anterior reemplace el nuevo banner. */
+    @media (max-width:560px){
+      .hero{background-image:url('banner-productos-gift-time.png');background-position:65% center}
+    }
+
     @media (prefers-reduced-motion:reduce){
       html{scroll-behavior:auto}
       *,*:before,*:after{transition:none!important;animation:none!important}
@@ -236,7 +251,6 @@
       </a>
       <nav class="links" id="links" aria-label="Principal">
         <a href="#tienda">Tienda</a>
-        <a href="#instagram">Instagram</a>
         <a href="#contacto">Contacto</a>
       </nav>
       <div class="actions">
@@ -317,25 +331,29 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"><span id="toastText"></span><button id="toastView">Ver pedido</button></div>
 
+  <div class="image-modal" id="imageModal" role="dialog" aria-modal="true" aria-labelledby="imageCaption" hidden>
+    <figure><button class="image-close" id="closeImage" aria-label="Cerrar imagen">×</button><img id="modalImage" src="" alt=""><figcaption id="imageCaption"></figcaption></figure>
+  </div>
+
   <footer class="wrap"><b>Gift Time Bogotá</b> · Maquillaje, cuidado y detalles con amor</footer>
 
   <script src="https://cdn.lightwidget.com/widgets/lightwidget.js" async></script>
   <script>
     const W = '573212482015';
     const products = [
-      {n:'Brochas Bob Esponja',c:'Maquillaje',p:51000,o:60000,stock:1,i:'🖌️'},
-      {n:'Mini Rugrats',c:'Maquillaje',p:36000,o:40000,i:'💄'},
-      {n:'HappyBerry',c:'Maquillaje',p:13000,o:15000,i:'🍓'},
-      {n:'Kit Niñas Magia',c:'Maquillaje',p:16000,o:20000,i:'✨'},
-      {n:'Desmaquillante',c:'Cuidado',p:20000,o:25000,i:'🫧'},
-      {n:'Luxe Herramientas',c:'Maquillaje',p:20000,o:25000,i:'🪞'},
-      {n:'Corrector Rosado',c:'Maquillaje',p:12000,o:15000,i:'🌸'},
-      {n:'Super Concealer',c:'Maquillaje',p:16000,o:20000,i:'🤍'},
-      {n:'Primer + Fijador',c:'Maquillaje',p:16000,o:20000,i:'💫'},
-      {n:'Polvos Teddy',c:'Maquillaje',p:13000,o:15000,i:'🧸'},
-      {n:'Protector Solar',c:'Cuidado',p:50000,o:50000,i:'☀️'},
-      {n:'Delineador Cat',c:'Maquillaje',p:12000,o:15000,i:'🐈'},
-      {n:'Rubor Safari',c:'Maquillaje',p:20000,o:25000,i:'🦋'}
+      {n:'Brochas Bob Esponja',c:'Maquillaje',p:51000,o:60000,stock:1,img:'producto-brochas.png'},
+      {n:'Mini Rugrats',c:'Maquillaje',p:36000,o:40000,img:'producto-rugrats.png'},
+      {n:'HappyBerry',c:'Maquillaje',p:13000,o:15000,img:'producto-happyberry.png'},
+      {n:'Kit Niñas Magia',c:'Maquillaje',p:16000,o:20000,img:'producto-kit-ninas-magia.png'},
+      {n:'Desmaquillante',c:'Cuidado',p:20000,o:25000,img:'producto-desmaquillante.png'},
+      {n:'Luxe Herramientas',c:'Maquillaje',p:20000,o:25000,img:'producto-luxe-herramientas.png'},
+      {n:'Corrector Rosado',c:'Maquillaje',p:12000,o:15000,img:'producto-corrector-rosado.png'},
+      {n:'Super Concealer',c:'Maquillaje',p:16000,o:20000,img:'producto-super-concealer.png'},
+      {n:'Primer + Fijador',c:'Maquillaje',p:16000,o:20000,img:'producto-primer-fijador.png'},
+      {n:'Polvos Teddy',c:'Maquillaje',p:13000,o:15000,img:'producto-polvos-teddy.png'},
+      {n:'Protector Solar',c:'Cuidado',p:50000,o:50000,img:'producto-protector-solar.png'},
+      {n:'Delineador Cat',c:'Maquillaje',p:12000,o:15000,img:'producto-delineador-cat.png'},
+      {n:'Rubor Safari',c:'Maquillaje',p:20000,o:25000,img:'producto-rubor-safari.png'}
     ];
 
     let selected = 'Todos', cart = [], toastTimer;
@@ -356,7 +374,7 @@
       $('products').innerHTML = list.map(p => {
         const i = products.indexOf(p), r = remain(p,i), out = r === 0;
         return `<article class="product">
-          <div class="art" aria-hidden="true"><small>${p.c==='Cuidado'?'CUIDADO':'BEAUTY'}</small><span>${p.i}</span></div>
+          <button class="art zoom" type="button" data-image="${i}" aria-label="Ver ${p.n} en grande"><img src="${p.img}" alt="${p.n}" loading="lazy"><small>${p.c==='Cuidado'?'CUIDADO':'BEAUTY'}</small></button>
           <div class="body">
             <p class="cat">${p.c}</p>
             <h3>${p.n}</h3>
@@ -428,6 +446,19 @@
       document.body.classList.remove('lock');
       $('cartButton').focus();
     }
+    function openImage(i){
+      const p = products[i];
+      $('modalImage').src = p.img; $('modalImage').alt = p.n;
+      $('imageCaption').textContent = p.n;
+      $('imageModal').hidden = false;
+      document.body.classList.add('lock');
+      setTimeout(() => $('closeImage').focus(), 50);
+    }
+    function closeImage(){
+      $('imageModal').hidden = true;
+      $('modalImage').src = '';
+      document.body.classList.remove('lock');
+    }
 
     function toggleMenu(force){
       const open = typeof force === 'boolean' ? force : !$('links').classList.contains('open');
@@ -444,6 +475,7 @@
     });
     $('products').addEventListener('click', e => {
       const b = e.target.closest('[data-add]'); if (b) add(+b.dataset.add);
+      const image = e.target.closest('[data-image]'); if (image) openImage(+image.dataset.image);
     });
     $('items').addEventListener('click', e => {
       const b = e.target.closest('[data-change]'); if (b) change(+b.dataset.change, +b.dataset.d);
@@ -451,12 +483,14 @@
     $('cartButton').onclick = openCart;
     $('toastView').onclick = openCart;
     $('closeCart').onclick = closeCart;
+    $('closeImage').onclick = closeImage;
+    $('imageModal').onclick = e => { if (e.target === $('imageModal')) closeImage(); };
     $('overlay').onclick = closeCart;
     $('menuButton').onclick = () => toggleMenu();
     $('links').addEventListener('click', e => { if (e.target.closest('a')) closeMenu(); });
     document.addEventListener('keydown', e => {
       if (e.key !== 'Escape') return;
-      if ($('cart').classList.contains('open')) closeCart(); else closeMenu();
+      if (!$('imageModal').hidden) closeImage(); else if ($('cart').classList.contains('open')) closeCart(); else closeMenu();
     });
     window.matchMedia('(min-width:851px)').addEventListener('change', e => { if (e.matches) closeMenu(); });
 
