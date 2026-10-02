@@ -354,6 +354,8 @@
   <script>
     const W = '573212482015';
     const image = name => `assets/productos/${name}`;
+    let products = [];
+    /* Catálogo anterior: ahora se carga desde data/productos.json para poder editarlo desde admin.html.
     const products = [
       {n:'Kit Niñas Magia',c:'Maquillaje',p:16000,o:20000,stock:1,img:image('producto-kit-ninas-magia.png'),description:'Kit infantil con libreta, bálsamo labial sin color y sombras suaves en tonos lila, rosa y amarillo. Incluye aplicador de esponja y está pensado para un uso diario delicado.'},
       {n:'Kit Brochas Mini x6 Rugrats',c:'Maquillaje',p:36000,o:40000,stock:3,img:image('producto-rugrats-1.jpg'),gallery:['producto-rugrats-1.jpg','producto-rugrats-2.jpg','producto-rugrats-3.jpg','producto-rugrats-4.jpg','producto-rugrats-5.jpg','producto-rugrats-6.jpg','producto-rugrats-7.jpg'].map(image),description:'Kit de 6 brochas mini inspirado en Rugrats, ideal para llevar en la cosmetiquera o el bolso. Cada brocha tiene su función marcada y sirve para aplicar y difuminar productos en crema o polvo; incluye brocha para ojos y cosmetiquera en forma de mochila.'},
@@ -376,12 +378,13 @@
       {n:'Crema Reparadora Nocturna',c:'Cuidado',p:20000,o:20000,stock:1,img:image('producto-crema-nocturna.png'),description:'Crema facial nocturna en gel, ligera y de rápida absorción. Ayuda a hidratar y suavizar la piel sin dejar sensación grasosa.'},
       {n:'Brillo Happy Berry',c:'Maquillaje',p:13000,o:15000,stock:1,img:image('producto-happy-berry.jpg'),description:'Gloss de brillo intenso y tono rosa muy sutil. Se desliza suavemente y aporta sensación de suavidad en los labios.'}
     ];
+    */
 
     let selected = 'Todos', cart = [], toastTimer, activeGallery = [], activeImageIndex = 0;
     const $ = id => document.getElementById(id);
     const fmt = x => x.toLocaleString('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0});
     const qty = i => cart.find(x => x.i === i)?.q || 0;
-    const remain = (p,i) => p.stock === undefined ? null : Math.max(0, p.stock - qty(i));
+    const remain = (p,i) => typeof p.stock !== 'number' ? null : Math.max(0, p.stock - qty(i));
     const cartTotal = () => cart.reduce((a,x) => a + products[x.i].p * x.q, 0);
 
     function renderFilters(){
@@ -393,15 +396,15 @@
     function renderProducts(){
       const list = selected === 'Todos' ? products : products.filter(p => p.c === selected);
       $('products').innerHTML = list.map(p => {
-        const i = products.indexOf(p), r = remain(p,i), out = r === 0;
+        const i = products.indexOf(p), r = remain(p,i), preorder = p.status === 'preorder', out = p.status === 'outofstock' || r === 0;
         return `<article class="product">
           <button class="art zoom" type="button" data-image="${i}" aria-label="Ver ${p.n} en grande"><img src="${p.img}" alt="${p.n}" loading="lazy"><small>${p.c==='Cuidado'?'CUIDADO':'BEAUTY'}</small></button>
           <div class="body">
             <p class="cat">${p.c}</p>
             <h3>${p.n}</h3>
             <div class="prices"><span class="price">${fmt(p.p)}</span>${p.p!==p.o?`<span class="old">${fmt(p.o)}</span>`:''}</div>
-            ${r===null?'':`<p class="stock ${out?'out':''}">${out?'Agotado':`Queda ${r} unidad${r===1?'':'es'}`}</p>`}
-            <button class="add" data-add="${i}" ${out?'disabled':''}>${out?'Agotado':'Agregar al pedido'}</button>
+            <p class="stock ${out?'out':''}">${out?'Agotado':preorder?'Sobre pedido':r===null?'Disponible':`Queda ${r} unidad${r===1?'':'es'}`}</p>
+            <button class="add" data-add="${i}" ${out?'disabled':''}>${out?'Agotado':preorder?'Solicitar sobre pedido':'Agregar al pedido'}</button>
           </div>
         </article>`;
       }).join('');
@@ -411,7 +414,7 @@
       const count = cart.reduce((a,x) => a + x.q, 0);
       $('count').textContent = count;
       $('items').innerHTML = cart.length ? cart.map(x => {
-        const p = products[x.i], max = p.stock !== undefined && x.q >= p.stock;
+        const p = products[x.i], max = typeof p.stock === 'number' && x.q >= p.stock;
         return `<div class="item">
           <div><b>${p.n}</b><br><small>${fmt(p.p)} c/u</small></div>
           <div class="item-right">
@@ -429,7 +432,7 @@
 
     function add(i){
       const p = products[i], line = cart.find(x => x.i === i);
-      if (p.stock !== undefined && qty(i) >= p.stock) return;
+      if (typeof p.stock === 'number' && qty(i) >= p.stock) return;
       line ? line.q++ : cart.push({i, q:1});
       renderCart(); renderProducts();
       const b = $('count'); b.classList.remove('bump'); void b.offsetWidth; b.classList.add('bump');
@@ -439,7 +442,7 @@
     function change(i, d){
       const l = cart.find(x => x.i === i), p = products[i];
       if (!l) return;
-      if (d > 0 && p.stock !== undefined && l.q >= p.stock) return;
+      if (d > 0 && typeof p.stock === 'number' && l.q >= p.stock) return;
       l.q += d;
       if (l.q < 1) cart = cart.filter(x => x.i !== i);
       renderCart(); renderProducts();
@@ -538,7 +541,18 @@
       window.open(`https://wa.me/${W}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
     };
 
-    renderFilters(); renderProducts(); renderCart();
+    async function loadProducts(){
+      try{
+        const response = await fetch('data/productos.json', {cache:'no-store'});
+        if (!response.ok) throw new Error('No se pudo cargar el catálogo');
+        products = await response.json();
+      } catch (error) {
+        $('products').innerHTML = '<p class="empty">No pudimos cargar los productos. Intenta actualizar la página.</p>';
+        return;
+      }
+      renderFilters(); renderProducts(); renderCart();
+    }
+    loadProducts();
   </script>
 </body>
 </html>
