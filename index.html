@@ -412,13 +412,14 @@
     const cartTotal = () => cart.reduce((a,x) => a + products[x.i].p * x.q, 0);
 
     function renderFilters(){
-      const cats = ['Todos', ...new Set(products.map(p => p.c))];
+      const cats = ['Todos', ...new Set(products.filter(p=>!p.hidden).map(p => p.c))];
       $('filters').innerHTML = cats.map(x =>
         `<button class="filter ${x===selected?'active':''}" data-cat="${x}" aria-pressed="${x===selected}">${x}</button>`).join('');
     }
 
     function renderProducts(){
-      const list = selected === 'Todos' ? products : products.filter(p => p.c === selected);
+      const visible = products.filter(p=>!p.hidden);
+      const list = selected === 'Todos' ? visible : visible.filter(p => p.c === selected);
       $('products').innerHTML = list.map(p => {
         const i = products.indexOf(p), variantMode = hasVariants(p), selectedVariant = chosenVariants[i] || '', variantRemain = selectedVariant ? remain(p,i,selectedVariant) : null, r = remain(p,i), preorder = p.status === 'preorder', out = p.status === 'outofstock' || (variantMode ? availableVariants(p,i).length === 0 : r === 0);
         const picker = variantMode ? `<select class="variant-picker" data-variant-select="${i}" aria-label="${esc(p.variantLabel || 'Opción')} para ${esc(p.n)}" ${out?'disabled':''}><option value="">Elige ${esc((p.variantLabel || 'una opción').toLowerCase())}</option>${p.variants.map(v=>{const left=remain(p,i,v.name), unavailable=typeof left==='number'&&left===0;return `<option value="${esc(v.name)}" ${v.name===selectedVariant?'selected':''} ${unavailable?'disabled':''}>${esc(v.name)}${unavailable?' — Agotado':typeof left==='number'?` — ${left} disponible${left===1?'':'s'}`:''}</option>`}).join('')}</select><p class="variant-note">${selectedVariant ? (variantRemain===0?'Este tono está agotado.':`${p.variantLabel || 'Opción'}: ${esc(selectedVariant)}${typeof variantRemain==='number'?` · Queda ${variantRemain}`:''}`) : `Elige ${((p.variantLabel || 'una opción').toLowerCase())} antes de agregar`}</p>` : '';
@@ -428,9 +429,9 @@
             <p class="cat">${p.c}</p>
             <h3>${p.n}</h3>
             <div class="prices"><span class="price">${fmt(p.p)}</span>${p.p!==p.o?`<span class="old">${fmt(p.o)}</span>`:''}</div>
-            <p class="stock ${out?'out':''}">${out?'Agotado':preorder?'Sobre pedido':variantMode?`${availableVariants(p,i).length} ${p.variantLabel || 'opción'}${availableVariants(p,i).length===1?' disponible':'es disponibles'}`:r===null?'Disponible':`Queda ${r} unidad${r===1?'':'es'}`}</p>
+            <p class="stock ${out?'out':''}">${out?'No disponible':preorder?'Sobre pedido':variantMode?`${availableVariants(p,i).length} ${p.variantLabel || 'opción'}${availableVariants(p,i).length===1?' disponible':'es disponibles'}`:r===null?'Disponible':`Queda ${r} unidad${r===1?'':'es'}`}</p>
             ${picker}
-            <button class="add" data-add="${i}" ${out?'disabled':''}>${out?'Agotado':preorder?'Solicitar sobre pedido':'Agregar al pedido'}</button>
+            <button class="add" data-add="${i}" ${out?'disabled':''}>${out?'No disponible':preorder?'Solicitar sobre pedido':'Agregar al pedido'}</button>
           </div>
         </article>`;
       }).join('');
