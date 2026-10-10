@@ -208,14 +208,20 @@
     "description": "Delineador para crear trazos definidos y looks tipo cat eye con mayor precisión."
   },
   {
-    "n": "Corrector Rosado",
+    "n": "Corrector Rosado Barbie",
     "c": "Maquillaje",
     "p": 12000,
     "o": 15000,
-    "stock": 2,
     "status": "available",
-    "img": "assets/productos/producto-corrector-rosado.png",
-    "description": "Corrector en tono rosado para complementar tu maquillaje y ayudar a dar un aspecto más uniforme a la piel."
+    "stock": 2,
+    "img": "assets/productos/producto-corrector-rosado-barbie-1791636025396-f68k5.jpg",
+    "description": "Corrector en tono rosado para complementar tu maquillaje y ayudar a dar un aspecto más uniforme a la piel.",
+    "gallery": [
+      "assets/productos/producto-corrector-rosado-barbie-1791636025396-f68k5.jpg",
+      "assets/productos/producto-corrector-rosado-barbie-1791636025399-8ofr4.jpg",
+      "assets/productos/producto-corrector-rosado-barbie-1791636025400-cpau8.jpg",
+      "assets/productos/producto-corrector-rosado-barbie-1791636025401-8py7s.jpg"
+    ]
   },
   {
     "n": "Corrector Líquido Rebel Girl",
