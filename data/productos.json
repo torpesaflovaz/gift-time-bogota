@@ -198,14 +198,20 @@
     "description": "Protector solar para sumar a tu rutina diaria de cuidado facial. Consulta por WhatsApp la presentación disponible."
   },
   {
-    "n": "Delineador Cat Eye",
+    "n": "Delineador Doble Trendy Cat Eye",
     "c": "Maquillaje",
     "p": 12000,
     "o": 15000,
-    "stock": 1,
     "status": "available",
-    "img": "assets/productos/producto-delineador-cat.png",
-    "description": "Delineador para crear trazos definidos y looks tipo cat eye con mayor precisión."
+    "stock": 1,
+    "img": "assets/productos/producto-delineador-doble-trendy-cat-eye-1791636364142-b0uul.webp",
+    "description": "Delineador para crear trazos definidos y looks tipo cat eye con mayor precisión.",
+    "gallery": [
+      "assets/productos/producto-delineador-doble-trendy-cat-eye-1791636364142-b0uul.webp",
+      "assets/productos/producto-delineador-doble-trendy-cat-eye-1791636364144-hojg9.webp",
+      "assets/productos/producto-delineador-doble-trendy-cat-eye-1791636364145-p0253.webp",
+      "assets/productos/producto-delineador-doble-trendy-cat-eye-1791636364145-bur00.webp"
+    ]
   },
   {
     "n": "Corrector Rosado Barbie",
