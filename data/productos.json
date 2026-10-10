@@ -99,10 +99,15 @@
     "c": "Maquillaje",
     "p": 16000,
     "o": 20000,
-    "stock": 2,
     "status": "available",
-    "img": "assets/productos/producto-primer-fijador.png",
-    "description": "Dúo práctico para preparar la piel antes del maquillaje y ayudar a mantener el look con un acabado más fresco durante el día."
+    "stock": 2,
+    "img": "assets/productos/producto-kit-primer-fijador-1791634606159-5ff24.webp",
+    "description": "Dúo práctico para preparar la piel antes del maquillaje y ayudar a mantener el look con un acabado más fresco durante el día.",
+    "gallery": [
+      "assets/productos/producto-kit-primer-fijador-1791634606159-5ff24.webp",
+      "assets/productos/producto-kit-primer-fijador-1791634606160-e7817.webp",
+      "assets/productos/producto-kit-primer-fijador-1791634606161-xy35q.webp"
+    ]
   },
   {
     "n": "Polvos Sueltos Teddy",
