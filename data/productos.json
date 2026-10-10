@@ -4,10 +4,16 @@
     "c": "Maquillaje",
     "p": 16000,
     "o": 20000,
-    "stock": 1,
     "status": "available",
-    "img": "assets/productos/producto-kit-ninas-magia.png",
-    "description": "Kit infantil con libreta, bálsamo labial sin color y sombras suaves en tonos lila, rosa y amarillo. Incluye aplicador de esponja y está pensado para un uso diario delicado."
+    "stock": 1,
+    "img": "assets/productos/producto-kit-ninas-magia-1791595653570-vokr8.webp",
+    "description": "Kit infantil con libreta, bálsamo labial sin color y sombras suaves en tonos lila, rosa y amarillo. Incluye aplicador de esponja y está pensado para un uso diario delicado.",
+    "gallery": [
+      "assets/productos/producto-kit-ninas-magia-1791595653570-vokr8.webp",
+      "assets/productos/producto-kit-ninas-magia-1791595653574-rhtkc.webp",
+      "assets/productos/producto-kit-ninas-magia-1791595653574-7uelx.webp",
+      "assets/productos/producto-kit-ninas-magia-1791595653575-y0siu.webp"
+    ]
   },
   {
     "n": "Kit Brochas Mini x6 Rugrats",
@@ -93,10 +99,15 @@
     "c": "Maquillaje",
     "p": 16000,
     "o": 20000,
-    "stock": 2,
     "status": "available",
-    "img": "assets/productos/producto-primer-fijador.png",
-    "description": "Dúo práctico para preparar la piel antes del maquillaje y ayudar a mantener el look con un acabado más fresco durante el día."
+    "stock": 2,
+    "img": "assets/productos/producto-kit-primer-fijador-1791595672352-9bs7s.webp",
+    "description": "Dúo práctico para preparar la piel antes del maquillaje y ayudar a mantener el look con un acabado más fresco durante el día.",
+    "gallery": [
+      "assets/productos/producto-kit-primer-fijador-1791595672352-9bs7s.webp",
+      "assets/productos/producto-kit-primer-fijador-1791595672354-3rzrb.webp",
+      "assets/productos/producto-kit-primer-fijador-1791595672356-48wxr.webp"
+    ]
   },
   {
     "n": "Polvos Sueltos Teddy",
