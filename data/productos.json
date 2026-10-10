@@ -102,7 +102,7 @@
     "status": "available",
     "stock": 2,
     "img": "assets/productos/producto-kit-primer-y-fijador-barbie-malibu-trendy-todo-tipo-piel-1791594589912-tzpgp.webp",
-    "description": "Dúo práctico para preparar la piel antes del maquillaje y ayudar a mantener el look con un acabado más fresco durante el día.",
+    "description": "Prepárate para un look con mucho estilo con este kit Barbie Malibu de Trendy. Incluye un primer facial en gel para preparar la piel antes del maquillaje y un spray fijador para complementar el acabado. Ideal para darle a tu rutina un toque fresco, práctico y lleno de color.",
     "gallery": [
       "assets/productos/producto-kit-primer-y-fijador-barbie-malibu-trendy-todo-tipo-piel-1791594589912-tzpgp.webp",
       "assets/productos/producto-kit-primer-y-fijador-barbie-malibu-trendy-todo-tipo-piel-1791594589914-8zo43.webp",
@@ -128,10 +128,14 @@
     "c": "Maquillaje",
     "p": 16000,
     "o": 20000,
-    "stock": 5,
     "status": "available",
-    "img": "assets/productos/producto-super-concealer.png",
-    "description": "Corrector de cobertura para unificar el aspecto de la piel y disimular imperfecciones. Disponible en tonos 1, 2 y 3; confirma tu tono por WhatsApp."
+    "stock": 5,
+    "img": "assets/productos/producto-corrector-y-tratamiento-super-conclear-1791594821618-8z8fs.webp",
+    "description": "Corrector de cobertura para unificar el aspecto de la piel y disimular imperfecciones. Disponible en tonos 1, 2 y 3; confirma tu tono por WhatsApp.",
+    "gallery": [
+      "assets/productos/producto-corrector-y-tratamiento-super-conclear-1791594821618-8z8fs.webp",
+      "assets/productos/producto-corrector-y-tratamiento-super-conclear-1791594821620-b90kh.webp"
+    ]
   },
   {
     "n": "Kit Pestañina + Fortalecedora",
