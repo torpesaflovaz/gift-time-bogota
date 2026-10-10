@@ -95,14 +95,19 @@
     "description": "Papeletas con aloe vera y té verde que absorben el exceso de grasa sin resecar ni alterar el maquillaje. Caja con 100 unidades."
   },
   {
-    "n": "Kit Primer + Fijador",
+    "n": "Kit Primer Y Fijador Barbie Malibu Trendy - Todo Tipo Piel",
     "c": "Maquillaje",
     "p": 16000,
     "o": 20000,
-    "stock": 2,
     "status": "available",
-    "img": "assets/productos/producto-primer-fijador.png",
-    "description": "Dúo práctico para preparar la piel antes del maquillaje y ayudar a mantener el look con un acabado más fresco durante el día."
+    "stock": 2,
+    "img": "assets/productos/producto-kit-primer-y-fijador-barbie-malibu-trendy-todo-tipo-piel-1791594589912-tzpgp.webp",
+    "description": "Dúo práctico para preparar la piel antes del maquillaje y ayudar a mantener el look con un acabado más fresco durante el día.",
+    "gallery": [
+      "assets/productos/producto-kit-primer-y-fijador-barbie-malibu-trendy-todo-tipo-piel-1791594589912-tzpgp.webp",
+      "assets/productos/producto-kit-primer-y-fijador-barbie-malibu-trendy-todo-tipo-piel-1791594589914-8zo43.webp",
+      "assets/productos/producto-kit-primer-y-fijador-barbie-malibu-trendy-todo-tipo-piel-1791594589916-jmt8n.webp"
+    ]
   },
   {
     "n": "Polvos Sueltos Teddy",
