@@ -84,6 +84,9 @@
     .benefit+.benefit{border-left:1px solid var(--line)}
     .icon{flex-shrink:0;width:36px;height:36px;border-radius:50%;background:var(--blush);color:var(--red);display:grid;place-items:center;font-size:1.15rem}
     .benefit b{display:block}.benefit small{color:#865567}
+    .payment-banner{margin-top:24px;background:linear-gradient(135deg,#fff 0%,#fff3f6 55%,#ffe0e8 100%);border:1px solid #f3cbd6;border-radius:22px;padding:clamp(20px,4vw,34px);display:grid;grid-template-columns:1.05fr 1fr;gap:22px;align-items:center;box-shadow:0 10px 25px rgba(90,16,32,.05)}
+    .payment-banner .eyebrow{margin-bottom:7px}.payment-banner h2{font-family:Georgia,serif;font-size:clamp(1.55rem,3vw,2.2rem);line-height:1.05;color:var(--dark);margin:0}.payment-banner p:not(.eyebrow){color:var(--muted);margin:9px 0 0;max-width:510px}
+    .payment-methods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.payment-method{background:#fff;border:1px solid #f4d3dc;border-radius:12px;padding:11px 12px;display:flex;align-items:center;gap:9px;font-size:.88rem;font-weight:bold;color:#7e2843}.payment-symbol{display:grid;place-items:center;width:28px;height:28px;border-radius:9px;background:#ffe0e8;color:var(--red);font-weight:900}.payment-cta{margin-top:14px;display:inline-flex;color:var(--red);font-weight:bold;text-decoration:none}.payment-cta:hover{text-decoration:underline}
 
     /* ---------- Sections ---------- */
     .block{padding:72px 0}
@@ -114,6 +117,9 @@
     .old{font-size:.82rem;color:#8a5f6c;text-decoration:line-through}
     .stock{font-size:.78rem;color:#8b2946;font-weight:bold;margin:0 0 12px}
     .stock.out{color:#7d5563}
+    .variant-picker{width:100%;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--dark);padding:10px;margin:0 0 10px;font:inherit;font-size:.88rem}
+    .variant-picker:focus{outline:2px solid #ef7295;outline-offset:1px}
+    .variant-note{font-size:.77rem;color:#8b2946;font-weight:bold;margin:-3px 0 10px}
     .add{border:1px solid var(--red);background:#fff;color:var(--red);border-radius:10px;min-height:44px;padding:10px;font-weight:bold;cursor:pointer;margin-top:auto}
     .add:hover:not(:disabled){background:var(--red);color:#fff}
     .add:disabled{background:#f6eef1;border-color:#e6cbd4;color:#7d5563;cursor:not-allowed}
@@ -200,7 +206,7 @@
       .links a:last-child{border-bottom:0}
       .hero{min-height:460px;background-position:65% center;border-radius:0 0 28px 28px}
       .hero:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(250,219,220,.95) 0%,rgba(250,219,220,.8) 50%,rgba(250,219,220,0) 85%)}
-      .benefits{grid-template-columns:1fr;margin-top:-24px}
+      .benefits{grid-template-columns:1fr;margin-top:-24px}.payment-banner{grid-template-columns:1fr}
       .benefit+.benefit{border-left:0;border-top:1px solid var(--line)}
       .contact{grid-template-columns:1fr}
       .contact-side{padding:26px 22px 30px}
@@ -296,6 +302,16 @@
       <div class="benefit"><span class="icon" aria-hidden="true">☏</span><div><b>Atención por WhatsApp</b><small>Pago y entrega se confirman allí</small></div></div>
     </div>
 
+    <section class="wrap payment-banner" aria-label="Métodos de pago">
+      <div><p class="eyebrow">PAGA COMO PREFIERAS</p><h2>Comprar tu detalle también es fácil</h2><p>Aceptamos diferentes medios de pago para que confirmes tu pedido con tranquilidad.</p><a class="payment-cta" href="https://wa.me/573212482015?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20m%C3%A9todos%20de%20pago." target="_blank" rel="noopener">¿Tienes dudas? Escríbenos por WhatsApp →</a></div>
+      <div class="payment-methods">
+        <div class="payment-method"><span class="payment-symbol">N</span><span>Nequi<br><small>321 248 2015</small></span></div>
+        <div class="payment-method"><span class="payment-symbol">▣</span><span>Tarjetas<br><small>Débito y crédito</small></span></div>
+        <div class="payment-method"><span class="payment-symbol">P</span><span>PSE<br><small>Pago seguro en línea</small></span></div>
+        <div class="payment-method"><span class="payment-symbol">↗</span><span>Link de pago<br><small>Te lo enviamos por WhatsApp</small></span></div>
+      </div>
+    </section>
+
     <section class="wrap block" id="tienda">
       <div class="section-top">
         <div>
@@ -384,11 +400,15 @@
     ];
     */
 
-    let selected = 'Todos', cart = [], toastTimer, activeGallery = [], activeImageIndex = 0;
+    let selected = 'Todos', cart = [], toastTimer, activeGallery = [], activeImageIndex = 0, chosenVariants = {};
     const $ = id => document.getElementById(id);
     const fmt = x => x.toLocaleString('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0});
-    const qty = i => cart.find(x => x.i === i)?.q || 0;
-    const remain = (p,i) => typeof p.stock !== 'number' ? null : Math.max(0, p.stock - qty(i));
+    const esc = x => String(x || '').replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
+    const hasVariants = p => Array.isArray(p.variants) && p.variants.length > 0;
+    const variantFor = (p,name) => p.variants?.find(v => v.name === name);
+    const qty = (i, variant='') => cart.find(x => x.i === i && (x.v || '') === variant)?.q || 0;
+    const remain = (p,i,variant='') => { const source=variant ? variantFor(p,variant) : p; return typeof source?.stock !== 'number' ? null : Math.max(0, source.stock - qty(i,variant)); };
+    const availableVariants = (p,i) => p.variants.filter(v => typeof v.stock !== 'number' || remain(p,i,v.name) > 0);
     const cartTotal = () => cart.reduce((a,x) => a + products[x.i].p * x.q, 0);
 
     function renderFilters(){
@@ -400,14 +420,16 @@
     function renderProducts(){
       const list = selected === 'Todos' ? products : products.filter(p => p.c === selected);
       $('products').innerHTML = list.map(p => {
-        const i = products.indexOf(p), r = remain(p,i), preorder = p.status === 'preorder', out = p.status === 'outofstock' || r === 0;
+        const i = products.indexOf(p), variantMode = hasVariants(p), selectedVariant = chosenVariants[i] || '', variantRemain = selectedVariant ? remain(p,i,selectedVariant) : null, r = remain(p,i), preorder = p.status === 'preorder', out = p.status === 'outofstock' || (variantMode ? availableVariants(p,i).length === 0 : r === 0);
+        const picker = variantMode ? `<select class="variant-picker" data-variant-select="${i}" aria-label="${esc(p.variantLabel || 'Opción')} para ${esc(p.n)}" ${out?'disabled':''}><option value="">Elige ${esc((p.variantLabel || 'una opción').toLowerCase())}</option>${p.variants.map(v=>{const left=remain(p,i,v.name), unavailable=typeof left==='number'&&left===0;return `<option value="${esc(v.name)}" ${v.name===selectedVariant?'selected':''} ${unavailable?'disabled':''}>${esc(v.name)}${unavailable?' — Agotado':typeof left==='number'?` — ${left} disponible${left===1?'':'s'}`:''}</option>`}).join('')}</select><p class="variant-note">${selectedVariant ? (variantRemain===0?'Este tono está agotado.':`${p.variantLabel || 'Opción'}: ${esc(selectedVariant)}${typeof variantRemain==='number'?` · Queda ${variantRemain}`:''}`) : `Elige ${((p.variantLabel || 'una opción').toLowerCase())} antes de agregar`}</p>` : '';
         return `<article class="product">
           <button class="art zoom" type="button" data-image="${i}" aria-label="Ver ${p.n} en grande"><img src="${p.img}" alt="${p.n}" loading="lazy"><small>${p.c==='Cuidado'?'CUIDADO':'BEAUTY'}</small></button>
           <div class="body">
             <p class="cat">${p.c}</p>
             <h3>${p.n}</h3>
             <div class="prices"><span class="price">${fmt(p.p)}</span>${p.p!==p.o?`<span class="old">${fmt(p.o)}</span>`:''}</div>
-            <p class="stock ${out?'out':''}">${out?'Agotado':preorder?'Sobre pedido':r===null?'Disponible':`Queda ${r} unidad${r===1?'':'es'}`}</p>
+            <p class="stock ${out?'out':''}">${out?'Agotado':preorder?'Sobre pedido':variantMode?`${availableVariants(p,i).length} ${p.variantLabel || 'opción'}${availableVariants(p,i).length===1?' disponible':'es disponibles'}`:r===null?'Disponible':`Queda ${r} unidad${r===1?'':'es'}`}</p>
+            ${picker}
             <button class="add" data-add="${i}" ${out?'disabled':''}>${out?'Agotado':preorder?'Solicitar sobre pedido':'Agregar al pedido'}</button>
           </div>
         </article>`;
@@ -418,14 +440,14 @@
       const count = cart.reduce((a,x) => a + x.q, 0);
       $('count').textContent = count;
       $('items').innerHTML = cart.length ? cart.map(x => {
-        const p = products[x.i], max = typeof p.stock === 'number' && x.q >= p.stock;
+        const p = products[x.i], variant = x.v ? variantFor(p,x.v) : null, max = typeof (variant || p).stock === 'number' && x.q >= (variant || p).stock;
         return `<div class="item">
-          <div><b>${p.n}</b><br><small>${fmt(p.p)} c/u</small></div>
+          <div><b>${p.n}</b>${x.v?`<br><small>${esc(p.variantLabel || 'Opción')}: ${esc(x.v)}</small>`:''}<br><small>${fmt(p.p)} c/u</small></div>
           <div class="item-right">
             <div class="qty">
-              <button data-change="${x.i}" data-d="-1" aria-label="Quitar uno">−</button>
+              <button data-change="${x.i}" data-variant="${encodeURIComponent(x.v || '')}" data-d="-1" aria-label="Quitar uno">−</button>
               <b>${x.q}</b>
-              <button data-change="${x.i}" data-d="1" aria-label="Agregar uno" ${max?'disabled':''}>+</button>
+              <button data-change="${x.i}" data-variant="${encodeURIComponent(x.v || '')}" data-d="1" aria-label="Agregar uno" ${max?'disabled':''}>+</button>
             </div>
             <small>${fmt(p.p*x.q)}</small>
           </div>
@@ -435,20 +457,22 @@
     }
 
     function add(i){
-      const p = products[i], line = cart.find(x => x.i === i);
-      if (typeof p.stock === 'number' && qty(i) >= p.stock) return;
-      line ? line.q++ : cart.push({i, q:1});
+      const p = products[i], variant = hasVariants(p) ? chosenVariants[i] : '';
+      if (hasVariants(p) && !variant) return showToast(`Elige ${String(p.variantLabel || 'una opción').toLowerCase()} primero`, false);
+      const source = variant ? variantFor(p,variant) : p, line = cart.find(x => x.i === i && (x.v || '') === variant);
+      if (typeof source?.stock === 'number' && qty(i,variant) >= source.stock) return;
+      line ? line.q++ : cart.push({i, v:variant, q:1});
       renderCart(); renderProducts();
       const b = $('count'); b.classList.remove('bump'); void b.offsetWidth; b.classList.add('bump');
       showToast(`${p.n} agregado`);
     }
 
-    function change(i, d){
-      const l = cart.find(x => x.i === i), p = products[i];
+    function change(i, d, variant=''){
+      const l = cart.find(x => x.i === i && (x.v || '') === variant), p = products[i], source = variant ? variantFor(p,variant) : p;
       if (!l) return;
-      if (d > 0 && typeof p.stock === 'number' && l.q >= p.stock) return;
+      if (d > 0 && typeof source?.stock === 'number' && l.q >= source.stock) return;
       l.q += d;
-      if (l.q < 1) cart = cart.filter(x => x.i !== i);
+      if (l.q < 1) cart = cart.filter(x => !(x.i === i && (x.v || '') === variant));
       renderCart(); renderProducts();
     }
 
@@ -516,8 +540,13 @@
       const b = e.target.closest('[data-add]'); if (b) add(+b.dataset.add);
       const image = e.target.closest('[data-image]'); if (image) openImage(+image.dataset.image);
     });
+    $('products').addEventListener('change', e => {
+      const select = e.target.closest('[data-variant-select]'); if (!select) return;
+      chosenVariants[+select.dataset.variantSelect] = select.value;
+      renderProducts();
+    });
     $('items').addEventListener('click', e => {
-      const b = e.target.closest('[data-change]'); if (b) change(+b.dataset.change, +b.dataset.d);
+      const b = e.target.closest('[data-change]'); if (b) change(+b.dataset.change, +b.dataset.d, decodeURIComponent(b.dataset.variant || ''));
     });
     $('cartButton').onclick = openCart;
     $('toastView').onclick = openCart;
@@ -540,7 +569,7 @@
 
     $('send').onclick = () => {
       if (!cart.length) return showToast('Agrega al menos un producto', false);
-      const lines = cart.map(x => `• ${products[x.i].n} x${x.q} — ${fmt(products[x.i].p*x.q)}`).join('\n');
+      const lines = cart.map(x => {const p=products[x.i], detail=x.v?` (${p.variantLabel || 'Opción'}: ${x.v})`:'';return `• ${p.n}${detail} x${x.q} — ${fmt(p.p*x.q)}`;}).join('\n');
       const msg = `Hola, quiero hacer este pedido en Gift Time Bogotá:\n\n${lines}\n\nTotal: ${fmt(cartTotal())}\n\nMi nombre es:`;
       window.open(`https://wa.me/${W}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
     };
