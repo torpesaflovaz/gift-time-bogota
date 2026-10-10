@@ -111,12 +111,12 @@
     "o": 20000,
     "status": "available",
     "stock": 2,
-    "img": "assets/productos/producto-kit-primer-fijador-1791634606159-5ff24.webp",
+    "img": "assets/productos/producto-kit-primer-y-fijador-barbie-malibu-trendy-todo-tipo-piel-1791594589912-tzpgp.webp",
     "description": "Dúo práctico para preparar la piel antes del maquillaje y ayudar a mantener el look con un acabado más fresco durante el día.",
     "gallery": [
-      "assets/productos/producto-kit-primer-fijador-1791634606159-5ff24.webp",
-      "assets/productos/producto-kit-primer-fijador-1791634606160-e7817.webp",
-      "assets/productos/producto-kit-primer-fijador-1791634606161-xy35q.webp"
+      "assets/productos/producto-kit-primer-y-fijador-barbie-malibu-trendy-todo-tipo-piel-1791594589912-tzpgp.webp",
+      "assets/productos/producto-kit-primer-y-fijador-barbie-malibu-trendy-todo-tipo-piel-1791594589914-8zo43.webp",
+      "assets/productos/producto-kit-primer-y-fijador-barbie-malibu-trendy-todo-tipo-piel-1791594589916-jmt8n.webp"
     ]
   },
   {
@@ -126,11 +126,11 @@
     "o": 15000,
     "status": "available",
     "stock": 3,
-    "img": "assets/productos/producto-polvos-sueltos-teddy-1791634631309-zzw8y.webp",
+    "img": "assets/productos/producto-polvos-sueltos-teddy-1791215419751-uipgf.webp",
     "description": "Polvos sueltos para ayudar a sellar el maquillaje y controlar el brillo, con presentación inspirada en Teddy.",
     "gallery": [
-      "assets/productos/producto-polvos-sueltos-teddy-1791634631309-zzw8y.webp",
-      "assets/productos/producto-polvos-sueltos-teddy-1791634631314-4otko.webp"
+      "assets/productos/producto-polvos-sueltos-teddy-1791215419751-uipgf.webp",
+      "assets/productos/producto-polvos-sueltos-teddy-1791215419755-1cn1z.webp"
     ]
   },
   {
@@ -140,11 +140,11 @@
     "o": 20000,
     "status": "available",
     "stock": 3,
-    "img": "assets/productos/producto-corrector-y-tratamiento-super-conclear-1791635819321-0bfyt.webp",
+    "img": "assets/productos/producto-corrector-y-tratamiento-super-conclear-1791594821618-8z8fs.webp",
     "description": "Corrector de cobertura para unificar el aspecto de la piel y disimular imperfecciones. Disponible en tonos 1, 2 y 3; confirma tu tono por WhatsApp.",
     "gallery": [
-      "assets/productos/producto-corrector-y-tratamiento-super-conclear-1791635819321-0bfyt.webp",
-      "assets/productos/producto-corrector-y-tratamiento-super-conclear-1791635819323-8dc3b.webp"
+      "assets/productos/producto-corrector-y-tratamiento-super-conclear-1791594821618-8z8fs.webp",
+      "assets/productos/producto-corrector-y-tratamiento-super-conclear-1791594821620-b90kh.webp"
     ],
     "variantLabel": "Tonos Disponibles",
     "variants": [

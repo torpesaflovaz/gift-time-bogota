@@ -84,9 +84,11 @@
     .benefit+.benefit{border-left:1px solid var(--line)}
     .icon{flex-shrink:0;width:36px;height:36px;border-radius:50%;background:var(--blush);color:var(--red);display:grid;place-items:center;font-size:1.15rem}
     .benefit b{display:block}.benefit small{color:#865567}
-    .payment-banner{margin-top:24px;background:linear-gradient(135deg,#fff 0%,#fff3f6 55%,#ffe0e8 100%);border:1px solid #f3cbd6;border-radius:22px;padding:clamp(20px,4vw,34px);display:grid;grid-template-columns:1.05fr 1fr;gap:22px;align-items:center;box-shadow:0 10px 25px rgba(90,16,32,.05)}
-    .payment-banner .eyebrow{margin-bottom:7px}.payment-banner h2{font-family:Georgia,serif;font-size:clamp(1.55rem,3vw,2.2rem);line-height:1.05;color:var(--dark);margin:0}.payment-banner p:not(.eyebrow){color:var(--muted);margin:9px 0 0;max-width:510px}
-    .payment-methods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.payment-method{background:#fff;border:1px solid #f4d3dc;border-radius:12px;padding:11px 12px;display:flex;align-items:center;gap:9px;font-size:.88rem;font-weight:bold;color:#7e2843}.payment-symbol{display:grid;place-items:center;width:28px;height:28px;border-radius:9px;background:#ffe0e8;color:var(--red);font-weight:900}.payment-cta{margin-top:14px;display:inline-flex;color:var(--red);font-weight:bold;text-decoration:none}.payment-cta:hover{text-decoration:underline}
+    .payment-banner{margin-top:24px;overflow:hidden;background:linear-gradient(125deg,#fff 0%,#fff2f5 48%,#ffdbe5 100%);border:1px solid #f3cbd6;border-radius:28px;padding:clamp(22px,4vw,40px);display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(20px,4vw,44px);align-items:center;box-shadow:0 14px 32px rgba(90,16,32,.08);position:relative}.payment-banner:after{content:'♥';position:absolute;right:-20px;top:-52px;color:rgba(229,26,42,.08);font-size:12rem;line-height:1;transform:rotate(12deg);pointer-events:none}.payment-banner>*{position:relative;z-index:1}
+    .payment-banner .eyebrow{margin-bottom:8px}.payment-banner h2{font-family:Georgia,serif;font-size:clamp(1.9rem,4vw,3rem);line-height:.98;color:var(--dark);margin:0;text-transform:uppercase}.payment-banner h2 strong{display:block;color:var(--red)}.payment-banner p:not(.eyebrow){color:var(--muted);margin:13px 0 0;max-width:470px}.payment-copy{padding-block:8px}.payment-copy .payment-cta{margin-top:18px}
+    .payment-panel{display:grid;gap:11px}.nequi-card{background:linear-gradient(135deg,#cf073a,#ee2456);padding:18px;border-radius:19px;color:#fff;box-shadow:0 12px 22px rgba(191,8,50,.22)}.nequi-top{display:flex;align-items:center;gap:10px;font-weight:800}.nequi-logo{display:grid;place-items:center;width:36px;height:36px;border-radius:12px;background:#fff;color:#4a164c;font-weight:900;font-size:1.1rem}.nequi-number{display:block;margin-top:9px;font-size:clamp(1.45rem,3vw,2rem);letter-spacing:.06em;font-weight:900}.nequi-card small{display:block;opacity:.88;margin-top:3px}
+    .payment-methods{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.payment-method{background:rgba(255,255,255,.92);border:1px solid #f4d3dc;border-radius:13px;padding:11px 8px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-height:86px;text-align:center;font-size:.76rem;font-weight:bold;color:#7e2843}.payment-symbol{display:grid;place-items:center;width:29px;height:29px;border-radius:9px;background:#ffe0e8;color:var(--red);font-weight:900}.payment-method small{font-size:.68rem;color:#946474;font-weight:600}
+    .delivery-note{grid-column:1/-1;display:flex;gap:12px;align-items:center;background:#fff;border:1px solid #f2cbd5;border-radius:16px;padding:13px 15px;color:#7c2842}.delivery-icon{display:grid;flex:0 0 38px;place-items:center;width:38px;height:38px;border-radius:12px;background:#ffe0e8;color:var(--red);font-size:1.25rem}.delivery-note b{display:block;color:var(--dark);font-size:.94rem}.delivery-note span{font-size:.82rem}.payment-cta{display:inline-flex;align-items:center;gap:7px;color:var(--red);font-weight:800;text-decoration:none}.payment-cta:hover{text-decoration:underline}
 
     /* ---------- Sections ---------- */
     .block{padding:72px 0}
@@ -97,9 +99,16 @@
     .filters{display:flex;gap:8px;flex-wrap:wrap}
     .filter{border:1px solid var(--line);background:#fff;color:#8b2642;border-radius:999px;padding:10px 15px;cursor:pointer;white-space:nowrap}
     .filter.active{background:var(--red);color:#fff;border-color:var(--red)}
+    .catalog-controls{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:22px}
+    .search-box{position:relative;flex:0 1 320px}
+    .search-box svg{position:absolute;left:14px;top:50%;width:18px;height:18px;transform:translateY(-50%);color:#a52b4b;pointer-events:none}
+    .search-input{width:100%;min-height:43px;padding:10px 14px 10px 43px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--dark);font:inherit;outline:none;box-shadow:0 4px 12px rgba(90,16,32,.04)}
+    .search-input::placeholder{color:#a97886}.search-input:focus{border-color:#d72851;box-shadow:0 0 0 3px rgba(215,40,81,.12)}
+    .empty{grid-column:1/-1;margin:0;padding:28px 18px;border:1px dashed #edbdcb;border-radius:16px;background:#fff8fa;color:var(--muted);text-align:center}
 
     /* ---------- Products ---------- */
     .products{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+    .spotlight{padding:34px 0 6px}.spotlight[hidden]{display:none}.spotlight .section-top{margin-bottom:18px}.spotlight .title{font-size:clamp(1.7rem,3vw,2.35rem)}
     .product{background:#fff;border:1px solid #f6d5de;border-radius:19px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 8px 22px rgba(90,16,32,.04)}
     .art{height:150px;padding:0;display:block;color:#fff;background:linear-gradient(145deg,#f16295,#df1d3d);position:relative;overflow:hidden}
     .art img{width:100%;height:100%;display:block;object-fit:cover;object-position:center}
@@ -109,6 +118,7 @@
     .product:nth-child(3n+2) .art{background:linear-gradient(145deg,#ffb0ca,#ef3a70)}
     .product:nth-child(3n) .art{background:linear-gradient(145deg,#bc1339,#631128)}
     .art small{position:absolute;z-index:2;left:12px;bottom:12px;font-weight:bold;letter-spacing:.08em;font-size:.7rem;background:rgba(255,255,255,.94);color:var(--dark);padding:5px 9px;border-radius:999px}
+    .new-label{position:absolute;z-index:3;top:11px;left:11px;background:var(--red);color:#fff;border-radius:999px;padding:6px 10px;font-size:.68rem;font-weight:900;letter-spacing:.08em;box-shadow:0 4px 12px rgba(119,8,33,.25)}
     .body{display:flex;flex:1;flex-direction:column;padding:15px}
     .cat{color:#94425b;font-size:.71rem;font-weight:bold;letter-spacing:.1em;margin:0 0 5px;text-transform:uppercase}
     .product h3{font-size:1rem;line-height:1.25;margin:0}
@@ -206,7 +216,7 @@
       .links a:last-child{border-bottom:0}
       .hero{min-height:460px;background-position:65% center;border-radius:0 0 28px 28px}
       .hero:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(250,219,220,.95) 0%,rgba(250,219,220,.8) 50%,rgba(250,219,220,0) 85%)}
-      .benefits{grid-template-columns:1fr;margin-top:-24px}.payment-banner{grid-template-columns:1fr}
+      .benefits{grid-template-columns:1fr;margin-top:-24px}.payment-banner{grid-template-columns:1fr}.payment-methods{grid-template-columns:repeat(3,minmax(0,1fr))}
       .benefit+.benefit{border-left:0;border-top:1px solid var(--line)}
       .contact{grid-template-columns:1fr}
       .contact-side{padding:26px 22px 30px}
@@ -230,6 +240,7 @@
       .section-top{flex-direction:column;align-items:stretch}
       .filters{flex-wrap:nowrap;overflow-x:auto;margin-inline:calc(var(--gutter)*-1);padding:2px var(--gutter);scrollbar-width:none}
       .filters::-webkit-scrollbar{display:none}
+      .catalog-controls{align-items:stretch;flex-direction:column}.search-box{flex-basis:auto}
       .block{padding:44px 0}
       .products{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
       .product{border-radius:16px}
@@ -303,13 +314,26 @@
     </div>
 
     <section class="wrap payment-banner" aria-label="Métodos de pago">
-      <div><p class="eyebrow">PAGA COMO PREFIERAS</p><h2>Comprar tu detalle también es fácil</h2><p>Aceptamos diferentes medios de pago para que confirmes tu pedido con tranquilidad.</p><a class="payment-cta" href="https://wa.me/573212482015?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20m%C3%A9todos%20de%20pago." target="_blank" rel="noopener">¿Tienes dudas? Escríbenos por WhatsApp →</a></div>
-      <div class="payment-methods">
-        <div class="payment-method"><span class="payment-symbol">N</span><span>Nequi<br><small>321 248 2015</small></span></div>
-        <div class="payment-method"><span class="payment-symbol">▣</span><span>Tarjetas<br><small>Débito y crédito</small></span></div>
-        <div class="payment-method"><span class="payment-symbol">P</span><span>PSE<br><small>Pago seguro en línea</small></span></div>
-        <div class="payment-method"><span class="payment-symbol">↗</span><span>Link de pago<br><small>Te lo enviamos por WhatsApp</small></span></div>
+      <div class="payment-copy"><p class="eyebrow">COMPRA CON TRANQUILIDAD</p><h2>Recibimos <strong>todos tus pagos</strong></h2><p>Elige el medio que prefieras y confirma tu detalle de forma fácil y segura por WhatsApp.</p><a class="payment-cta" href="https://wa.me/573212482015?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20m%C3%A9todos%20de%20pago." target="_blank" rel="noopener">Resolver una duda por WhatsApp →</a></div>
+      <div class="payment-panel">
+        <div class="nequi-card"><div class="nequi-top"><span class="nequi-logo">N</span><span>Paga con Nequi</span></div><span class="nequi-number">321 248 2015</span><small>Envía tu comprobante por WhatsApp para confirmar.</small></div>
+        <div class="payment-methods">
+          <div class="payment-method"><span class="payment-symbol">▣</span><span>Tarjetas</span><small>Débito y crédito</small></div>
+          <div class="payment-method"><span class="payment-symbol">P</span><span>PSE</span><small>Pago en línea</small></div>
+          <div class="payment-method"><span class="payment-symbol">↗</span><span>Link de pago</span><small>Te lo enviamos</small></div>
+        </div>
+        <div class="delivery-note"><span class="delivery-icon" aria-hidden="true">⌁</span><div><b>Hacemos envíos a domicilio</b><span>Pregunta por el costo de envío según tu zona.</span></div></div>
       </div>
+    </section>
+
+    <section class="wrap spotlight" id="favoritesSection" hidden>
+      <div class="section-top"><div><p class="eyebrow">SELECCIÓN ESPECIAL</p><h2 class="title">Nuestros favoritos</h2><p class="intro">Los detalles que más nos encantan de la tienda.</p></div></div>
+      <div class="products" id="favoriteProducts"></div>
+    </section>
+
+    <section class="wrap spotlight" id="newSection" hidden>
+      <div class="section-top"><div><p class="eyebrow">RECIÉN LLEGADOS</p><h2 class="title">Lo nuevo en la tienda</h2><p class="intro">Descubre las novedades antes de que se agoten.</p></div></div>
+      <div class="products" id="newProducts"></div>
     </section>
 
     <section class="wrap block" id="tienda">
@@ -319,7 +343,13 @@
           <h2 class="title">Elige tus favoritos</h2>
           <p class="intro">Agrégalos al carrito y envía el pedido directamente por WhatsApp.</p>
         </div>
+      </div>
+      <div class="catalog-controls">
         <div class="filters" id="filters" role="group" aria-label="Filtrar por categoría"></div>
+        <label class="search-box" for="productSearch">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4.2 4.2"></path></svg>
+          <input class="search-input" type="search" id="productSearch" placeholder="Busca un producto" autocomplete="off" aria-label="Buscar productos">
+        </label>
       </div>
       <div class="products" id="products"></div>
     </section>
@@ -400,7 +430,7 @@
     ];
     */
 
-    let selected = 'Todos', cart = [], toastTimer, activeGallery = [], activeImageIndex = 0, chosenVariants = {};
+    let selected = 'Todos', searchTerm = '', cart = [], toastTimer, activeGallery = [], activeImageIndex = 0, chosenVariants = {};
     const $ = id => document.getElementById(id);
     const fmt = x => x.toLocaleString('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0});
     const esc = x => String(x || '').replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
@@ -417,14 +447,11 @@
         `<button class="filter ${x===selected?'active':''}" data-cat="${x}" aria-pressed="${x===selected}">${x}</button>`).join('');
     }
 
-    function renderProducts(){
-      const visible = products.filter(p=>!p.hidden);
-      const list = selected === 'Todos' ? visible : visible.filter(p => p.c === selected);
-      $('products').innerHTML = list.map(p => {
+    function productCard(p){
         const i = products.indexOf(p), variantMode = hasVariants(p), selectedVariant = chosenVariants[i] || '', variantRemain = selectedVariant ? remain(p,i,selectedVariant) : null, r = remain(p,i), preorder = p.status === 'preorder', out = p.status === 'outofstock' || (variantMode ? availableVariants(p,i).length === 0 : r === 0);
         const picker = variantMode ? `<select class="variant-picker" data-variant-select="${i}" aria-label="${esc(p.variantLabel || 'Opción')} para ${esc(p.n)}" ${out?'disabled':''}><option value="">Elige ${esc((p.variantLabel || 'una opción').toLowerCase())}</option>${p.variants.map(v=>{const left=remain(p,i,v.name), unavailable=typeof left==='number'&&left===0;return `<option value="${esc(v.name)}" ${v.name===selectedVariant?'selected':''} ${unavailable?'disabled':''}>${esc(v.name)}${unavailable?' — Agotado':typeof left==='number'?` — ${left} disponible${left===1?'':'s'}`:''}</option>`}).join('')}</select><p class="variant-note">${selectedVariant ? (variantRemain===0?'Este tono está agotado.':`${p.variantLabel || 'Opción'}: ${esc(selectedVariant)}${typeof variantRemain==='number'?` · Queda ${variantRemain}`:''}`) : `Elige ${((p.variantLabel || 'una opción').toLowerCase())} antes de agregar`}</p>` : '';
         return `<article class="product">
-          <button class="art zoom" type="button" data-image="${i}" aria-label="Ver ${p.n} en grande"><img src="${p.img}" alt="${p.n}" loading="lazy"><small>${p.c==='Cuidado'?'CUIDADO':'BEAUTY'}</small></button>
+          <button class="art zoom" type="button" data-image="${i}" aria-label="Ver ${p.n} en grande">${p.isNew?'<span class="new-label">NUEVO</span>':''}<img src="${p.img}" alt="${p.n}" loading="lazy"><small>${p.c==='Cuidado'?'CUIDADO':'BEAUTY'}</small></button>
           <div class="body">
             <p class="cat">${p.c}</p>
             <h3>${p.n}</h3>
@@ -434,7 +461,27 @@
             <button class="add" data-add="${i}" ${out?'disabled':''}>${out?'No disponible':preorder?'Solicitar sobre pedido':'Agregar al pedido'}</button>
           </div>
         </article>`;
-      }).join('');
+    }
+    function renderHighlights(){
+      const visible=products.filter(p=>!p.hidden), favorites=visible.filter(p=>p.featured).slice(0,4), newest=visible.filter(p=>p.isNew).slice(0,4);
+      $('favoritesSection').hidden=!favorites.length; $('newSection').hidden=!newest.length;
+      $('favoriteProducts').innerHTML=favorites.map(productCard).join('');
+      $('newProducts').innerHTML=newest.map(productCard).join('');
+    }
+    function renderProducts(){
+      const visible = products.filter(p=>!p.hidden);
+      const categoryList = selected === 'Todos' ? visible : visible.filter(p => p.c === selected);
+      const normalizedSearch = searchTerm.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();
+      const list = normalizedSearch ? categoryList.filter(p =>
+        [p.n, p.c, p.description, p.variantLabel, ...(p.variants || []).map(v => v.name)]
+          .some(value => String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().includes(normalizedSearch))
+      ) : categoryList;
+      if (!list.length) {
+        const query = searchTerm.trim() ? ` para “${esc(searchTerm.trim())}”` : '';
+        $('products').innerHTML = `<p class="empty">No encontramos productos${query}. Prueba con otro nombre o categoría.</p>`;
+        return;
+      }
+      $('products').innerHTML = list.map(productCard).join('');
     }
 
     function renderCart(){
@@ -463,7 +510,7 @@
       const source = variant ? variantFor(p,variant) : p, line = cart.find(x => x.i === i && (x.v || '') === variant);
       if (typeof source?.stock === 'number' && qty(i,variant) >= source.stock) return;
       line ? line.q++ : cart.push({i, v:variant, q:1});
-      renderCart(); renderProducts();
+      renderCart(); renderHighlights(); renderProducts();
       const b = $('count'); b.classList.remove('bump'); void b.offsetWidth; b.classList.add('bump');
       showToast(`${p.n} agregado`);
     }
@@ -474,7 +521,7 @@
       if (d > 0 && typeof source?.stock === 'number' && l.q >= source.stock) return;
       l.q += d;
       if (l.q < 1) cart = cart.filter(x => !(x.i === i && (x.v || '') === variant));
-      renderCart(); renderProducts();
+      renderCart(); renderHighlights(); renderProducts();
     }
 
     function showToast(text, action = true){
@@ -537,14 +584,20 @@
       const b = e.target.closest('[data-cat]'); if (!b) return;
       selected = b.dataset.cat; renderFilters(); renderProducts();
     });
-    $('products').addEventListener('click', e => {
-      const b = e.target.closest('[data-add]'); if (b) add(+b.dataset.add);
-      const image = e.target.closest('[data-image]'); if (image) openImage(+image.dataset.image);
-    });
-    $('products').addEventListener('change', e => {
-      const select = e.target.closest('[data-variant-select]'); if (!select) return;
-      chosenVariants[+select.dataset.variantSelect] = select.value;
+    $('productSearch').addEventListener('input', e => {
+      searchTerm = e.target.value;
       renderProducts();
+    });
+    ['products','favoriteProducts','newProducts'].forEach(id => {
+      $(id).addEventListener('click', e => {
+        const b = e.target.closest('[data-add]'); if (b) add(+b.dataset.add);
+        const image = e.target.closest('[data-image]'); if (image) openImage(+image.dataset.image);
+      });
+      $(id).addEventListener('change', e => {
+        const select = e.target.closest('[data-variant-select]'); if (!select) return;
+        chosenVariants[+select.dataset.variantSelect] = select.value;
+        renderHighlights(); renderProducts();
+      });
     });
     $('items').addEventListener('click', e => {
       const b = e.target.closest('[data-change]'); if (b) change(+b.dataset.change, +b.dataset.d, decodeURIComponent(b.dataset.variant || ''));
@@ -584,7 +637,7 @@
         $('products').innerHTML = '<p class="empty">No pudimos cargar los productos. Intenta actualizar la página.</p>';
         return;
       }
-      renderFilters(); renderProducts(); renderCart();
+      renderFilters(); renderHighlights(); renderProducts(); renderCart();
     }
     loadProducts();
   </script>
