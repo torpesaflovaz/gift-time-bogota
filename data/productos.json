@@ -112,12 +112,16 @@
   {
     "n": "Polvos Sueltos Teddy",
     "c": "Maquillaje",
-    "p": 13000,
+    "p": 13050,
     "o": 15000,
-    "stock": 3,
     "status": "available",
-    "img": "assets/productos/producto-polvos-teddy.png",
-    "description": "Polvos sueltos para ayudar a sellar el maquillaje y controlar el brillo, con presentación inspirada en Teddy."
+    "stock": 3,
+    "img": "assets/productos/producto-polvos-sueltos-teddy-1791595754169-bpg7h.webp",
+    "description": "Polvos sueltos para ayudar a sellar el maquillaje y controlar el brillo, con presentación inspirada en Teddy.",
+    "gallery": [
+      "assets/productos/producto-polvos-sueltos-teddy-1791595754169-bpg7h.webp",
+      "assets/productos/producto-polvos-sueltos-teddy-1791595754170-qqn48.webp"
+    ]
   },
   {
     "n": "Corrector y Tratamiento Super Conclear",
