@@ -4,8 +4,8 @@
     "c": "Maquillaje",
     "p": 16000,
     "o": 20000,
-    "status": "available",
-    "stock": 1,
+    "status": "outofstock",
+    "stock": null,
     "img": "assets/productos/producto-kit-ninas-magia-1791634578425-p7ehj.webp",
     "description": "Kit infantil con libreta, bálsamo labial sin color y sombras suaves en tonos lila, rosa y amarillo. Incluye aplicador de esponja y está pensado para un uso diario delicado.",
     "gallery": [
