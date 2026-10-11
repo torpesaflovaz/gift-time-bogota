@@ -100,7 +100,7 @@
     .filter{border:1px solid var(--line);background:#fff;color:#8b2642;border-radius:999px;padding:10px 15px;cursor:pointer;white-space:nowrap}
     .filter.active{background:var(--red);color:#fff;border-color:var(--red)}
     .catalog-controls{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:22px}
-    .catalog-more{text-align:center;margin-top:28px}.catalog-more[hidden]{display:none}.catalog-more p{margin:0 0 12px;color:var(--muted)}.catalog-more a{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:11px 20px;border-radius:999px;background:var(--red);color:#fff;text-decoration:none;font-weight:800;box-shadow:0 8px 18px rgba(229,26,42,.18)}.catalog-more a:hover{background:#c9112d}
+    .catalog-more{text-align:center;margin-top:28px}.catalog-more[hidden]{display:none}.catalog-more p{margin:0 0 12px;color:var(--muted)}.catalog-more button{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:11px 20px;border:0;border-radius:999px;background:var(--red);color:#fff;font:inherit;font-weight:800;cursor:pointer;box-shadow:0 8px 18px rgba(229,26,42,.18)}.catalog-more button:hover{background:#c9112d}
     .search-box{position:relative;flex:0 1 320px}
     .search-box svg{position:absolute;left:14px;top:50%;width:18px;height:18px;transform:translateY(-50%);color:#a52b4b;pointer-events:none}
     .search-input{width:100%;min-height:43px;padding:10px 14px 10px 43px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--dark);font:inherit;outline:none;box-shadow:0 4px 12px rgba(90,16,32,.04)}
@@ -353,7 +353,7 @@
         </label>
       </div>
       <div class="products" id="products"></div>
-      <div class="catalog-more" id="catalogMore" hidden><p id="catalogMoreText"></p><a href="catalogo.html#tienda">Ver catálogo completo →</a></div>
+      <div class="catalog-more" id="catalogMore" hidden><p id="catalogMoreText"></p><button id="toggleCatalog" type="button">Ver más productos ↓</button></div>
     </section>
 
     <section class="wrap block" id="instagram">
@@ -432,8 +432,7 @@
     ];
     */
 
-    const fullCatalog = new URLSearchParams(location.search).get('catalogo') === '1';
-    let selected = 'Todos', searchTerm = '', cart = [], toastTimer, activeGallery = [], activeImageIndex = 0, chosenVariants = {};
+    let selected = 'Todos', searchTerm = '', catalogExpanded = false, cart = [], toastTimer, activeGallery = [], activeImageIndex = 0, chosenVariants = {};
     const $ = id => document.getElementById(id);
     const fmt = x => x.toLocaleString('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0});
     const esc = x => String(x || '').replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
@@ -485,10 +484,13 @@
         $('catalogMore').hidden=true;
         return;
       }
-      const shown = fullCatalog ? list : list.slice(0,10);
+      const shown = catalogExpanded ? list : list.slice(0,12);
       $('products').innerHTML = shown.map(productCard).join('');
-      $('catalogMore').hidden = fullCatalog || list.length <= 10;
-      if (!fullCatalog && list.length > 10) $('catalogMoreText').textContent = `Hay ${list.length - 10} productos más por descubrir.`;
+      $('catalogMore').hidden = list.length <= 12;
+      if (list.length > 12) {
+        $('catalogMoreText').textContent = catalogExpanded ? 'Ya estás viendo todos los productos.' : `Hay ${list.length - 12} productos más por descubrir.`;
+        $('toggleCatalog').textContent = catalogExpanded ? 'Mostrar menos productos ↑' : 'Ver más productos ↓';
+      }
     }
 
     function renderCart(){
@@ -589,11 +591,17 @@
     // Eventos
     $('filters').addEventListener('click', e => {
       const b = e.target.closest('[data-cat]'); if (!b) return;
-      selected = b.dataset.cat; renderFilters(); renderProducts();
+      selected = b.dataset.cat; catalogExpanded = false; renderFilters(); renderProducts();
     });
     $('productSearch').addEventListener('input', e => {
       searchTerm = e.target.value;
+      catalogExpanded = !!searchTerm.trim();
       renderProducts();
+    });
+    $('toggleCatalog').addEventListener('click', () => {
+      catalogExpanded = !catalogExpanded;
+      renderProducts();
+      if (!catalogExpanded) $('tienda').scrollIntoView({behavior:'smooth',block:'start'});
     });
     ['products','favoriteProducts','newProducts'].forEach(id => {
       $(id).addEventListener('click', e => {
