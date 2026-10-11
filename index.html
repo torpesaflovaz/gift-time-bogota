@@ -141,14 +141,12 @@
     .insta-head h2{font-family:Georgia,serif;font-size:clamp(1.8rem,3.5vw,2.3rem);line-height:1.05;color:var(--dark);margin:0}
     .insta-head p{color:var(--muted);margin:5px 0 0}
     .instagram{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-    .ig-feed{border-radius:15px;overflow:hidden;min-height:200px;background:#fff}
-    .ig-feed iframe{display:block;width:100%}
-    .ig{aspect-ratio:1;border-radius:15px;color:#fff;text-decoration:none;padding:15px;display:flex;align-items:flex-end;position:relative;overflow:hidden;background:linear-gradient(145deg,#ed3f75,#9b1232)}
-    .ig:before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 75% 15%,#ffd5e1 0 7%,transparent 8%),radial-gradient(circle at 24% 25%,rgba(255,255,255,.4) 0 11%,transparent 12%),linear-gradient(180deg,transparent 35%,rgba(70,6,26,.78) 100%)}
-    .ig:nth-child(2){background:linear-gradient(145deg,#ffacc5,#e11549)}
-    .ig:nth-child(3){background:linear-gradient(145deg,#a71134,#f15a8b)}
-    .ig:nth-child(4){background:linear-gradient(145deg,#ff709b,#781029)}
-    .ig strong{position:relative;font-size:.9rem;line-height:1.2;text-shadow:0 1px 3px rgba(40,0,12,.5)}
+    .ig{aspect-ratio:1;border-radius:15px;color:#fff;text-decoration:none;position:relative;overflow:hidden;background:linear-gradient(145deg,#ed3f75,#9b1232);display:block}
+    .ig img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s ease}
+    .ig:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(70,6,26,.82) 100%);pointer-events:none}
+    .ig:hover img{transform:scale(1.045)}
+    .ig strong{position:absolute;z-index:1;left:12px;right:12px;bottom:11px;font-size:.82rem;line-height:1.22;text-shadow:0 1px 3px rgba(40,0,12,.7);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+    .ig-status{grid-column:1/-1;margin:0;padding:22px;text-align:center;border-radius:15px;background:#fff;color:#875266}
 
     /* ---------- Contact ---------- */
     .contact{display:grid;grid-template-columns:1.2fr .8fr;background:var(--red);border-radius:26px;overflow:hidden;color:#fff}
@@ -207,7 +205,7 @@
     }
     /* Banner de productos local: funciona sin depender de enlaces externos. */
     .hero{background:#f7c6cd url('assets/marca/banner-productos-gift-time.png') right center/contain no-repeat}
-    #instagram{display:none}
+    #instagram{display:block}
 
     @media (max-width:850px){
       .menu-button{display:grid}
@@ -366,9 +364,7 @@
           </div>
           <a class="button secondary" href="https://www.instagram.com/gift_time_bogota/" target="_blank" rel="noopener">Ver Instagram ↗</a>
         </div>
-        <div class="ig-feed">
-          <iframe src="https://lightwidget.com/widgets/de5c8eadad8c5cac97f9e577f3617bfd.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" title="Publicaciones recientes de Instagram de Gift Time Bogotá" loading="lazy" style="width:100%;border:0;overflow:hidden;"></iframe>
-        </div>
+        <div class="instagram" id="instagramPosts" aria-live="polite"><p class="ig-status">Cargando publicaciones recientes…</p></div>
       </div>
     </section>
 
@@ -654,7 +650,23 @@
       }
       renderFilters(); renderHighlights(); renderProducts(); renderCart();
     }
+    async function loadInstagramPosts(){
+      const container = $('instagramPosts');
+      try{
+        const response = await fetch('https://gift-time-instagram-feed.torpesaflovaz.workers.dev/', {cache:'no-store'});
+        if (!response.ok) throw new Error('No se pudieron cargar las publicaciones');
+        const {posts} = await response.json();
+        if (!Array.isArray(posts) || !posts.length) throw new Error('No hay publicaciones disponibles');
+        container.innerHTML = posts.slice(0,4).map(post => {
+          const caption = String(post.caption || 'Ver publicación en Instagram').replace(/\s+/g,' ').trim();
+          return `<a class="ig" href="${esc(post.permalink)}" target="_blank" rel="noopener" aria-label="Abrir publicación de Instagram: ${esc(caption.slice(0,80))}"><img src="${esc(post.image)}" alt="${esc(caption)}" loading="lazy"><strong>${esc(caption || 'Ver publicación en Instagram')} ↗</strong></a>`;
+        }).join('');
+      } catch (error) {
+        container.innerHTML = '<p class="ig-status">No pudimos cargar Instagram en este momento. Visítanos en nuestro perfil.</p>';
+      }
+    }
     loadProducts();
+    loadInstagramPosts();
   </script>
 </body>
 </html>
