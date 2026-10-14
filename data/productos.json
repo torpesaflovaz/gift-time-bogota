@@ -139,7 +139,7 @@
     "p": 16000,
     "o": 20000,
     "status": "available",
-    "stock": 3,
+    "stock": 2,
     "img": "assets/productos/producto-corrector-y-tratamiento-super-conclear-1791594821618-8z8fs.webp",
     "description": "Corrector de cobertura para unificar el aspecto de la piel y disimular imperfecciones. Disponible en tonos 1, 2 y 3; confirma tu tono por WhatsApp.",
     "gallery": [
@@ -154,7 +154,7 @@
       },
       {
         "name": "Tono 2",
-        "stock": 1
+        "stock": 0
       },
       {
         "name": "Tono 3",
