@@ -1,5 +1,16 @@
 [
   {
+    "n": "Jabon de Rosas con AH Bioaqua",
+    "c": "Cuidado",
+    "p": 10000,
+    "o": 10000,
+    "status": "available",
+    "stock": 3,
+    "img": "assets/productos/producto-jabon-de-rosas-con-ah-bioaqua-1791994077347-k5adm.jpeg",
+    "description": "Limpieza profunda que elimina grasa, suciedad y residuos.\nSuaviza la textura gracias a los AHA de acción exfoliante suave.\nAporta hidratación inmediata sin sensación tirante.\nDeja un acabado luminoso y aspecto revitalizado.\nIdeal para pieles opacas o con textura irregular.",
+    "featured": true
+  },
+  {
     "n": "Pestañina Waterproof Pink Flash Volume",
     "c": "Maquillaje",
     "p": 17000,
