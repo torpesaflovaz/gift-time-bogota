@@ -33,8 +33,8 @@
     "c": "Cuidado",
     "p": 12000,
     "o": 15000,
-    "stock": 1,
     "status": "available",
+    "stock": 1,
     "img": "assets/productos/producto-mascarilla-aloe.jpg",
     "description": "Mascarilla facial en gel con aloe y ácido hialurónico. Aporta sensación de hidratación, se absorbe rápido y ayuda a mejorar la apariencia de la piel antes del maquillaje."
   },
