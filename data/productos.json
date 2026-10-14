@@ -1,5 +1,16 @@
 [
   {
+    "n": "Velo Facial con Granada y Vitamina E",
+    "c": "Cuidado",
+    "p": 2000,
+    "o": 2000,
+    "status": "available",
+    "stock": 6,
+    "img": "assets/productos/producto-velo-facial-con-granada-y-vitamina-e-1791994240971-gwyn3.jpeg",
+    "description": "Hidratación intensa que deja la piel suave y fresca.\nEfecto revitalizante para un rostro luminoso y saludable.\nAcción anti-edad: ayuda a suavizar líneas finas y aporta elasticidad.\nPráctica y fácil de usar: ideal para tu momento de self-care en casa.",
+    "featured": true
+  },
+  {
     "n": "Jabon de Rosas con AH Bioaqua",
     "c": "Cuidado",
     "p": 10000,
