@@ -1,5 +1,16 @@
 [
   {
+    "n": "Parches Antiacné Invisibles",
+    "c": "Cuidado",
+    "p": 11000,
+    "o": 11000,
+    "status": "available",
+    "stock": 2,
+    "img": "assets/productos/producto-parches-antiacne-invisibles-1791995199149-unwwu.jpeg",
+    "description": "Solución rápida, discreta y efectiva para granitos inesperados 💗\n\nEstos parches ayudan a absorber impurezas, proteger el brote y mejorar visiblemente su apariencia sin resecar la piel. Su diseño ultra delgado se adapta perfectamente al rostro y puedes usarlos incluso durante el día.",
+    "featured": true
+  },
+  {
     "n": "Velo Facial Sakura + Colageno",
     "c": "Cuidado",
     "p": 2000,
