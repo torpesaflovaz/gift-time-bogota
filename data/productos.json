@@ -177,9 +177,9 @@
     "c": "Maquillaje",
     "p": 8000,
     "o": 8000,
-    "stock": 2,
     "status": "available",
-    "img": "assets/productos/producto-brillo-retro.jpg",
+    "stock": 2,
+    "img": "assets/productos/producto-brillo-retro-1791992212987-e1upq.jpeg",
     "description": "Gloss ligero con aroma a fresa, brillo saludable y un toque rosado sutil. No se siente pesado ni pegajoso."
   },
   {
