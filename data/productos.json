@@ -1,5 +1,16 @@
 [
   {
+    "n": "Protector Solar con Acido Hialuronico, Niacinamida y Te Verde",
+    "c": "Cuidado",
+    "p": 15000,
+    "o": 15000,
+    "status": "available",
+    "stock": 4,
+    "img": "assets/productos/producto-protector-solar-con-acido-hialuronico-niacinamida-y-te-verde-1791993563005-20yg5.jpeg",
+    "description": "Este protector solar SPF 35 está formulado para pieles mixtas y grasas. Su textura ligera protege del sol sin obstruir los poros, ayudando a calmar brotes, reducir brillo y mantener la piel equilibrada durante el día.",
+    "isNew": true
+  },
+  {
     "n": "Stick Antifrizz Hair Wax 75 g",
     "c": "Cuidado",
     "p": 17000,
