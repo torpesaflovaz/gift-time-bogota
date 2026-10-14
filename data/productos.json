@@ -163,13 +163,13 @@
     ]
   },
   {
-    "n": "Kit Pestañina + Fortalecedora",
+    "n": "Kit Duo Pestañina + Fortalecedora Gold Eyes",
     "c": "Maquillaje",
     "p": 15000,
     "o": 15000,
-    "stock": 1,
     "status": "available",
-    "img": "assets/productos/producto-pestanina-fortalecedora.jpg",
+    "stock": 1,
+    "img": "assets/productos/producto-kit-duo-pestanina-fortalecedora-gold-eyes-1791991698201-gxowk.jpeg",
     "description": "Kit para definir las pestañas. Incluye pestañina fortalecedora de fórmula ligera, útil también para fijar suavemente las cejas o como prebase."
   },
   {
