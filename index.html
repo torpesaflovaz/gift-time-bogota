@@ -164,10 +164,10 @@
     /* ---------- Cart ---------- */
     .overlay{position:fixed;inset:0;background:rgba(50,16,29,.43);z-index:20;opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}
     .overlay.show{opacity:1;visibility:visible}
-    .image-modal{position:fixed;inset:0;z-index:40;display:grid;place-items:center;padding:24px;background:rgba(28,8,16,.84)}
+    .image-modal{position:fixed;inset:0;z-index:40;display:grid;place-items:center;padding:16px;background:rgba(28,8,16,.84);overflow-y:auto;-webkit-overflow-scrolling:touch}
     .image-modal[hidden]{display:none}
-    .image-modal figure{position:relative;width:min(92vw,680px);max-height:92dvh;margin:0;text-align:center}
-    .image-modal .modal-main-image{display:block;width:100%;max-width:100%;max-height:62dvh;object-fit:contain;border-radius:18px;background:#fff;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+    .image-modal figure{position:relative;width:min(92vw,680px);max-height:calc(100dvh - 32px);margin:0;text-align:center;overflow-y:auto;overscroll-behavior:contain;padding:0 4px 18px;-webkit-overflow-scrolling:touch}
+    .image-modal .modal-main-image{display:block;width:100%;max-width:100%;max-height:52dvh;object-fit:contain;border-radius:18px;background:#fff;box-shadow:0 20px 60px rgba(0,0,0,.4)}
     .image-modal figcaption{color:#fff;font-weight:bold;margin:12px 50px 0}
     .image-close{position:absolute;right:-12px;top:-12px;width:44px;height:44px;border:0;border-radius:50%;background:#fff;color:var(--red);font-size:2rem;line-height:1;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25)}
     .gallery-nav{position:absolute;top:calc(31dvh - 22px);width:42px;height:42px;border:0;border-radius:50%;background:#fff;color:var(--red);font-size:2rem;line-height:1;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25)}
@@ -175,7 +175,7 @@
     .gallery-thumbs{display:flex;justify-content:center;gap:8px;overflow-x:auto;padding:12px 2px 2px;scrollbar-width:thin}
     .gallery-thumbs button{flex:0 0 auto;width:56px;height:56px;padding:0;border:2px solid transparent;border-radius:10px;background:#fff;cursor:pointer;overflow:hidden}
     .gallery-thumbs button.active{border-color:#f24b6b}.gallery-thumbs img{display:block;width:100%;height:100%;object-fit:cover}
-    .image-description{color:#fce8ee;margin:10px auto 0;max-width:620px;font-size:.93rem;line-height:1.45}
+    .image-description{color:#fce8ee;margin:10px auto 0;max-width:620px;font-size:.96rem;line-height:1.5;white-space:pre-wrap;padding-bottom:8px}
     .cart{position:fixed;z-index:25;right:0;top:0;width:min(405px,100%);height:100vh;height:100dvh;background:#fff;padding:22px 22px calc(18px + env(safe-area-inset-bottom,0px));padding-top:calc(22px + env(safe-area-inset-top,0px));box-shadow:-10px 0 45px rgba(51,16,29,.22);transform:translateX(105%);visibility:hidden;transition:transform .25s,visibility .25s;display:flex;flex-direction:column}
     .cart.open{transform:translateX(0);visibility:visible}
     .cart-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:16px}
@@ -208,6 +208,11 @@
     #instagram{display:block}
 
     @media (max-width:850px){
+      .image-modal{place-items:start center;padding-top:12px;padding-bottom:12px}
+      .image-modal figure{width:min(94vw,680px);max-height:calc(100dvh - 24px)}
+      .image-modal .modal-main-image{max-height:44dvh}
+      .image-modal figcaption{margin-top:10px}
+      .image-description{padding-bottom:18px}
       .menu-button{display:grid}
       .links{position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;background:#fff;border-bottom:1px solid #f8dde5;box-shadow:0 18px 30px rgba(116,17,45,.08);padding:6px var(--gutter) 14px;display:none}
       .links.open{display:flex}
@@ -561,6 +566,11 @@
       activeGallery = p.gallery || [p.img]; activeImageIndex = 0;
       $('imageCaption').textContent = p.n;
       $('imageDescription').textContent = p.description || '';
+      const descriptionStyle = p.descriptionStyle || {};
+      const descriptionSizes = {small:'.84rem',medium:'.96rem',large:'1.08rem',xlarge:'1.2rem'};
+      $('imageDescription').style.fontSize = descriptionSizes[descriptionStyle.size] || descriptionSizes.medium;
+      $('imageDescription').style.fontWeight = descriptionStyle.bold ? '700' : '400';
+      $('imageDescription').style.textAlign = ['left','center','justify'].includes(descriptionStyle.align) ? descriptionStyle.align : 'left';
       $('galleryThumbs').innerHTML = activeGallery.map((src,j) => `<button type="button" class="${j === 0 ? 'active' : ''}" data-gallery-image="${j}" aria-label="Ver foto ${j + 1} de ${p.n}"><img src="${src}" alt=""></button>`).join('');
       $('prevImage').disabled = activeGallery.length < 2;
       $('nextImage').disabled = activeGallery.length < 2;
