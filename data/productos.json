@@ -1,5 +1,16 @@
 [
   {
+    "n": "Combo Mascarillas Piel Luminosa por 3",
+    "c": "Cuidado",
+    "p": 17000,
+    "o": 17000,
+    "status": "available",
+    "stock": 4,
+    "img": "assets/productos/producto-combo-mascarillas-piel-luminosa-por-3-1791994352693-nbghn.jpeg",
+    "description": "Aporta luminosidad y ayuda a unificar el tono.\nProporciona calma y confort.\nMejora la textura y el aspecto descansado.\nHidratación y suavidad inmediata.\nRutina completa: limpieza, reparación y efecto glow.",
+    "isNew": true
+  },
+  {
     "n": "Velo Facial con Granada y Vitamina E",
     "c": "Cuidado",
     "p": 2000,
