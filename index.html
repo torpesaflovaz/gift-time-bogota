@@ -690,6 +690,9 @@
       const descriptionSizes = {small:'.84rem',medium:'.96rem',large:'1.08rem',xlarge:'1.2rem'};
       $('imageDescription').style.fontSize = descriptionSizes[descriptionStyle.size] || descriptionSizes.medium;
       $('imageDescription').style.fontWeight = descriptionStyle.bold ? '700' : '400';
+      $('imageDescription').style.fontStyle = descriptionStyle.italic ? 'italic' : 'normal';
+      $('imageDescription').style.textDecoration = descriptionStyle.underline ? 'underline' : 'none';
+      $('imageDescription').style.color = /^#[0-9a-f]{6}$/i.test(descriptionStyle.color || '') ? descriptionStyle.color : '#fce8ee';
       $('imageDescription').style.textAlign = ['left','center','justify'].includes(descriptionStyle.align) ? descriptionStyle.align : 'left';
       $('galleryThumbs').innerHTML = activeGallery.map((src,j) => `<button type="button" class="${j === 0 ? 'active' : ''}" data-gallery-image="${j}" aria-label="Ver foto ${j + 1} de ${p.n}"><img src="${src}" alt=""></button>`).join('');
       $('prevImage').disabled = activeGallery.length < 2;
