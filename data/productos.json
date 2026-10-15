@@ -133,6 +133,11 @@
     "stock": 3,
     "img": "assets/productos/producto-polvos-sueltos-teddy-1791215419751-uipgf.webp",
     "description": "Polvos sueltos para ayudar a sellar el maquillaje y controlar el brillo, con presentación inspirada en Teddy.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "align": "left"
+    },
     "gallery": [
       "assets/productos/producto-polvos-sueltos-teddy-1791215419751-uipgf.webp",
       "assets/productos/producto-polvos-sueltos-teddy-1791215419755-1cn1z.webp"
