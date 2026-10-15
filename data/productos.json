@@ -17,12 +17,17 @@
   {
     "n": "Kit Niñas Magia",
     "c": "Maquillaje",
-    "p": 16000,
+    "p": 20000,
     "o": 20000,
     "status": "outofstock",
     "stock": null,
     "img": "assets/productos/producto-kit-ninas-magia-1791634578425-p7ehj.webp",
     "description": "Kit infantil con libreta, bálsamo labial sin color y sombras suaves en tonos lila, rosa y amarillo. Incluye aplicador de esponja y está pensado para un uso diario delicado.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "align": "left"
+    },
     "gallery": [
       "assets/productos/producto-kit-ninas-magia-1791634578425-p7ehj.webp",
       "assets/productos/producto-kit-ninas-magia-1791634578429-nb5hp.webp",
@@ -360,6 +365,16 @@
     "isNew": true
   },
   {
+    "n": "TORRE DE RUBOR, ILUMINADOR Y CONTORNO CAT FACE",
+    "c": "Maquillaje",
+    "p": 15000,
+    "o": 15000,
+    "status": "available",
+    "stock": 1,
+    "img": "assets/productos/producto-torre-de-rubor-iluminador-y-contorno-cat-face-1791992443238-0qqxj.jpeg",
+    "description": "3 infaltables en un compacto y práctico empaque de pisos.\nAsí es el nuevo Cat Face, contiene un rubor en tono rosita durazno para tus mejillas, un iluminador en tono oro rosa perfecto para utilizar como iluminador y un bronzer en crema en tono universal."
+  },
+  {
     "n": "Velo Facial con Granada y Vitamina E",
     "c": "Cuidado",
     "p": 2000,
@@ -422,15 +437,5 @@
     "stock": 1,
     "img": "assets/productos/producto-kit-duo-pestanina-fortalecedora-gold-eyes-1791991864377-hww9r.jpeg",
     "description": "Kit para definir las pestañas. Incluye pestañina fortalecedora de fórmula ligera, útil también para fijar suavemente las cejas o como prebase."
-  },
-  {
-    "n": "TORRE DE RUBOR, ILUMINADOR Y CONTORNO CAT FACE",
-    "c": "Maquillaje",
-    "p": 15000,
-    "o": 15000,
-    "status": "available",
-    "stock": 1,
-    "img": "assets/productos/producto-torre-de-rubor-iluminador-y-contorno-cat-face-1791992443238-0qqxj.jpeg",
-    "description": "3 infaltables en un compacto y práctico empaque de pisos.\nAsí es el nuevo Cat Face, contiene un rubor en tono rosita durazno para tus mejillas, un iluminador en tono oro rosa perfecto para utilizar como iluminador y un bronzer en crema en tono universal."
   }
 ]
