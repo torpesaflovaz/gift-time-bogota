@@ -278,5 +278,164 @@
     "status": "available",
     "img": "assets/productos/producto-happy-berry.jpg",
     "description": "Gloss de brillo intenso y tono rosa muy sutil. Se desliza suavemente y aporta sensación de suavidad en los labios."
+  },
+  {
+    "n": "Mascarilla Térmica para Ojos – Diseños de Caricaturas",
+    "c": "Cuidado",
+    "p": 6000,
+    "o": 6000,
+    "status": "available",
+    "stock": 40,
+    "img": "assets/productos/producto-mascarilla-termica-para-ojos-disenos-de-caricaturas-1791996885740-fhu5z.jpeg",
+    "description": "💕 ¡Descansa y consiente tus ojos con un toque de ternura!\n\nNuestras mascarillas térmicas de vapor combinan una agradable sensación de calor con diseños de caricaturas encantadores. Son ideales para relajarte después de un día ocupado o disfrutar de un momento de autocuidado.\n\nBeneficios:\n\nProporcionan calor suave y reconfortante.\n\nAyudan a aliviar la sensación de fatiga ocular.\n\nIdeales para relajarte antes de dormir.\n\nPrácticas para llevar de viaje.\n\nPerfectas como un pequeño regalo.\n\nCaracterísticas:\n\nCuatro diseños disponibles: morado, rosado, verde y amarillo.\n\nTiempo de uso indicado: aproximadamente 20–30 minutos.\n\nPresentación individual.\n\nProducto de un solo uso.\n\n🎀 ¡Elige tu diseño favorito y disfruta de un momento de relajación!",
+    "featured": true,
+    "isNew": true,
+    "gallery": [
+      "assets/productos/producto-mascarilla-termica-para-ojos-disenos-de-caricaturas-1791996885740-fhu5z.jpeg",
+      "assets/productos/producto-mascarilla-termica-para-ojos-disenos-de-caricaturas-1791996985524-dbmxh.jpeg"
+    ]
+  },
+  {
+    "n": "Mscarilla Térmica de Vapor para Ojos - Lavanda",
+    "c": "Cuidado",
+    "p": 6000,
+    "o": 6000,
+    "status": "available",
+    "stock": 12,
+    "img": "assets/productos/producto-mscarilla-termica-de-vapor-para-ojos-lavanda-1791996795216-trvng.jpeg",
+    "description": "💜 ¡Regálale a tus ojos un momento de descanso!\n\nDisfruta de una experiencia relajante con nuestra mascarilla térmica de vapor para ojos. Su calor suave y reconfortante ayuda a aliviar la sensación de cansancio ocular después de un día largo.\n\nBeneficios:\n\nAyuda a relajar la zona alrededor de los ojos.\n\nBrinda una agradable sensación de descanso.\n\nIdeal después de trabajar o usar pantallas.\n\nPerfecta para tu rutina de autocuidado.\n\nCaracterísticas:\n\nTemperatura indicada en el empaque: aproximadamente 45 °C.\n\nDuración indicada: aproximadamente 50 minutos.\n\nPresentación individual.\n\nProducto de un solo uso.\n\n✨ ¡Convierte cualquier momento en una pausa de relajación!",
+    "featured": true,
+    "isNew": true,
+    "gallery": [
+      "assets/productos/producto-mscarilla-termica-de-vapor-para-ojos-lavanda-1791996795216-trvng.jpeg",
+      "assets/productos/producto-mscarilla-termica-de-vapor-para-ojos-lavanda-1791996944275-a2mui.jpeg"
+    ]
+  },
+  {
+    "n": "Shampoo Seco Manzana Verde",
+    "c": "Cuidado",
+    "p": 22000,
+    "o": 22000,
+    "status": "available",
+    "stock": 2,
+    "img": "assets/productos/producto-shampoo-seco-manzana-verde-1791995301065-rj7m9.jpeg",
+    "description": "Refresca tu cabello al instante sin necesidad de lavar.\n\nEl Dry Shampoo de Disaar ayuda a absorber el exceso de grasa del cuero cabelludo, dejando el cabello con apariencia limpia, ligera y con volumen en segundos. Ideal para retoques rápidos durante el día o cuando no tienes tiempo de lavar tu cabello.",
+    "featured": true
+  },
+  {
+    "n": "Parches Antiacné Invisibles",
+    "c": "Cuidado",
+    "p": 11000,
+    "o": 11000,
+    "status": "available",
+    "stock": 2,
+    "img": "assets/productos/producto-parches-antiacne-invisibles-1791995199149-unwwu.jpeg",
+    "description": "Solución rápida, discreta y efectiva para granitos inesperados 💗\n\nEstos parches ayudan a absorber impurezas, proteger el brote y mejorar visiblemente su apariencia sin resecar la piel. Su diseño ultra delgado se adapta perfectamente al rostro y puedes usarlos incluso durante el día.",
+    "featured": true
+  },
+  {
+    "n": "Velo Facial Sakura + Colageno",
+    "c": "Cuidado",
+    "p": 2000,
+    "o": 2000,
+    "status": "available",
+    "stock": 4,
+    "img": "assets/productos/producto-velo-facial-sakura-colageno-1791994546182-cry86.jpeg",
+    "description": "Revitaliza tu piel en minutos: mascarilla en tela infusionada con colágeno y extracto de flor de sakura que hidrata profundamente, mejora la firmeza y aporta un glow natural inmediato."
+  },
+  {
+    "n": "Tonico Facial Niacinamida+Sandia 40% Hidratacion & Luminosiad",
+    "c": "Cuidado",
+    "p": 15000,
+    "o": 15000,
+    "status": "available",
+    "stock": 2,
+    "img": "assets/productos/producto-tonico-facial-niacinamida-sandia-40-hidratacion-luminosiad-1791994466264-1gdv2.jpeg",
+    "description": "Hidratación inmediata y frescura duradera.\nAyuda a minimizar la apariencia de poros.\nNiacinamida que unifica el tono y potencia la luminosidad.\nPrepara la piel para absorber mejor los siguientes pasos.\nFórmula con 96% de ingredientes naturales."
+  },
+  {
+    "n": "Combo Mascarillas Piel Luminosa por 3",
+    "c": "Cuidado",
+    "p": 17000,
+    "o": 17000,
+    "status": "available",
+    "stock": 4,
+    "img": "assets/productos/producto-combo-mascarillas-piel-luminosa-por-3-1791994352693-nbghn.jpeg",
+    "description": "Aporta luminosidad y ayuda a unificar el tono.\nProporciona calma y confort.\nMejora la textura y el aspecto descansado.\nHidratación y suavidad inmediata.\nRutina completa: limpieza, reparación y efecto glow.",
+    "isNew": true
+  },
+  {
+    "n": "Velo Facial con Granada y Vitamina E",
+    "c": "Cuidado",
+    "p": 2000,
+    "o": 2000,
+    "status": "available",
+    "stock": 6,
+    "img": "assets/productos/producto-velo-facial-con-granada-y-vitamina-e-1791994240971-gwyn3.jpeg",
+    "description": "Hidratación intensa que deja la piel suave y fresca.\nEfecto revitalizante para un rostro luminoso y saludable.\nAcción anti-edad: ayuda a suavizar líneas finas y aporta elasticidad.\nPráctica y fácil de usar: ideal para tu momento de self-care en casa.",
+    "featured": true
+  },
+  {
+    "n": "Jabon de Rosas con AH Bioaqua",
+    "c": "Cuidado",
+    "p": 10000,
+    "o": 10000,
+    "status": "available",
+    "stock": 3,
+    "img": "assets/productos/producto-jabon-de-rosas-con-ah-bioaqua-1791994077347-k5adm.jpeg",
+    "description": "Limpieza profunda que elimina grasa, suciedad y residuos.\nSuaviza la textura gracias a los AHA de acción exfoliante suave.\nAporta hidratación inmediata sin sensación tirante.\nDeja un acabado luminoso y aspecto revitalizado.\nIdeal para pieles opacas o con textura irregular.",
+    "featured": true
+  },
+  {
+    "n": "Pestañina Waterproof Pink Flash Volume",
+    "c": "Maquillaje",
+    "p": 17000,
+    "o": 17000,
+    "status": "available",
+    "stock": 3,
+    "img": "assets/productos/producto-pestanina-waterproof-pink-flash-volume-1791993987835-dxdsu.jpeg",
+    "description": "Brinda volumen intenso sin apelmazar.\nDefine cada pestaña gracias a su cepillo de precisión.\nContiene microfibras para un efecto de pestañas más largas y con cuerpo.\nFórmula ligera que no deja grumos.\nLarga duración con acabado natural.\nIdeal para un look romántico y femenino.",
+    "isNew": true
+  },
+  {
+    "n": "Mascarilla Capilar Bioaqua Rice Raw Pulp Reparadora y Nutritiva",
+    "c": "Cuidado",
+    "p": 16000,
+    "o": 16000,
+    "status": "outofstock",
+    "stock": null,
+    "img": "assets/productos/producto-mascarilla-capilar-bioaqua-rice-raw-pulp-reparadora-y-nutritiva-1791993823210-y0vnv.jpeg",
+    "description": "Esta mascarilla capilar con extracto de arroz ayuda a reparar el daño, hidratar profundamente y mejorar la suavidad del cabello. Su fórmula nutre desde la raíz hasta las puntas, dejando el cabello más fuerte, manejable y con un aspecto saludable."
+  },
+  {
+    "n": "Protector Solar con Acido Hialuronico, Niacinamida y Te Verde",
+    "c": "Cuidado",
+    "p": 15000,
+    "o": 15000,
+    "status": "available",
+    "stock": 4,
+    "img": "assets/productos/producto-protector-solar-con-acido-hialuronico-niacinamida-y-te-verde-1791993563005-20yg5.jpeg",
+    "description": "Este protector solar SPF 35 está formulado para pieles mixtas y grasas. Su textura ligera protege del sol sin obstruir los poros, ayudando a calmar brotes, reducir brillo y mantener la piel equilibrada durante el día.",
+    "isNew": true
+  },
+  {
+    "n": "Kit Duo Pestañina + Fortalecedora Gold Eyes",
+    "c": "Maquillaje",
+    "p": 15000,
+    "o": 15000,
+    "status": "available",
+    "stock": 1,
+    "img": "assets/productos/producto-kit-duo-pestanina-fortalecedora-gold-eyes-1791991864377-hww9r.jpeg",
+    "description": "Kit para definir las pestañas. Incluye pestañina fortalecedora de fórmula ligera, útil también para fijar suavemente las cejas o como prebase."
+  },
+  {
+    "n": "TORRE DE RUBOR, ILUMINADOR Y CONTORNO CAT FACE",
+    "c": "Maquillaje",
+    "p": 15000,
+    "o": 15000,
+    "status": "available",
+    "stock": 1,
+    "img": "assets/productos/producto-torre-de-rubor-iluminador-y-contorno-cat-face-1791992443238-0qqxj.jpeg",
+    "description": "3 infaltables en un compacto y práctico empaque de pisos.\nAsí es el nuevo Cat Face, contiene un rubor en tono rosita durazno para tus mejillas, un iluminador en tono oro rosa perfecto para utilizar como iluminador y un bronzer en crema en tono universal."
   }
 ]
