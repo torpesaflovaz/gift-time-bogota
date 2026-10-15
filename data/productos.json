@@ -168,16 +168,6 @@
     ]
   },
   {
-    "n": "Kit Pestañina + Fortalecedora",
-    "c": "Maquillaje",
-    "p": 15000,
-    "o": 15000,
-    "stock": 1,
-    "status": "available",
-    "img": "assets/productos/producto-pestanina-fortalecedora.jpg",
-    "description": "Kit para definir las pestañas. Incluye pestañina fortalecedora de fórmula ligera, útil también para fijar suavemente las cejas o como prebase."
-  },
-  {
     "n": "Brillo Retro",
     "c": "Maquillaje",
     "p": 8000,
