@@ -177,10 +177,15 @@
     "c": "Maquillaje",
     "p": 8000,
     "o": 8000,
-    "stock": 2,
     "status": "available",
-    "img": "assets/productos/producto-brillo-retro.jpg",
-    "description": "Gloss ligero con aroma a fresa, brillo saludable y un toque rosado sutil. No se siente pesado ni pegajoso."
+    "stock": 2,
+    "img": "assets/productos/producto-brillo-retro-1792098931132-8dsx8.jpeg",
+    "description": "Gloss ligero con aroma a fresa, brillo saludable y un toque rosado sutil. No se siente pesado ni pegajoso.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "align": "left"
+    }
   },
   {
     "n": "Pestañina Pastel",
@@ -248,16 +253,6 @@
     "status": "available",
     "img": "assets/productos/producto-corrector-rebel-girl.jpg",
     "description": "Corrector hidratante de cobertura media a alta y acabado mate. Es cremoso, ligero y ayuda a lograr una cobertura uniforme. Disponible en tonos 2 y 3; confirma tu tono por WhatsApp."
-  },
-  {
-    "n": "Torre Cat Face",
-    "c": "Maquillaje",
-    "p": 15000,
-    "o": 15000,
-    "stock": 1,
-    "status": "available",
-    "img": "assets/productos/producto-torre-cat-face.jpg",
-    "description": "Torre con 4 iluminadores, incluido un glitter en gel tornasol y tres iluminadores de textura horneada. Incluye mini espejo."
   },
   {
     "n": "Crema Reparadora Nocturna",
