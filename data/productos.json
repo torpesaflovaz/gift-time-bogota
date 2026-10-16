@@ -10,6 +10,17 @@
     "description": "Dale una segunda vida a los materiales con esta cosmetiquera reciclable elaborada a partir de empaque reutilizado de Froot Loops. Su diseño colorido, cierre superior y práctico tamaño la hacen ideal para guardar maquillaje, brochas, accesorios o pequeños esenciales diarios. Cada pieza aprovecha materiales existentes, por lo que puede presentar ligeras variaciones que la hacen única. Una opción funcional, original y más consciente con el planeta. ♻️"
   },
   {
+    "n": "Protector Solar con Acido Hialuronico, Niacinamida y Te Verde",
+    "c": "Cuidado",
+    "p": 15000,
+    "o": 15000,
+    "status": "available",
+    "stock": 4,
+    "img": "assets/productos/producto-protector-solar-con-acido-hialuronico-niacinamida-y-te-verde-1791993563005-20yg5.jpeg",
+    "description": "Este protector solar SPF 35 está formulado para pieles mixtas y grasas. Su textura ligera protege del sol sin obstruir los poros, ayudando a calmar brotes, reducir brillo y mantener la piel equilibrada durante el día.",
+    "isNew": true
+  },
+  {
     "n": "Stick Antifrizz Hair Wax 75 g",
     "c": "Cuidado",
     "p": 17000,
@@ -421,17 +432,6 @@
     "stock": null,
     "img": "assets/productos/producto-mascarilla-capilar-bioaqua-rice-raw-pulp-reparadora-y-nutritiva-1791993823210-y0vnv.jpeg",
     "description": "Esta mascarilla capilar con extracto de arroz ayuda a reparar el daño, hidratar profundamente y mejorar la suavidad del cabello. Su fórmula nutre desde la raíz hasta las puntas, dejando el cabello más fuerte, manejable y con un aspecto saludable."
-  },
-  {
-    "n": "Protector Solar con Acido Hialuronico, Niacinamida y Te Verde",
-    "c": "Cuidado",
-    "p": 15000,
-    "o": 15000,
-    "status": "available",
-    "stock": 4,
-    "img": "assets/productos/producto-protector-solar-con-acido-hialuronico-niacinamida-y-te-verde-1791993563005-20yg5.jpeg",
-    "description": "Este protector solar SPF 35 está formulado para pieles mixtas y grasas. Su textura ligera protege del sol sin obstruir los poros, ayudando a calmar brotes, reducir brillo y mantener la piel equilibrada durante el día.",
-    "isNew": true
   },
   {
     "n": "Kit Duo Pestañina + Fortalecedora Gold Eyes",
