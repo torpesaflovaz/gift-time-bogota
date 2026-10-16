@@ -182,16 +182,6 @@
     ]
   },
   {
-    "n": "Kit Pestañina + Fortalecedora",
-    "c": "Maquillaje",
-    "p": 15000,
-    "o": 15000,
-    "stock": 1,
-    "status": "available",
-    "img": "assets/productos/producto-pestanina-fortalecedora.jpg",
-    "description": "Kit para definir las pestañas. Incluye pestañina fortalecedora de fórmula ligera, útil también para fijar suavemente las cejas o como prebase."
-  },
-  {
     "n": "Brillo Retro",
     "c": "Maquillaje",
     "p": 8000,
@@ -267,16 +257,6 @@
     "status": "available",
     "img": "assets/productos/producto-corrector-rebel-girl.jpg",
     "description": "Corrector hidratante de cobertura media a alta y acabado mate. Es cremoso, ligero y ayuda a lograr una cobertura uniforme. Disponible en tonos 2 y 3; confirma tu tono por WhatsApp."
-  },
-  {
-    "n": "Torre Cat Face",
-    "c": "Maquillaje",
-    "p": 15000,
-    "o": 15000,
-    "stock": 1,
-    "status": "available",
-    "img": "assets/productos/producto-torre-cat-face.jpg",
-    "description": "Torre con 4 iluminadores, incluido un glitter en gel tornasol y tres iluminadores de textura horneada. Incluye mini espejo."
   },
   {
     "n": "Crema Reparadora Nocturna",
