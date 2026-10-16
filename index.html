@@ -562,7 +562,15 @@
     const remain = (p,i,variant='') => { const source=variant ? variantFor(p,variant) : p; return typeof source?.stock !== 'number' ? null : Math.max(0, source.stock - qty(i,variant)); };
     const availableVariants = (p,i) => p.variants.filter(v => typeof v.stock !== 'number' || remain(p,i,v.name) > 0);
     const cartTotal = () => cart.reduce((a,x) => a + products[x.i].p * x.q, 0);
-    const catalogProducts = () => products.filter(p => !p.hidden && !p.featured && !p.isNew);
+    // El catálogo solo excluye los productos que realmente se muestran arriba.
+    // Así, si hay más de cuatro "Nuevos" o "Favoritos", los demás siguen apareciendo abajo.
+    const catalogProducts = () => {
+      const visible=products.filter(p=>!p.hidden);
+      const featured=visible.filter(p=>p.featured).slice(0,4);
+      const newest=visible.filter(p=>p.isNew).slice(0,4);
+      const shownAbove=new Set([...featured,...newest]);
+      return visible.filter(p=>!shownAbove.has(p));
+    };
     const productAvailable = (p,i) => !p.hidden && p.status !== 'outofstock' && (hasVariants(p) ? availableVariants(p,i).length > 0 : remain(p,i) !== 0);
 
     function recommendedProducts(excluded=[], limit=3){
