@@ -1,5 +1,23 @@
 [
   {
+    "n": "Cosmetiquera Reciclable - Choco Break Surtido Frutal",
+    "c": "Accesorios",
+    "p": 25000,
+    "o": 25000,
+    "status": "available",
+    "stock": 1,
+    "img": "assets/productos/producto-cosmetiquera-reciclable-choco-break-surtido-frutal-1792170716594-5fa0q.png",
+    "description": "Una explosión de color para llevar tus esenciales con mucha dulzura. Esta cosmetiquera está elaborada artesanalmente a partir de un empaque reciclado de Choco Break Surtido Frutal, convirtiendo un material recuperado en un accesorio útil, alegre y único. ♻️\n\nSu tamaño es ideal para guardar maquillaje, brochas, cables, audífonos, papelería, productos de cuidado personal o pequeños tesoros del día a día. Cuenta con cierre funcional y una argolla lateral para llevarla cómodamente en tu bolso o mochila.\n\nCada pieza conserva detalles propios del empaque original, por eso puede tener pequeñas variaciones que la hacen aún más especial.\n\nCreación reciclada e independiente; no es un producto oficial de Colombina.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "justify"
+    }
+  },
+  {
     "n": "Cosmetiquera Reciclable - Chocoramo Barrita Frutos Rojos",
     "c": "Accesorios",
     "p": 25000,
