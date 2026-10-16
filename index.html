@@ -227,7 +227,7 @@
     .gallery-thumbs{display:flex;justify-content:center;gap:8px;overflow-x:auto;padding:12px 2px 2px;scrollbar-width:thin}
     .gallery-thumbs button{flex:0 0 auto;width:56px;height:56px;padding:0;border:2px solid transparent;border-radius:10px;background:#fff;cursor:pointer;overflow:hidden}
     .gallery-thumbs button.active{border-color:#f24b6b}.gallery-thumbs img{display:block;width:100%;height:100%;object-fit:cover}
-    .image-description{color:#fce8ee;margin:10px auto 0;max-width:620px;font-size:.96rem;line-height:1.5;white-space:pre-wrap;padding-bottom:8px}.cross-sell{margin:18px auto 0;max-width:620px;text-align:left;background:#fff;border-radius:16px;padding:14px;color:var(--ink)}.cross-sell h3{margin:0;font-family:Georgia,serif;font-size:1.15rem;color:var(--dark)}.cross-sell p{margin:2px 0 10px;color:#8b6470;font-size:.86rem}.cross-sell-list{display:grid;gap:9px}.cross-sell-card{display:grid;grid-template-columns:58px minmax(0,1fr) auto;gap:10px;align-items:center;padding:8px;border:1px solid #f5dbe2;border-radius:12px;background:#fffafb}.cross-sell-card img{width:58px;height:58px;object-fit:contain;border-radius:9px;background:#fff}.cross-sell-card strong{display:block;font-size:.85rem;line-height:1.2}.cross-sell-card small{display:block;color:var(--red);font-weight:800;margin-top:3px}.cross-sell-card button{border:0;border-radius:9px;padding:8px 10px;background:var(--red);color:#fff;font:700 .76rem system-ui,sans-serif;cursor:pointer}.cart-recommendations{padding:12px 0 4px}.cart-recommendations[hidden]{display:none}.cart-recommendations .cross-sell{margin:0;padding:12px;background:#fff6f8}.cart-recommendations .cross-sell-card{grid-template-columns:46px minmax(0,1fr) auto;padding:7px}.cart-recommendations .cross-sell-card img{width:46px;height:46px}.cart-recommendations .cross-sell-card strong{font-size:.78rem}.cart-recommendations .cross-sell-card button{padding:7px 8px}.cart-recommendations .cross-sell-list{gap:7px}
+    .image-description{color:#fce8ee;margin:10px auto 0;max-width:620px;font-size:.96rem;line-height:1.5;white-space:pre-wrap;padding-bottom:8px}.modal-purchase{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:9px;align-items:center;max-width:620px;margin:12px auto 0;padding:10px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.28);border-radius:14px}.modal-purchase select{min-width:0;border:0;border-radius:9px;padding:10px;background:#fff;color:var(--ink);font:600 .88rem system-ui,sans-serif}.modal-purchase button{border:0;border-radius:10px;padding:11px 14px;background:var(--red);color:#fff;font:800 .85rem system-ui,sans-serif;cursor:pointer}.modal-purchase button:disabled{opacity:.55;cursor:not-allowed}.cross-sell{margin:18px auto 0;max-width:620px;text-align:left;background:#fff;border-radius:16px;padding:14px;color:var(--ink)}.cross-sell h3{margin:0;font-family:Georgia,serif;font-size:1.15rem;color:var(--dark)}.cross-sell p{margin:2px 0 10px;color:#8b6470;font-size:.86rem}.cross-sell-list{display:grid;gap:9px}.cross-sell-card{display:grid;grid-template-columns:58px minmax(0,1fr) auto;gap:10px;align-items:center;padding:8px;border:1px solid #f5dbe2;border-radius:12px;background:#fffafb}.cross-sell-card img{width:58px;height:58px;object-fit:contain;border-radius:9px;background:#fff}.cross-sell-card strong{display:block;font-size:.85rem;line-height:1.2}.cross-sell-card small{display:block;color:var(--red);font-weight:800;margin-top:3px}.cross-sell-card button{border:0;border-radius:9px;padding:8px 10px;background:var(--red);color:#fff;font:700 .76rem system-ui,sans-serif;cursor:pointer}.cart-recommendations{padding:12px 0 4px}.cart-recommendations[hidden]{display:none}.cart-recommendations .cross-sell{margin:0;padding:12px;background:#fff6f8}.cart-recommendations .cross-sell-card{grid-template-columns:46px minmax(0,1fr) auto;padding:7px}.cart-recommendations .cross-sell-card img{width:46px;height:46px}.cart-recommendations .cross-sell-card strong{font-size:.78rem}.cart-recommendations .cross-sell-card button{padding:7px 8px}.cart-recommendations .cross-sell-list{gap:7px}
     .cart{position:fixed;z-index:25;right:0;top:0;width:min(405px,100%);height:100vh;height:100dvh;background:#fff;padding:22px 22px calc(18px + env(safe-area-inset-bottom,0px));padding-top:calc(22px + env(safe-area-inset-top,0px));box-shadow:-10px 0 45px rgba(51,16,29,.22);transform:translateX(105%);visibility:hidden;transition:transform .25s,visibility .25s;display:flex;flex-direction:column}
     .cart.open{transform:translateX(0);visibility:visible}
     .cart-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:16px}
@@ -256,7 +256,7 @@
       .instagram{grid-template-columns:repeat(2,1fr)}
     }
     /* Banner de productos local: funciona sin depender de enlaces externos. */
-    .hero{background:#f7c6cd url('assets/marca/banner-maquillaje-skincare.png') right center/cover no-repeat}
+    .hero{background:#f7c6cd url('assets/marca/banner-productos-minimal-v5.png') right center/cover no-repeat}
     #instagram{display:block}
 
     @media (max-width:850px){
@@ -264,7 +264,7 @@
       .image-modal figure{width:min(94vw,680px);max-height:calc(100dvh - 24px)}
       .image-modal .modal-main-image{max-height:44dvh}
       .image-modal figcaption{margin-top:10px}
-      .image-description{padding-bottom:18px}
+      .image-description{padding-bottom:18px}.modal-purchase{grid-template-columns:1fr}.modal-purchase button{width:100%}
       .menu-button{display:grid}
       .links{position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;background:#fff;border-bottom:1px solid #f8dde5;box-shadow:0 18px 30px rgba(116,17,45,.08);padding:6px var(--gutter) 14px;display:none}
       .links.open{display:flex}
@@ -326,7 +326,7 @@
       .hero{display:flex;flex-direction:column;align-items:stretch;min-height:0;background:#fadbdc!important}
       .hero:before{display:none}
       .hero-copy{padding:40px 0 28px}
-      .hero:after{content:'';display:block;order:2;width:100%;aspect-ratio:2084/754;background:#f7c6cd url('assets/marca/banner-maquillaje-skincare.png') center/cover no-repeat;border-radius:0 0 28px 28px}
+      .hero:after{content:'';display:block;order:2;width:100%;aspect-ratio:2084/754;background:#f7c6cd url('assets/marca/banner-productos-minimal-v5.png') center/cover no-repeat;border-radius:0 0 28px 28px}
     }
 
     @media (prefers-reduced-motion:reduce){
@@ -334,7 +334,7 @@
       *,*:before,*:after{transition:none!important;animation:none!important}
     }
     /* Ajustes visuales finales */
-    .hero{background:#f7c6cd url('assets/marca/banner-maquillaje-skincare.png') right center/cover no-repeat}
+    .hero{background:#f7c6cd url('assets/marca/banner-productos-minimal-v5.png') right center/cover no-repeat}
     .hero:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,247,249,.98) 0%,rgba(255,239,244,.94) 40%,rgba(255,229,237,.55) 62%,rgba(255,229,237,0) 82%)}
     .hero-copy{position:relative;z-index:1;text-shadow:0 1px 0 rgba(255,255,255,.55)}
     .hero h1{color:#7d102d}.hero p{color:#68243a;font-weight:600;max-width:520px}
@@ -371,7 +371,7 @@
       .hero h1{max-width:11.5ch;margin:0 auto 14px;font-size:clamp(2.18rem,9.7vw,2.8rem);line-height:1.12;letter-spacing:-.025em}
       .hero p{max-width:32ch;margin:0 auto;line-height:1.55}
       .hero .cta-row{justify-content:center;margin-top:20px}
-      .hero:after{height:clamp(190px,56vw,255px);min-height:190px;aspect-ratio:auto;background:#f7c6cd url('assets/marca/banner-maquillaje-skincare.png') center center/cover no-repeat}
+      .hero:after{height:clamp(190px,56vw,255px);min-height:190px;aspect-ratio:auto;background:#f7c6cd url('assets/marca/banner-productos-minimal-v5.png') center center/cover no-repeat}
       .instagram-box:after{width:150px;height:150px;right:-78px;top:-78px}
       .insta-cta{width:100%}
     }
@@ -494,7 +494,7 @@
   <div class="toast" id="toast" role="status" aria-live="polite"><span id="toastText"></span><button id="toastView">Ver pedido</button></div>
 
   <div class="image-modal" id="imageModal" role="dialog" aria-modal="true" aria-labelledby="imageCaption" hidden>
-    <figure><button class="image-close" id="closeImage" aria-label="Cerrar imagen">×</button><img class="modal-main-image" id="modalImage" src="" alt=""><button class="gallery-nav gallery-prev" id="prevImage" aria-label="Foto anterior">‹</button><button class="gallery-nav gallery-next" id="nextImage" aria-label="Foto siguiente">›</button><div class="gallery-thumbs" id="galleryThumbs" aria-label="Galería de fotos"></div><figcaption id="imageCaption"></figcaption><p class="image-description" id="imageDescription"></p><section id="imageRecommendations" class="cross-sell" hidden></section></figure>
+    <figure><button class="image-close" id="closeImage" aria-label="Cerrar imagen">×</button><img class="modal-main-image" id="modalImage" src="" alt=""><button class="gallery-nav gallery-prev" id="prevImage" aria-label="Foto anterior">‹</button><button class="gallery-nav gallery-next" id="nextImage" aria-label="Foto siguiente">›</button><div class="gallery-thumbs" id="galleryThumbs" aria-label="Galería de fotos"></div><figcaption id="imageCaption"></figcaption><p class="image-description" id="imageDescription"></p><div id="modalPurchase" class="modal-purchase"></div><section id="imageRecommendations" class="cross-sell" hidden></section></figure>
   </div>
 
   <footer class="site-footer">
@@ -553,7 +553,7 @@
     ];
     */
 
-    let selected = 'Todos', searchTerm = '', catalogExpanded = false, cart = [], toastTimer, activeGallery = [], activeImageIndex = 0, chosenVariants = {};
+    let selected = 'Todos', searchTerm = '', catalogExpanded = false, cart = [], toastTimer, activeGallery = [], activeImageIndex = 0, activeProductIndex = null, chosenVariants = {};
     const $ = id => document.getElementById(id);
     const fmt = x => x.toLocaleString('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0});
     const esc = x => String(x || '').replace(/[&<>'"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
@@ -721,9 +721,14 @@
       $('modalImage').src = activeGallery[activeImageIndex];
       $('galleryThumbs').querySelectorAll('button').forEach((b,i) => b.classList.toggle('active', i === activeImageIndex));
     }
+    function renderModalPurchase(i){
+      const p=products[i], variantMode=hasVariants(p), selectedVariant=chosenVariants[i]||'', out=!productAvailable(p,i);
+      const picker=variantMode?`<select id="modalVariantPicker" aria-label="${esc(p.variantLabel || 'Opción')} para ${esc(p.n)}" ${out?'disabled':''}><option value="">Elige ${esc((p.variantLabel || 'una opción').toLowerCase())}</option>${p.variants.map(v=>{const left=remain(p,i,v.name), unavailable=typeof left==='number'&&left===0;return `<option value="${esc(v.name)}" ${v.name===selectedVariant?'selected':''} ${unavailable?'disabled':''}>${esc(v.name)}${unavailable?' — Agotado':''}</option>`}).join('')}</select>`:'';
+      $('modalPurchase').innerHTML=`${picker}<button type="button" data-modal-add="${i}" ${out?'disabled':''}>${out?'No disponible':variantMode?'Agregar opción':'Agregar al pedido'}</button>`;
+    }
     function openImage(i){
       const p = products[i];
-      activeGallery = p.gallery || [p.img]; activeImageIndex = 0;
+      activeProductIndex=i; activeGallery = p.gallery || [p.img]; activeImageIndex = 0;
       $('imageCaption').textContent = p.n;
       $('imageDescription').textContent = p.description || '';
       const descriptionStyle = p.descriptionStyle || {};
@@ -734,6 +739,7 @@
       $('imageDescription').style.textDecoration = descriptionStyle.underline ? 'underline' : 'none';
       $('imageDescription').style.color = /^#[0-9a-f]{6}$/i.test(descriptionStyle.color || '') ? descriptionStyle.color : '#fce8ee';
       $('imageDescription').style.textAlign = ['left','center','justify'].includes(descriptionStyle.align) ? descriptionStyle.align : 'left';
+      renderModalPurchase(i);
       renderImageRecommendations(i);
       $('galleryThumbs').innerHTML = activeGallery.map((src,j) => `<button type="button" class="${j === 0 ? 'active' : ''}" data-gallery-image="${j}" aria-label="Ver foto ${j + 1} de ${p.n}"><img src="${src}" alt=""></button>`).join('');
       $('prevImage').disabled = activeGallery.length < 2;
@@ -795,7 +801,8 @@
     $('prevImage').onclick = () => showGalleryImage(activeImageIndex - 1);
     $('nextImage').onclick = () => showGalleryImage(activeImageIndex + 1);
     $('galleryThumbs').onclick = e => { const b = e.target.closest('[data-gallery-image]'); if (b) showGalleryImage(+b.dataset.galleryImage); };
-    $('imageModal').onclick = e => { if (e.target === $('imageModal')) closeImage(); };
+    $('imageModal').onclick = e => { const addButton=e.target.closest('[data-modal-add]');if(addButton){add(+addButton.dataset.modalAdd);return;}if(e.target === $('imageModal')) closeImage(); };
+    $('modalPurchase').addEventListener('change',e=>{if(e.target.id!=='modalVariantPicker'||activeProductIndex===null)return;chosenVariants[activeProductIndex]=e.target.value;renderModalPurchase(activeProductIndex);});
     $('overlay').onclick = closeCart;
     $('menuButton').onclick = () => toggleMenu();
     $('links').addEventListener('click', e => { if (e.target.closest('a')) closeMenu(); });
