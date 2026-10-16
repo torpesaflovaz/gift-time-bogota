@@ -1,5 +1,21 @@
 [
   {
+    "n": "Mascarilla Térmica para Ojos – Diseños de Caricaturas",
+    "c": "Cuidado",
+    "p": 6000,
+    "o": 6000,
+    "status": "available",
+    "stock": 40,
+    "img": "assets/productos/producto-mascarilla-termica-para-ojos-disenos-de-caricaturas-1791996885740-fhu5z.jpeg",
+    "description": "💕 ¡Descansa y consiente tus ojos con un toque de ternura!\n\nNuestras mascarillas térmicas de vapor combinan una agradable sensación de calor con diseños de caricaturas encantadores. Son ideales para relajarte después de un día ocupado o disfrutar de un momento de autocuidado.\n\nBeneficios:\n\nProporcionan calor suave y reconfortante.\n\nAyudan a aliviar la sensación de fatiga ocular.\n\nIdeales para relajarte antes de dormir.\n\nPrácticas para llevar de viaje.\n\nPerfectas como un pequeño regalo.\n\nCaracterísticas:\n\nCuatro diseños disponibles: morado, rosado, verde y amarillo.\n\nTiempo de uso indicado: aproximadamente 20–30 minutos.\n\nPresentación individual.\n\nProducto de un solo uso.\n\n🎀 ¡Elige tu diseño favorito y disfruta de un momento de relajación!",
+    "featured": true,
+    "isNew": true,
+    "gallery": [
+      "assets/productos/producto-mascarilla-termica-para-ojos-disenos-de-caricaturas-1791996885740-fhu5z.jpeg",
+      "assets/productos/producto-mascarilla-termica-para-ojos-disenos-de-caricaturas-1791996985524-dbmxh.jpeg"
+    ]
+  },
+  {
     "n": "Cosmetiquera Reciclable - Choco Melos",
     "c": "Accesorios",
     "p": 25000,
@@ -16,6 +32,21 @@
       "color": "#fce8ee",
       "align": "justify"
     }
+  },
+  {
+    "n": "Pestañina Pastel",
+    "c": "Maquillaje",
+    "p": 12000,
+    "o": 12000,
+    "stock": 1,
+    "status": "available",
+    "img": "assets/productos/producto-pestanina-pastel-1.jpg",
+    "gallery": [
+      "assets/productos/producto-pestanina-pastel-1.jpg",
+      "assets/productos/producto-pestanina-pastel-2.jpg",
+      "assets/productos/producto-pestanina-pastel-3.jpg"
+    ],
+    "description": "Pestañina a prueba de agua con presentación pastel. Hay tres referencias con cepillos de silicona: azul para alargar, verde para volumen y rosada para mayor largo y volumen. Todas son de color negro."
   },
   {
     "n": "Cosmetiquera Reciclable - Choco Break Surtido Frutal",
@@ -36,6 +67,24 @@
     }
   },
   {
+    "n": "Brillo Retro",
+    "c": "Maquillaje",
+    "p": 8000,
+    "o": 8000,
+    "status": "available",
+    "stock": 2,
+    "img": "assets/productos/producto-brillo-retro-1792158912501-lhzkc.jpeg",
+    "description": "Gloss ligero con aroma a fresa, brillo saludable y un toque rosado sutil. No se siente pesado ni pegajoso.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    }
+  },
+  {
     "n": "Cosmetiquera Reciclable - Chocoramo Barrita Frutos Rojos",
     "c": "Accesorios",
     "p": 25000,
@@ -52,6 +101,16 @@
       "color": "#fce8ee",
       "align": "justify"
     }
+  },
+  {
+    "n": "Mascarilla Capilar Bioaqua Rice Raw Pulp Reparadora y Nutritiva",
+    "c": "Cuidado",
+    "p": 16000,
+    "o": 16000,
+    "status": "outofstock",
+    "stock": null,
+    "img": "assets/productos/producto-mascarilla-capilar-bioaqua-rice-raw-pulp-reparadora-y-nutritiva-1791993823210-y0vnv.jpeg",
+    "description": "Esta mascarilla capilar con extracto de arroz ayuda a reparar el daño, hidratar profundamente y mejorar la suavidad del cabello. Su fórmula nutre desde la raíz hasta las puntas, dejando el cabello más fuerte, manejable y con un aspecto saludable."
   },
   {
     "n": "Cosmetiquera Reciclable Jet Burbujas",
@@ -88,6 +147,17 @@
       "color": "#fce8ee",
       "align": "justify"
     }
+  },
+  {
+    "n": "Protector Solar con Acido Hialuronico, Niacinamida y Te Verde",
+    "c": "Cuidado",
+    "p": 15000,
+    "o": 15000,
+    "status": "available",
+    "stock": 4,
+    "img": "assets/productos/producto-protector-solar-con-acido-hialuronico-niacinamida-y-te-verde-1791993563005-20yg5.jpeg",
+    "description": "Este protector solar SPF 35 está formulado para pieles mixtas y grasas. Su textura ligera protege del sol sin obstruir los poros, ayudando a calmar brotes, reducir brillo y mantener la piel equilibrada durante el día.",
+    "isNew": true
   },
   {
     "n": "Cosmetiquera Reciclable Menta Helada – Colombina",
@@ -194,17 +264,6 @@
       "color": "#fce8ee",
       "align": "justify"
     }
-  },
-  {
-    "n": "Protector Solar con Acido Hialuronico, Niacinamida y Te Verde",
-    "c": "Cuidado",
-    "p": 15000,
-    "o": 15000,
-    "status": "available",
-    "stock": 4,
-    "img": "assets/productos/producto-protector-solar-con-acido-hialuronico-niacinamida-y-te-verde-1791993563005-20yg5.jpeg",
-    "description": "Este protector solar SPF 35 está formulado para pieles mixtas y grasas. Su textura ligera protege del sol sin obstruir los poros, ayudando a calmar brotes, reducir brillo y mantener la piel equilibrada durante el día.",
-    "isNew": true
   },
   {
     "n": "Stick Antifrizz Hair Wax 75 g",
@@ -413,39 +472,6 @@
     ]
   },
   {
-    "n": "Brillo Retro",
-    "c": "Maquillaje",
-    "p": 8000,
-    "o": 8000,
-    "status": "available",
-    "stock": 2,
-    "img": "assets/productos/producto-brillo-retro-1792158912501-lhzkc.jpeg",
-    "description": "Gloss ligero con aroma a fresa, brillo saludable y un toque rosado sutil. No se siente pesado ni pegajoso.",
-    "descriptionStyle": {
-      "size": "medium",
-      "bold": false,
-      "italic": false,
-      "underline": false,
-      "color": "#fce8ee",
-      "align": "left"
-    }
-  },
-  {
-    "n": "Pestañina Pastel",
-    "c": "Maquillaje",
-    "p": 12000,
-    "o": 12000,
-    "stock": 1,
-    "status": "available",
-    "img": "assets/productos/producto-pestanina-pastel-1.jpg",
-    "gallery": [
-      "assets/productos/producto-pestanina-pastel-1.jpg",
-      "assets/productos/producto-pestanina-pastel-2.jpg",
-      "assets/productos/producto-pestanina-pastel-3.jpg"
-    ],
-    "description": "Pestañina a prueba de agua con presentación pastel. Hay tres referencias con cepillos de silicona: azul para alargar, verde para volumen y rosada para mayor largo y volumen. Todas son de color negro."
-  },
-  {
     "n": "Protector Solar SKINCARE 40ML",
     "c": "Cuidado",
     "p": 43000,
@@ -516,22 +542,6 @@
     "status": "available",
     "img": "assets/productos/producto-happy-berry.jpg",
     "description": "Gloss de brillo intenso y tono rosa muy sutil. Se desliza suavemente y aporta sensación de suavidad en los labios."
-  },
-  {
-    "n": "Mascarilla Térmica para Ojos – Diseños de Caricaturas",
-    "c": "Cuidado",
-    "p": 6000,
-    "o": 6000,
-    "status": "available",
-    "stock": 40,
-    "img": "assets/productos/producto-mascarilla-termica-para-ojos-disenos-de-caricaturas-1791996885740-fhu5z.jpeg",
-    "description": "💕 ¡Descansa y consiente tus ojos con un toque de ternura!\n\nNuestras mascarillas térmicas de vapor combinan una agradable sensación de calor con diseños de caricaturas encantadores. Son ideales para relajarte después de un día ocupado o disfrutar de un momento de autocuidado.\n\nBeneficios:\n\nProporcionan calor suave y reconfortante.\n\nAyudan a aliviar la sensación de fatiga ocular.\n\nIdeales para relajarte antes de dormir.\n\nPrácticas para llevar de viaje.\n\nPerfectas como un pequeño regalo.\n\nCaracterísticas:\n\nCuatro diseños disponibles: morado, rosado, verde y amarillo.\n\nTiempo de uso indicado: aproximadamente 20–30 minutos.\n\nPresentación individual.\n\nProducto de un solo uso.\n\n🎀 ¡Elige tu diseño favorito y disfruta de un momento de relajación!",
-    "featured": true,
-    "isNew": true,
-    "gallery": [
-      "assets/productos/producto-mascarilla-termica-para-ojos-disenos-de-caricaturas-1791996885740-fhu5z.jpeg",
-      "assets/productos/producto-mascarilla-termica-para-ojos-disenos-de-caricaturas-1791996985524-dbmxh.jpeg"
-    ]
   },
   {
     "n": "Mscarilla Térmica de Vapor para Ojos - Lavanda",
@@ -649,16 +659,6 @@
     "img": "assets/productos/producto-pestanina-waterproof-pink-flash-volume-1791993987835-dxdsu.jpeg",
     "description": "Brinda volumen intenso sin apelmazar.\nDefine cada pestaña gracias a su cepillo de precisión.\nContiene microfibras para un efecto de pestañas más largas y con cuerpo.\nFórmula ligera que no deja grumos.\nLarga duración con acabado natural.\nIdeal para un look romántico y femenino.",
     "isNew": true
-  },
-  {
-    "n": "Mascarilla Capilar Bioaqua Rice Raw Pulp Reparadora y Nutritiva",
-    "c": "Cuidado",
-    "p": 16000,
-    "o": 16000,
-    "status": "outofstock",
-    "stock": null,
-    "img": "assets/productos/producto-mascarilla-capilar-bioaqua-rice-raw-pulp-reparadora-y-nutritiva-1791993823210-y0vnv.jpeg",
-    "description": "Esta mascarilla capilar con extracto de arroz ayuda a reparar el daño, hidratar profundamente y mejorar la suavidad del cabello. Su fórmula nutre desde la raíz hasta las puntas, dejando el cabello más fuerte, manejable y con un aspecto saludable."
   },
   {
     "n": "Kit Duo Pestañina + Fortalecedora Gold Eyes",
