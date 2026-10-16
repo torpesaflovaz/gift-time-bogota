@@ -1,39 +1,5 @@
 [
   {
-    "n": "Cosmetiquera Reciclable Tipitin – Unicornio y Salvaje",
-    "c": "Accesorios",
-    "p": 15000,
-    "o": 15000,
-    "status": "available",
-    "stock": 2,
-    "img": "assets/productos/producto-cosmetiquera-reciclable-tipitin-unicornio-y-salvaje-1792167947164-kxaxw.png",
-    "description": "Cosmetiquera reutilizable elaborada artesanalmente a partir de empaques recuperados. Una opción práctica, original y sostenible para llevar maquillaje, accesorios o pequeños esenciales. Cuenta con cierre y ventana transparente; disponible en diseños Unicornio y Salvaje. Cada pieza aprovecha materiales reciclables y tiene detalles únicos.",
-    "descriptionStyle": {
-      "size": "medium",
-      "bold": false,
-      "italic": false,
-      "underline": false,
-      "color": "#fce8ee",
-      "align": "left"
-    },
-    "gallery": [
-      "assets/productos/producto-cosmetiquera-reciclable-tipitin-unicornio-y-salvaje-1792167947164-kxaxw.png",
-      "assets/productos/producto-cosmetiquera-reciclable-tipitin-unicornio-y-salvaje-1792167947173-6r4b3.png",
-      "assets/productos/producto-cosmetiquera-reciclable-tipitin-unicornio-y-salvaje-1792167947177-evilg.png"
-    ],
-    "variantLabel": "Diseño",
-    "variants": [
-      {
-        "name": "Unicornio",
-        "stock": 1
-      },
-      {
-        "name": "Salvaje",
-        "stock": 1
-      }
-    ]
-  },
-  {
     "n": "Cosmetiquera Reciclable Froot Loops",
     "c": "Accesorios",
     "p": 15000,
@@ -117,6 +83,40 @@
     "status": "available",
     "img": "assets/productos/producto-mascarilla-aloe.jpg",
     "description": "Mascarilla facial en gel con aloe y ácido hialurónico. Aporta sensación de hidratación, se absorbe rápido y ayuda a mejorar la apariencia de la piel antes del maquillaje."
+  },
+  {
+    "n": "Cosmetiquera Reciclable Tipitin – Unicornio y Salvaje",
+    "c": "Accesorios",
+    "p": 15000,
+    "o": 15000,
+    "status": "available",
+    "stock": 2,
+    "img": "assets/productos/producto-cosmetiquera-reciclable-tipitin-unicornio-y-salvaje-1792167947164-kxaxw.png",
+    "description": "Cosmetiquera reutilizable elaborada artesanalmente a partir de empaques recuperados. Una opción práctica, original y sostenible para llevar maquillaje, accesorios o pequeños esenciales. Cuenta con cierre y ventana transparente; disponible en diseños Unicornio y Salvaje. Cada pieza aprovecha materiales reciclables y tiene detalles únicos.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    },
+    "gallery": [
+      "assets/productos/producto-cosmetiquera-reciclable-tipitin-unicornio-y-salvaje-1792167947164-kxaxw.png",
+      "assets/productos/producto-cosmetiquera-reciclable-tipitin-unicornio-y-salvaje-1792167947173-6r4b3.png",
+      "assets/productos/producto-cosmetiquera-reciclable-tipitin-unicornio-y-salvaje-1792167947177-evilg.png"
+    ],
+    "variantLabel": "Diseño",
+    "variants": [
+      {
+        "name": "Unicornio",
+        "stock": 1
+      },
+      {
+        "name": "Salvaje",
+        "stock": 1
+      }
+    ]
   },
   {
     "n": "Kit Brochas Bob Esponja",
