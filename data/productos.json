@@ -322,7 +322,14 @@
     "stock": 12,
     "img": "assets/productos/producto-mscarilla-termica-de-vapor-para-ojos-lavanda-1791996795216-trvng.jpeg",
     "description": "💜 ¡Regálale a tus ojos un momento de descanso!\n\nDisfruta de una experiencia relajante con nuestra mascarilla térmica de vapor para ojos. Su calor suave y reconfortante ayuda a aliviar la sensación de cansancio ocular después de un día largo.\n\nBeneficios:\n\nAyuda a relajar la zona alrededor de los ojos.\n\nBrinda una agradable sensación de descanso.\n\nIdeal después de trabajar o usar pantallas.\n\nPerfecta para tu rutina de autocuidado.\n\nCaracterísticas:\n\nTemperatura indicada en el empaque: aproximadamente 45 °C.\n\nDuración indicada: aproximadamente 50 minutos.\n\nPresentación individual.\n\nProducto de un solo uso.\n\n✨ ¡Convierte cualquier momento en una pausa de relajación!",
-    "featured": true,
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    },
     "isNew": true,
     "gallery": [
       "assets/productos/producto-mscarilla-termica-de-vapor-para-ojos-lavanda-1791996795216-trvng.jpeg",
