@@ -59,6 +59,14 @@
     "stock": 40,
     "img": "assets/productos/producto-mascarilla-termica-para-ojos-disenos-de-caricaturas-1791996885740-fhu5z.jpeg",
     "description": "💕 ¡Descansa y consiente tus ojos con un toque de ternura!\n\nNuestras mascarillas térmicas de vapor combinan una agradable sensación de calor con diseños de caricaturas encantadores. Son ideales para relajarte después de un día ocupado o disfrutar de un momento de autocuidado.\n\nBeneficios:\n\nProporcionan calor suave y reconfortante.\n\nAyudan a aliviar la sensación de fatiga ocular.\n\nIdeales para relajarte antes de dormir.\n\nPrácticas para llevar de viaje.\n\nPerfectas como un pequeño regalo.\n\nCaracterísticas:\n\nCuatro diseños disponibles: morado, rosado, verde y amarillo.\n\nTiempo de uso indicado: aproximadamente 20–30 minutos.\n\nPresentación individual.\n\nProducto de un solo uso.\n\n🎀 ¡Elige tu diseño favorito y disfruta de un momento de relajación!",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    },
     "featured": true,
     "isNew": true,
     "gallery": [
