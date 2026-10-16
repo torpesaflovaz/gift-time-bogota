@@ -75,16 +75,6 @@
     "description": "Kit de 6 brochas mini inspirado en Rugrats, ideal para llevar en la cosmetiquera o el bolso. Cada brocha tiene su función marcada y sirve para aplicar y difuminar productos en crema o polvo; incluye brocha para ojos y cosmetiquera en forma de mochila."
   },
   {
-    "n": "Mascarilla Aloe Vera",
-    "c": "Cuidado",
-    "p": 12000,
-    "o": 15000,
-    "stock": 1,
-    "status": "available",
-    "img": "assets/productos/producto-mascarilla-aloe.jpg",
-    "description": "Mascarilla facial en gel con aloe y ácido hialurónico. Aporta sensación de hidratación, se absorbe rápido y ayuda a mejorar la apariencia de la piel antes del maquillaje."
-  },
-  {
     "n": "Cosmetiquera Reciclable Tipitin – Unicornio y Salvaje",
     "c": "Accesorios",
     "p": 15000,
@@ -117,6 +107,16 @@
         "stock": 1
       }
     ]
+  },
+  {
+    "n": "Mascarilla Aloe Vera",
+    "c": "Cuidado",
+    "p": 12000,
+    "o": 15000,
+    "stock": 1,
+    "status": "available",
+    "img": "assets/productos/producto-mascarilla-aloe.jpg",
+    "description": "Mascarilla facial en gel con aloe y ácido hialurónico. Aporta sensación de hidratación, se absorbe rápido y ayuda a mejorar la apariencia de la piel antes del maquillaje."
   },
   {
     "n": "Kit Brochas Bob Esponja",
