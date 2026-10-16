@@ -226,7 +226,7 @@
     .gallery-thumbs{display:flex;justify-content:center;gap:8px;overflow-x:auto;padding:12px 2px 2px;scrollbar-width:thin}
     .gallery-thumbs button{flex:0 0 auto;width:56px;height:56px;padding:0;border:2px solid transparent;border-radius:10px;background:#fff;cursor:pointer;overflow:hidden}
     .gallery-thumbs button.active{border-color:#f24b6b}.gallery-thumbs img{display:block;width:100%;height:100%;object-fit:cover}
-    .image-description{color:#fce8ee;margin:10px auto 0;max-width:620px;font-size:.96rem;line-height:1.5;white-space:pre-wrap;padding-bottom:8px}
+    .image-description{color:#fce8ee;margin:10px auto 0;max-width:620px;font-size:.96rem;line-height:1.5;white-space:pre-wrap;padding-bottom:8px}.cross-sell{margin:18px auto 0;max-width:620px;text-align:left;background:#fff;border-radius:16px;padding:14px;color:var(--ink)}.cross-sell h3{margin:0;font-family:Georgia,serif;font-size:1.15rem;color:var(--dark)}.cross-sell p{margin:2px 0 10px;color:#8b6470;font-size:.86rem}.cross-sell-list{display:grid;gap:9px}.cross-sell-card{display:grid;grid-template-columns:58px minmax(0,1fr) auto;gap:10px;align-items:center;padding:8px;border:1px solid #f5dbe2;border-radius:12px;background:#fffafb}.cross-sell-card img{width:58px;height:58px;object-fit:contain;border-radius:9px;background:#fff}.cross-sell-card strong{display:block;font-size:.85rem;line-height:1.2}.cross-sell-card small{display:block;color:var(--red);font-weight:800;margin-top:3px}.cross-sell-card button{border:0;border-radius:9px;padding:8px 10px;background:var(--red);color:#fff;font:700 .76rem system-ui,sans-serif;cursor:pointer}.cart-recommendations{padding:12px 0 4px}.cart-recommendations[hidden]{display:none}.cart-recommendations .cross-sell{margin:0;padding:12px;background:#fff6f8}.cart-recommendations .cross-sell-card{grid-template-columns:46px minmax(0,1fr) auto;padding:7px}.cart-recommendations .cross-sell-card img{width:46px;height:46px}.cart-recommendations .cross-sell-card strong{font-size:.78rem}.cart-recommendations .cross-sell-card button{padding:7px 8px}.cart-recommendations .cross-sell-list{gap:7px}
     .cart{position:fixed;z-index:25;right:0;top:0;width:min(405px,100%);height:100vh;height:100dvh;background:#fff;padding:22px 22px calc(18px + env(safe-area-inset-bottom,0px));padding-top:calc(22px + env(safe-area-inset-top,0px));box-shadow:-10px 0 45px rgba(51,16,29,.22);transform:translateX(105%);visibility:hidden;transition:transform .25s,visibility .25s;display:flex;flex-direction:column}
     .cart.open{transform:translateX(0);visibility:visible}
     .cart-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:16px}
@@ -484,7 +484,7 @@
   <div class="overlay" id="overlay"></div>
   <aside class="cart" id="cart" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true">
     <div class="cart-top"><h2 id="cartTitle">Tu pedido</h2><button class="close" id="closeCart" aria-label="Cerrar pedido">×</button></div>
-    <div class="items" id="items"></div>
+    <div class="items" id="items"></div><div id="cartRecommendations" class="cart-recommendations" hidden></div>
     <div class="total"><span>Total</span><span id="total">$0</span></div>
     <button class="send" id="send">Enviar pedido por WhatsApp</button>
     <p class="note">El pago y la entrega se confirman contigo por WhatsApp.</p>
@@ -493,7 +493,7 @@
   <div class="toast" id="toast" role="status" aria-live="polite"><span id="toastText"></span><button id="toastView">Ver pedido</button></div>
 
   <div class="image-modal" id="imageModal" role="dialog" aria-modal="true" aria-labelledby="imageCaption" hidden>
-    <figure><button class="image-close" id="closeImage" aria-label="Cerrar imagen">×</button><img class="modal-main-image" id="modalImage" src="" alt=""><button class="gallery-nav gallery-prev" id="prevImage" aria-label="Foto anterior">‹</button><button class="gallery-nav gallery-next" id="nextImage" aria-label="Foto siguiente">›</button><div class="gallery-thumbs" id="galleryThumbs" aria-label="Galería de fotos"></div><figcaption id="imageCaption"></figcaption><p class="image-description" id="imageDescription"></p></figure>
+    <figure><button class="image-close" id="closeImage" aria-label="Cerrar imagen">×</button><img class="modal-main-image" id="modalImage" src="" alt=""><button class="gallery-nav gallery-prev" id="prevImage" aria-label="Foto anterior">‹</button><button class="gallery-nav gallery-next" id="nextImage" aria-label="Foto siguiente">›</button><div class="gallery-thumbs" id="galleryThumbs" aria-label="Galería de fotos"></div><figcaption id="imageCaption"></figcaption><p class="image-description" id="imageDescription"></p><section id="imageRecommendations" class="cross-sell" hidden></section></figure>
   </div>
 
   <footer class="site-footer">
@@ -563,6 +563,30 @@
     const availableVariants = (p,i) => p.variants.filter(v => typeof v.stock !== 'number' || remain(p,i,v.name) > 0);
     const cartTotal = () => cart.reduce((a,x) => a + products[x.i].p * x.q, 0);
     const catalogProducts = () => products.filter(p => !p.hidden && !p.featured && !p.isNew);
+    const productAvailable = (p,i) => !p.hidden && p.status !== 'outofstock' && (hasVariants(p) ? availableVariants(p,i).length > 0 : remain(p,i) !== 0);
+
+    function recommendedProducts(excluded=[], limit=3){
+      const blocked=new Set(excluded), candidates=products.map((p,i)=>({p,i})).filter(({p,i})=>!blocked.has(i)&&productAvailable(p,i));
+      const byCategory=new Map();
+      candidates.forEach(item=>{const key=item.p.c||'Otros';if(!byCategory.has(key))byCategory.set(key,[]);byCategory.get(key).push(item);});
+      const result=[];
+      [...byCategory.keys()].sort((a,b)=>a.localeCompare(b,'es')).forEach(category=>{if(result.length<limit)result.push(byCategory.get(category)[0]);});
+      return result.length<limit?[...result,...candidates.filter(item=>!result.includes(item)).slice(0,limit-result.length)]:result;
+    }
+    function recommendationMarkup(list){
+      return list.map(({p,i})=>`<article class="cross-sell-card"><img src="${esc(p.img)}" alt="${esc(p.n)}"><div><strong>${esc(p.n)}</strong><small>${fmt(p.p)}</small></div>${hasVariants(p)?`<button type="button" data-cross-view="${i}">Ver opciones</button>`:`<button type="button" data-cross-add="${i}">Agregar</button>`}</article>`).join('');
+    }
+    function renderImageRecommendations(currentIndex){
+      const list=recommendedProducts([currentIndex],3), section=$('imageRecommendations');
+      section.hidden=!list.length;
+      section.innerHTML=list.length?`<h3>Combínalo con</h3><p>Productos que pueden ir perfecto con tu elección.</p><div class="cross-sell-list">${recommendationMarkup(list)}</div>`:'';
+    }
+    function renderCartRecommendations(){
+      const section=$('cartRecommendations');
+      const list=cart.length?recommendedProducts(cart.map(x=>x.i),2):[];
+      section.hidden=!list.length;
+      section.innerHTML=list.length?`<div class="cross-sell"><h3>Completa tu compra</h3><p>También te puede gustar.</p><div class="cross-sell-list">${recommendationMarkup(list)}</div></div>`:'';
+    }
 
     function renderFilters(){
       const cats = ['Todos', ...new Set(catalogProducts().map(p => p.c))];
@@ -632,6 +656,7 @@
         </div>`;
       }).join('') : '<p class="empty">Tu carrito está vacío.<br>¡Elige tus favoritos!</p>';
       $('total').textContent = fmt(cartTotal());
+      renderCartRecommendations();
     }
 
     function add(i){
@@ -694,6 +719,7 @@
       $('imageDescription').style.textDecoration = descriptionStyle.underline ? 'underline' : 'none';
       $('imageDescription').style.color = /^#[0-9a-f]{6}$/i.test(descriptionStyle.color || '') ? descriptionStyle.color : '#fce8ee';
       $('imageDescription').style.textAlign = ['left','center','justify'].includes(descriptionStyle.align) ? descriptionStyle.align : 'left';
+      renderImageRecommendations(i);
       $('galleryThumbs').innerHTML = activeGallery.map((src,j) => `<button type="button" class="${j === 0 ? 'active' : ''}" data-gallery-image="${j}" aria-label="Ver foto ${j + 1} de ${p.n}"><img src="${src}" alt=""></button>`).join('');
       $('prevImage').disabled = activeGallery.length < 2;
       $('nextImage').disabled = activeGallery.length < 2;
@@ -746,6 +772,7 @@
     $('items').addEventListener('click', e => {
       const b = e.target.closest('[data-change]'); if (b) change(+b.dataset.change, +b.dataset.d, decodeURIComponent(b.dataset.variant || ''));
     });
+    ['imageRecommendations','cartRecommendations'].forEach(id=>$(id).addEventListener('click',e=>{const addButton=e.target.closest('[data-cross-add]');const viewButton=e.target.closest('[data-cross-view]');if(addButton)add(+addButton.dataset.crossAdd);if(viewButton)openImage(+viewButton.dataset.crossView);}));
     $('cartButton').onclick = openCart;
     $('toastView').onclick = openCart;
     $('closeCart').onclick = closeCart;
