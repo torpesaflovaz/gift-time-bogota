@@ -1,5 +1,23 @@
 [
   {
+    "n": "Cosmetiquera Reciclable Jet Burbujas",
+    "c": "Accesorios",
+    "p": 25000,
+    "o": 25000,
+    "status": "available",
+    "stock": 1,
+    "img": "assets/productos/producto-cosmetiquera-reciclable-jet-burbujas-1792170273468-xikcd.png",
+    "description": "Una cosmetiquera llena de color y con una segunda historia por contar. Está elaborada artesanalmente a partir de un empaque reciclado de Jet Burbujas, convirtiendo un material recuperado en un accesorio práctico y único. ♻️\n\nSu tamaño es ideal para guardar maquillaje, brochas, productos de cuidado personal, cables, audífonos, papelería o accesorios de viaje. Cuenta con cierre funcional y argolla lateral para que puedas llevarla cómodamente en el bolso o mochila.\n\nCada pieza conserva detalles del empaque original, por lo que puede presentar pequeñas variaciones que la hacen especial. Una forma creativa de organizar tus cosas y darle una nueva vida a materiales reciclables.\n\nEste accesorio es una creación reciclada e independiente; no es un producto oficial de Jet.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "justify"
+    }
+  },
+  {
     "n": "Cosmetiquera Reciclable - Choco Barrilete",
     "c": "Accesorios",
     "p": 25000,
