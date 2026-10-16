@@ -1,29 +1,13 @@
 [
   {
-    "n": "Mascarilla Térmica para Ojos – Diseños de Caricaturas",
-    "c": "Cuidado",
-    "p": 6000,
-    "o": 6000,
-    "status": "available",
-    "stock": 40,
-    "img": "assets/productos/producto-mascarilla-termica-para-ojos-disenos-de-caricaturas-1791996885740-fhu5z.jpeg",
-    "description": "💕 ¡Descansa y consiente tus ojos con un toque de ternura!\n\nNuestras mascarillas térmicas de vapor combinan una agradable sensación de calor con diseños de caricaturas encantadores. Son ideales para relajarte después de un día ocupado o disfrutar de un momento de autocuidado.\n\nBeneficios:\n\nProporcionan calor suave y reconfortante.\n\nAyudan a aliviar la sensación de fatiga ocular.\n\nIdeales para relajarte antes de dormir.\n\nPrácticas para llevar de viaje.\n\nPerfectas como un pequeño regalo.\n\nCaracterísticas:\n\nCuatro diseños disponibles: morado, rosado, verde y amarillo.\n\nTiempo de uso indicado: aproximadamente 20–30 minutos.\n\nPresentación individual.\n\nProducto de un solo uso.\n\n🎀 ¡Elige tu diseño favorito y disfruta de un momento de relajación!",
-    "featured": true,
-    "isNew": true,
-    "gallery": [
-      "assets/productos/producto-mascarilla-termica-para-ojos-disenos-de-caricaturas-1791996885740-fhu5z.jpeg",
-      "assets/productos/producto-mascarilla-termica-para-ojos-disenos-de-caricaturas-1791996985524-dbmxh.jpeg"
-    ]
-  },
-  {
-    "n": "Cosmetiquera Reciclable - Choco Melos",
+    "n": "Mini Monedero Reciclable Oreo BTS – Edición Especial",
     "c": "Accesorios",
-    "p": 25000,
-    "o": 25000,
+    "p": 13000,
+    "o": 13000,
     "status": "available",
     "stock": 1,
-    "img": "assets/productos/producto-cosmetiquera-reciclable-choco-melos-1792170882480-1s74v.png",
-    "description": "Una cosmetiquera llena de detalles dulces y mucho corazón. Elaborada artesanalmente a partir de empaques reciclados, combina tonos rojos, corazones y un diseño inspirado en el chocolate para transformar material recuperado en un accesorio único. ♻️\n\nIdeal para guardar maquillaje, brochas, cables, audífonos, papelería, productos de cuidado personal o esos pequeños objetos que siempre quieres tener a la mano. Tiene cierre funcional y argolla lateral para acompañarte cómodamente en tu bolso o mochila.\n\nCada pieza conserva detalles propios del empaque original, por eso puede presentar pequeñas variaciones que la hacen aún más especial.",
+    "img": "assets/productos/producto-mini-monedero-reciclable-oreo-bts-edicion-especial-1792169386762-3q8un.png",
+    "description": "Pequeño, práctico y con un diseño que no pasa desapercibido. Este mini monedero está elaborado artesanalmente a partir del empaque de la edición especial Oreo BTS, transformando un material reciclado en un accesorio único y lleno de personalidad. ♻️\n\nSu tamaño compacto lo hace ideal para llevar en el bolsillo, bolso o mochila. Úsalo para guardar monedas, billetes doblados, tarjetas, llaves pequeñas, audífonos, memoria USB, ligas para el cabello o cualquier accesorio pequeño que quieras mantener organizado.\nCuenta con cierre funcional y argolla lateral para llevarlo con mayor facilidad. Cada pieza conserva detalles propios del empaque original reciclado, por lo que tiene un acabado especial y puede presentar pequeñas variaciones que la hacen única.\n\nCaracterísticas:\n\n- Diseño Oreo BTS de edición especial\n- Elaborado artesanalmente con material reciclado\n- Tamaño compacto, ideal para el día a día\n- Cierre funcional y argolla lateral\n- Perfecto para monedas, tarjetas, llaves y accesorios pequeños\n- Pieza única de edición limitada\n\nEste accesorio es una creación reciclada e independiente; no es un producto oficial de Oreo ni de BTS.",
     "descriptionStyle": {
       "size": "medium",
       "bold": false,
@@ -47,6 +31,68 @@
       "assets/productos/producto-pestanina-pastel-3.jpg"
     ],
     "description": "Pestañina a prueba de agua con presentación pastel. Hay tres referencias con cepillos de silicona: azul para alargar, verde para volumen y rosada para mayor largo y volumen. Todas son de color negro."
+  },
+  {
+    "n": "Cosmetiquera Reciclable - Choco Melos",
+    "c": "Accesorios",
+    "p": 25000,
+    "o": 25000,
+    "status": "available",
+    "stock": 1,
+    "img": "assets/productos/producto-cosmetiquera-reciclable-choco-melos-1792170882480-1s74v.png",
+    "description": "Una cosmetiquera llena de detalles dulces y mucho corazón. Elaborada artesanalmente a partir de empaques reciclados, combina tonos rojos, corazones y un diseño inspirado en el chocolate para transformar material recuperado en un accesorio único. ♻️\n\nIdeal para guardar maquillaje, brochas, cables, audífonos, papelería, productos de cuidado personal o esos pequeños objetos que siempre quieres tener a la mano. Tiene cierre funcional y argolla lateral para acompañarte cómodamente en tu bolso o mochila.\n\nCada pieza conserva detalles propios del empaque original, por eso puede presentar pequeñas variaciones que la hacen aún más especial.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "justify"
+    }
+  },
+  {
+    "n": "Mascarilla Térmica para Ojos – Diseños de Caricaturas",
+    "c": "Cuidado",
+    "p": 6000,
+    "o": 6000,
+    "status": "available",
+    "stock": 40,
+    "img": "assets/productos/producto-mascarilla-termica-para-ojos-disenos-de-caricaturas-1791996885740-fhu5z.jpeg",
+    "description": "💕 ¡Descansa y consiente tus ojos con un toque de ternura!\n\nNuestras mascarillas térmicas de vapor combinan una agradable sensación de calor con diseños de caricaturas encantadores. Son ideales para relajarte después de un día ocupado o disfrutar de un momento de autocuidado.\n\nBeneficios:\n\nProporcionan calor suave y reconfortante.\n\nAyudan a aliviar la sensación de fatiga ocular.\n\nIdeales para relajarte antes de dormir.\n\nPrácticas para llevar de viaje.\n\nPerfectas como un pequeño regalo.\n\nCaracterísticas:\n\nCuatro diseños disponibles: morado, rosado, verde y amarillo.\n\nTiempo de uso indicado: aproximadamente 20–30 minutos.\n\nPresentación individual.\n\nProducto de un solo uso.\n\n🎀 ¡Elige tu diseño favorito y disfruta de un momento de relajación!",
+    "featured": true,
+    "isNew": true,
+    "gallery": [
+      "assets/productos/producto-mascarilla-termica-para-ojos-disenos-de-caricaturas-1791996885740-fhu5z.jpeg",
+      "assets/productos/producto-mascarilla-termica-para-ojos-disenos-de-caricaturas-1791996985524-dbmxh.jpeg"
+    ]
+  },
+  {
+    "n": "Cosmetiquera Reciclable Bon Bon Bum  x J. Balvin – Edición Limitada",
+    "c": "Accesorios",
+    "p": 30000,
+    "o": 30000,
+    "status": "available",
+    "stock": 1,
+    "img": "assets/productos/producto-cosmetiquera-reciclable-bon-bon-bum-x-j-balvin-edicion-limitada-1792168959739-rke24.png",
+    "description": "Una cosmetiquera con mucha actitud y una segunda oportunidad para un empaque especial. Esta pieza de edición limitada está elaborada artesanalmente a partir de material reciclado del diseño Bon Bon Bum x J. Balvin, por eso cada una conserva detalles únicos que la hacen diferente.\nSu cierre mantiene tus cosas reunidas y su ventana transparente permite ver fácilmente lo que llevas dentro. Es perfecta para organizar maquillaje, brochas, cables, audífonos, papelería, monedas, accesorios de viaje, medicamentos pequeños o esos objetos que siempre terminan sueltos en el bolso.\nMás que una cosmetiquera, es un accesorio práctico, llamativo y consciente: una forma bonita de reutilizar, reducir residuos y llevar contigo una pieza que no encontrarás en todos lados. ♻️\n\nCaracterísticas:\n- Diseño Bon Bon Bum x Balloon de edición limitada\n- Elaborada con material reciclado\n- Cierre funcional\n- Ventana transparente\n- Ideal para maquillaje, accesorios, viaje y organización diaria\n- Pieza artesanal con detalles únicos",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "justify"
+    }
+  },
+  {
+    "n": "Mascarilla Capilar Bioaqua Rice Raw Pulp Reparadora y Nutritiva",
+    "c": "Cuidado",
+    "p": 16000,
+    "o": 16000,
+    "status": "outofstock",
+    "stock": null,
+    "img": "assets/productos/producto-mascarilla-capilar-bioaqua-rice-raw-pulp-reparadora-y-nutritiva-1791993823210-y0vnv.jpeg",
+    "description": "Esta mascarilla capilar con extracto de arroz ayuda a reparar el daño, hidratar profundamente y mejorar la suavidad del cabello. Su fórmula nutre desde la raíz hasta las puntas, dejando el cabello más fuerte, manejable y con un aspecto saludable."
   },
   {
     "n": "Cosmetiquera Reciclable - Choco Break Surtido Frutal",
@@ -85,6 +131,17 @@
     }
   },
   {
+    "n": "Protector Solar con Acido Hialuronico, Niacinamida y Te Verde",
+    "c": "Cuidado",
+    "p": 15000,
+    "o": 15000,
+    "status": "available",
+    "stock": 4,
+    "img": "assets/productos/producto-protector-solar-con-acido-hialuronico-niacinamida-y-te-verde-1791993563005-20yg5.jpeg",
+    "description": "Este protector solar SPF 35 está formulado para pieles mixtas y grasas. Su textura ligera protege del sol sin obstruir los poros, ayudando a calmar brotes, reducir brillo y mantener la piel equilibrada durante el día.",
+    "isNew": true
+  },
+  {
     "n": "Cosmetiquera Reciclable - Chocoramo Barrita Frutos Rojos",
     "c": "Accesorios",
     "p": 25000,
@@ -103,14 +160,22 @@
     }
   },
   {
-    "n": "Mascarilla Capilar Bioaqua Rice Raw Pulp Reparadora y Nutritiva",
+    "n": "Stick Antifrizz Hair Wax 75 g",
     "c": "Cuidado",
-    "p": 16000,
-    "o": 16000,
+    "p": 17000,
+    "o": 17000,
     "status": "outofstock",
-    "stock": null,
-    "img": "assets/productos/producto-mascarilla-capilar-bioaqua-rice-raw-pulp-reparadora-y-nutritiva-1791993823210-y0vnv.jpeg",
-    "description": "Esta mascarilla capilar con extracto de arroz ayuda a reparar el daño, hidratar profundamente y mejorar la suavidad del cabello. Su fórmula nutre desde la raíz hasta las puntas, dejando el cabello más fuerte, manejable y con un aspecto saludable."
+    "stock": 0,
+    "img": "assets/productos/producto-stick-antifrizz-hair-wax-75-g-1791636681164-yaltv.webp",
+    "description": "Controla el frizz y los baby hairs en segundos con este práctico stick de cera para el cabello. Su formato en barra permite una aplicación limpia y precisa para lograr peinados más pulidos, definidos y con acabado natural, sin dejar el cabello rígido.  \nIdeal para recoger el cabello, definir la línea frontal o retocar esos pelitos sueltos durante el día.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    }
   },
   {
     "n": "Cosmetiquera Reciclable Jet Burbujas",
@@ -149,156 +214,19 @@
     }
   },
   {
-    "n": "Protector Solar con Acido Hialuronico, Niacinamida y Te Verde",
-    "c": "Cuidado",
-    "p": 15000,
-    "o": 15000,
-    "status": "available",
-    "stock": 4,
-    "img": "assets/productos/producto-protector-solar-con-acido-hialuronico-niacinamida-y-te-verde-1791993563005-20yg5.jpeg",
-    "description": "Este protector solar SPF 35 está formulado para pieles mixtas y grasas. Su textura ligera protege del sol sin obstruir los poros, ayudando a calmar brotes, reducir brillo y mantener la piel equilibrada durante el día.",
-    "isNew": true
-  },
-  {
-    "n": "Cosmetiquera Reciclable Menta Helada – Colombina",
-    "c": "Accesorios",
-    "p": 25000,
-    "o": 25000,
-    "status": "available",
-    "stock": 1,
-    "img": "assets/productos/producto-cosmetiquera-reciclable-menta-helada-colombina-1792169786373-h74as.png",
-    "description": "Dale una nueva vida a lo cotidiano con esta cosmetiquera reciclable elaborada artesanalmente a partir de un empaque de Menta Helada Colombina. Su diseño azul intenso, con detalles frutales y ventana transparente, la convierte en un accesorio fresco, práctico y diferente. ♻️\nTiene el espacio ideal para organizar maquillaje, brochas, productos de cuidado personal, cables, audífonos, papelería o accesorios de viaje. El cierre ayuda a mantener todo reunido y la argolla lateral facilita llevarla en el bolso o mochila.\nCada pieza conserva rasgos únicos del empaque original reciclado, así que puede presentar pequeñas variaciones en sus detalles. Un accesorio funcional que transforma material recuperado en algo bonito y útil.\n\nCaracterísticas:\n- Elaborada artesanalmente con material reciclado\n- Diseño Menta Helada Colombina\n- Cierre funcional y argolla lateral\n- Ventana transparente\n- Ideal para maquillaje, accesorios y organización diaria\n- Pieza única con detalles propios del empaque reciclado\n\nEste accesorio es una creación reciclada e independiente; no es un producto oficial de Colombina.",
-    "descriptionStyle": {
-      "size": "medium",
-      "bold": false,
-      "italic": false,
-      "underline": false,
-      "color": "#fce8ee",
-      "align": "justify"
-    }
-  },
-  {
-    "n": "Mini Monedero Reciclable Oreo BTS – Edición Especial",
-    "c": "Accesorios",
-    "p": 13000,
-    "o": 13000,
-    "status": "available",
-    "stock": 1,
-    "img": "assets/productos/producto-mini-monedero-reciclable-oreo-bts-edicion-especial-1792169386762-3q8un.png",
-    "description": "Pequeño, práctico y con un diseño que no pasa desapercibido. Este mini monedero está elaborado artesanalmente a partir del empaque de la edición especial Oreo BTS, transformando un material reciclado en un accesorio único y lleno de personalidad. ♻️\n\nSu tamaño compacto lo hace ideal para llevar en el bolsillo, bolso o mochila. Úsalo para guardar monedas, billetes doblados, tarjetas, llaves pequeñas, audífonos, memoria USB, ligas para el cabello o cualquier accesorio pequeño que quieras mantener organizado.\nCuenta con cierre funcional y argolla lateral para llevarlo con mayor facilidad. Cada pieza conserva detalles propios del empaque original reciclado, por lo que tiene un acabado especial y puede presentar pequeñas variaciones que la hacen única.\n\nCaracterísticas:\n\n- Diseño Oreo BTS de edición especial\n- Elaborado artesanalmente con material reciclado\n- Tamaño compacto, ideal para el día a día\n- Cierre funcional y argolla lateral\n- Perfecto para monedas, tarjetas, llaves y accesorios pequeños\n- Pieza única de edición limitada\n\nEste accesorio es una creación reciclada e independiente; no es un producto oficial de Oreo ni de BTS.",
-    "descriptionStyle": {
-      "size": "medium",
-      "bold": false,
-      "italic": false,
-      "underline": false,
-      "color": "#fce8ee",
-      "align": "justify"
-    }
-  },
-  {
-    "n": "Cosmetiquera Reciclable Bon Bon Bum  x J. Balvin – Edición Limitada",
-    "c": "Accesorios",
-    "p": 30000,
-    "o": 30000,
-    "status": "available",
-    "stock": 1,
-    "img": "assets/productos/producto-cosmetiquera-reciclable-bon-bon-bum-x-j-balvin-edicion-limitada-1792168959739-rke24.png",
-    "description": "Una cosmetiquera con mucha actitud y una segunda oportunidad para un empaque especial. Esta pieza de edición limitada está elaborada artesanalmente a partir de material reciclado del diseño Bon Bon Bum x J. Balvin, por eso cada una conserva detalles únicos que la hacen diferente.\nSu cierre mantiene tus cosas reunidas y su ventana transparente permite ver fácilmente lo que llevas dentro. Es perfecta para organizar maquillaje, brochas, cables, audífonos, papelería, monedas, accesorios de viaje, medicamentos pequeños o esos objetos que siempre terminan sueltos en el bolso.\nMás que una cosmetiquera, es un accesorio práctico, llamativo y consciente: una forma bonita de reutilizar, reducir residuos y llevar contigo una pieza que no encontrarás en todos lados. ♻️\n\nCaracterísticas:\n- Diseño Bon Bon Bum x Balloon de edición limitada\n- Elaborada con material reciclado\n- Cierre funcional\n- Ventana transparente\n- Ideal para maquillaje, accesorios, viaje y organización diaria\n- Pieza artesanal con detalles únicos",
-    "descriptionStyle": {
-      "size": "medium",
-      "bold": false,
-      "italic": false,
-      "underline": false,
-      "color": "#fce8ee",
-      "align": "justify"
-    }
-  },
-  {
-    "n": "Cosmetiquera Reciclable Bianchi – Dulces recuerdos",
-    "c": "Accesorios",
-    "p": 15000,
-    "o": 15000,
-    "status": "available",
-    "stock": 2,
-    "img": "assets/productos/producto-cosmetiquera-reciclable-bianchi-dulces-recuerdos-1792168620312-zti4g.png",
-    "description": "Una pequeña dosis de dulzura con una historia bonita detrás. Esta cosmetiquera está elaborada artesanalmente a partir de empaques reciclados de Bianchi, convirtiendo un material que podía desecharse en un accesorio único y lleno de encanto.\n\nÚsala para guardar maquillaje, cables, audífonos, papelería, monedas, accesorios de viaje o esos pequeños esenciales que siempre quieres tener a la mano. Su cierre ayuda a mantener todo organizado y cada diseño tiene detalles propios, porque lo reciclado también puede ser especial. ♻️",
-    "descriptionStyle": {
-      "size": "medium",
-      "bold": false,
-      "italic": false,
-      "underline": false,
-      "color": "#fce8ee",
-      "align": "justify"
-    },
-    "gallery": [
-      "assets/productos/producto-cosmetiquera-reciclable-bianchi-dulces-recuerdos-1792168620312-zti4g.png",
-      "assets/productos/producto-cosmetiquera-reciclable-bianchi-dulces-recuerdos-1792168620319-konsh.png",
-      "assets/productos/producto-cosmetiquera-reciclable-bianchi-dulces-recuerdos-1792168620323-cd0eu.png"
-    ],
-    "variantLabel": "Diseño",
-    "variants": [
-      {
-        "name": "Chocolate Blanco",
-        "stock": 1
-      },
-      {
-        "name": "Chocolate",
-        "stock": 1
-      }
-    ]
-  },
-  {
-    "n": "Cosmetiquera Reciclable - Froot Loops",
-    "c": "Accesorios",
-    "p": 25000,
-    "o": 25000,
-    "status": "available",
-    "stock": 1,
-    "img": "assets/productos/producto-cosmetiquera-reciclable-froot-loops-1792102168723-vfolo.png",
-    "description": "Dale una segunda vida a los materiales con esta cosmetiquera reciclable elaborada a partir de empaque reutilizado de Froot Loops. Su diseño colorido, cierre superior y práctico tamaño la hacen ideal para guardar maquillaje, brochas, accesorios o pequeños esenciales diarios. \nCada pieza aprovecha materiales existentes, por lo que puede presentar ligeras variaciones que la hacen única. Una opción funcional, original y más consciente con el planeta. ♻️",
-    "descriptionStyle": {
-      "size": "medium",
-      "bold": false,
-      "italic": false,
-      "underline": false,
-      "color": "#fce8ee",
-      "align": "justify"
-    }
-  },
-  {
-    "n": "Stick Antifrizz Hair Wax 75 g",
-    "c": "Cuidado",
-    "p": 17000,
-    "o": 17000,
-    "status": "outofstock",
-    "stock": 0,
-    "img": "assets/productos/producto-stick-antifrizz-hair-wax-75-g-1791636681164-yaltv.webp",
-    "description": "Controla el frizz y los baby hairs en segundos con este práctico stick de cera para el cabello. Su formato en barra permite una aplicación limpia y precisa para lograr peinados más pulidos, definidos y con acabado natural, sin dejar el cabello rígido.  \nIdeal para recoger el cabello, definir la línea frontal o retocar esos pelitos sueltos durante el día.",
-    "descriptionStyle": {
-      "size": "medium",
-      "bold": false,
-      "italic": false,
-      "underline": false,
-      "color": "#fce8ee",
-      "align": "left"
-    }
-  },
-  {
-    "n": "Kit Niñas Magia",
+    "n": "Kit Primer + Fijador",
     "c": "Maquillaje",
     "p": 16000,
     "o": 20000,
-    "status": "outofstock",
-    "stock": null,
-    "img": "assets/productos/producto-kit-ninas-magia-1791634578425-p7ehj.webp",
-    "description": "Kit infantil con libreta, bálsamo labial sin color y sombras suaves en tonos lila, rosa y amarillo. Incluye aplicador de esponja y está pensado para un uso diario delicado.",
+    "status": "available",
+    "stock": 2,
+    "img": "assets/productos/producto-kit-primer-y-fijador-barbie-malibu-trendy-todo-tipo-piel-1791594589912-tzpgp.webp",
+    "description": "Dúo práctico para preparar la piel antes del maquillaje y ayudar a mantener el look con un acabado más fresco durante el día.",
     "gallery": [
-      "assets/productos/producto-kit-ninas-magia-1791634578425-p7ehj.webp",
-      "assets/productos/producto-kit-ninas-magia-1791634578429-nb5hp.webp",
-      "assets/productos/producto-kit-ninas-magia-1791634578430-qvbvm.webp",
-      "assets/productos/producto-kit-ninas-magia-1791634578431-kna92.webp"
-    ],
-    "hidden": true
+      "assets/productos/producto-kit-primer-y-fijador-barbie-malibu-trendy-todo-tipo-piel-1791594589912-tzpgp.webp",
+      "assets/productos/producto-kit-primer-y-fijador-barbie-malibu-trendy-todo-tipo-piel-1791594589914-8zo43.webp",
+      "assets/productos/producto-kit-primer-y-fijador-barbie-malibu-trendy-todo-tipo-piel-1791594589916-jmt8n.webp"
+    ]
   },
   {
     "n": "Cosmetiquera Reciclable Tipitin – Unicornio y Salvaje",
@@ -354,6 +282,93 @@
     "description": "Kit de 6 brochas mini inspirado en Rugrats, ideal para llevar en la cosmetiquera o el bolso. Cada brocha tiene su función marcada y sirve para aplicar y difuminar productos en crema o polvo; incluye brocha para ojos y cosmetiquera en forma de mochila."
   },
   {
+    "n": "Cosmetiquera Reciclable - Froot Loops",
+    "c": "Accesorios",
+    "p": 25000,
+    "o": 25000,
+    "status": "available",
+    "stock": 1,
+    "img": "assets/productos/producto-cosmetiquera-reciclable-froot-loops-1792102168723-vfolo.png",
+    "description": "Dale una segunda vida a los materiales con esta cosmetiquera reciclable elaborada a partir de empaque reutilizado de Froot Loops. Su diseño colorido, cierre superior y práctico tamaño la hacen ideal para guardar maquillaje, brochas, accesorios o pequeños esenciales diarios. \nCada pieza aprovecha materiales existentes, por lo que puede presentar ligeras variaciones que la hacen única. Una opción funcional, original y más consciente con el planeta. ♻️",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "justify"
+    }
+  },
+  {
+    "n": "Cosmetiquera Reciclable Bianchi – Dulces recuerdos",
+    "c": "Accesorios",
+    "p": 15000,
+    "o": 15000,
+    "status": "available",
+    "stock": 2,
+    "img": "assets/productos/producto-cosmetiquera-reciclable-bianchi-dulces-recuerdos-1792168620312-zti4g.png",
+    "description": "Una pequeña dosis de dulzura con una historia bonita detrás. Esta cosmetiquera está elaborada artesanalmente a partir de empaques reciclados de Bianchi, convirtiendo un material que podía desecharse en un accesorio único y lleno de encanto.\n\nÚsala para guardar maquillaje, cables, audífonos, papelería, monedas, accesorios de viaje o esos pequeños esenciales que siempre quieres tener a la mano. Su cierre ayuda a mantener todo organizado y cada diseño tiene detalles propios, porque lo reciclado también puede ser especial. ♻️",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "justify"
+    },
+    "gallery": [
+      "assets/productos/producto-cosmetiquera-reciclable-bianchi-dulces-recuerdos-1792168620312-zti4g.png",
+      "assets/productos/producto-cosmetiquera-reciclable-bianchi-dulces-recuerdos-1792168620319-konsh.png",
+      "assets/productos/producto-cosmetiquera-reciclable-bianchi-dulces-recuerdos-1792168620323-cd0eu.png"
+    ],
+    "variantLabel": "Diseño",
+    "variants": [
+      {
+        "name": "Chocolate Blanco",
+        "stock": 1
+      },
+      {
+        "name": "Chocolate",
+        "stock": 1
+      }
+    ]
+  },
+  {
+    "n": "Cosmetiquera Reciclable Menta Helada – Colombina",
+    "c": "Accesorios",
+    "p": 25000,
+    "o": 25000,
+    "status": "available",
+    "stock": 1,
+    "img": "assets/productos/producto-cosmetiquera-reciclable-menta-helada-colombina-1792169786373-h74as.png",
+    "description": "Dale una nueva vida a lo cotidiano con esta cosmetiquera reciclable elaborada artesanalmente a partir de un empaque de Menta Helada Colombina. Su diseño azul intenso, con detalles frutales y ventana transparente, la convierte en un accesorio fresco, práctico y diferente. ♻️\nTiene el espacio ideal para organizar maquillaje, brochas, productos de cuidado personal, cables, audífonos, papelería o accesorios de viaje. El cierre ayuda a mantener todo reunido y la argolla lateral facilita llevarla en el bolso o mochila.\nCada pieza conserva rasgos únicos del empaque original reciclado, así que puede presentar pequeñas variaciones en sus detalles. Un accesorio funcional que transforma material recuperado en algo bonito y útil.\n\nCaracterísticas:\n- Elaborada artesanalmente con material reciclado\n- Diseño Menta Helada Colombina\n- Cierre funcional y argolla lateral\n- Ventana transparente\n- Ideal para maquillaje, accesorios y organización diaria\n- Pieza única con detalles propios del empaque reciclado\n\nEste accesorio es una creación reciclada e independiente; no es un producto oficial de Colombina.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "justify"
+    }
+  },
+  {
+    "n": "Kit Niñas Magia",
+    "c": "Maquillaje",
+    "p": 16000,
+    "o": 20000,
+    "status": "outofstock",
+    "stock": null,
+    "img": "assets/productos/producto-kit-ninas-magia-1791634578425-p7ehj.webp",
+    "description": "Kit infantil con libreta, bálsamo labial sin color y sombras suaves en tonos lila, rosa y amarillo. Incluye aplicador de esponja y está pensado para un uso diario delicado.",
+    "gallery": [
+      "assets/productos/producto-kit-ninas-magia-1791634578425-p7ehj.webp",
+      "assets/productos/producto-kit-ninas-magia-1791634578429-nb5hp.webp",
+      "assets/productos/producto-kit-ninas-magia-1791634578430-qvbvm.webp",
+      "assets/productos/producto-kit-ninas-magia-1791634578431-kna92.webp"
+    ],
+    "hidden": true
+  },
+  {
     "n": "Mascarilla Aloe Vera",
     "c": "Cuidado",
     "p": 12000,
@@ -362,6 +377,24 @@
     "status": "available",
     "img": "assets/productos/producto-mascarilla-aloe.jpg",
     "description": "Mascarilla facial en gel con aloe y ácido hialurónico. Aporta sensación de hidratación, se absorbe rápido y ayuda a mejorar la apariencia de la piel antes del maquillaje."
+  },
+  {
+    "n": "Cosmetiquera Reciclable - Supercoco Turrón",
+    "c": "Accesorios",
+    "p": 25000,
+    "o": 25000,
+    "status": "available",
+    "stock": 1,
+    "img": "assets/productos/producto-cosmetiquera-reciclable-supercoco-turron-1792171094768-cxivq.png",
+    "description": "Esta cosmetiquera reciclable de Supercoco Turrón lleva el sabor de uno de esos dulces que alegran cualquier antojo, pero convertido en un accesorio práctico para todos los días. Su diseño verde intenso, los detalles de coco y el cierre amarillo hacen que destaque de inmediato en tu bolso. ♻️\n\nEstá elaborada artesanalmente a partir de empaques recuperados, dándoles una nueva vida en lugar de desecharlos. Úsala para guardar maquillaje, brochas, cables, audífonos, productos de cuidado personal o tus indispensables de viaje. También es perfecta para llevar monedas, documentos pequeños o esos objetos que siempre terminan sueltos en la cartera.\n\nCada cosmetiquera conserva detalles únicos del empaque original y puede presentar ligeras variaciones, porque ninguna se repite exactamente igual. Una pieza creativa, útil y con una historia de reutilización detrás.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "justify"
+    }
   },
   {
     "n": "Kit Brochas Bob Esponja",
@@ -412,21 +445,6 @@
     "status": "available",
     "img": "assets/productos/producto-papeletas-bob.jpg",
     "description": "Papeletas con aloe vera y té verde que absorben el exceso de grasa sin resecar ni alterar el maquillaje. Caja con 100 unidades."
-  },
-  {
-    "n": "Kit Primer + Fijador",
-    "c": "Maquillaje",
-    "p": 16000,
-    "o": 20000,
-    "status": "available",
-    "stock": 2,
-    "img": "assets/productos/producto-kit-primer-y-fijador-barbie-malibu-trendy-todo-tipo-piel-1791594589912-tzpgp.webp",
-    "description": "Dúo práctico para preparar la piel antes del maquillaje y ayudar a mantener el look con un acabado más fresco durante el día.",
-    "gallery": [
-      "assets/productos/producto-kit-primer-y-fijador-barbie-malibu-trendy-todo-tipo-piel-1791594589912-tzpgp.webp",
-      "assets/productos/producto-kit-primer-y-fijador-barbie-malibu-trendy-todo-tipo-piel-1791594589914-8zo43.webp",
-      "assets/productos/producto-kit-primer-y-fijador-barbie-malibu-trendy-todo-tipo-piel-1791594589916-jmt8n.webp"
-    ]
   },
   {
     "n": "Polvos Sueltos Teddy",
