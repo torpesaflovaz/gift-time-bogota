@@ -1,5 +1,23 @@
 [
   {
+    "n": "Cosmetiquera Reciclable Menta Helada – Colombina",
+    "c": "Accesorios",
+    "p": 25000,
+    "o": 25000,
+    "status": "available",
+    "stock": 1,
+    "img": "assets/productos/producto-cosmetiquera-reciclable-menta-helada-colombina-1792169786373-h74as.png",
+    "description": "Dale una nueva vida a lo cotidiano con esta cosmetiquera reciclable elaborada artesanalmente a partir de un empaque de Menta Helada Colombina. Su diseño azul intenso, con detalles frutales y ventana transparente, la convierte en un accesorio fresco, práctico y diferente. ♻️\nTiene el espacio ideal para organizar maquillaje, brochas, productos de cuidado personal, cables, audífonos, papelería o accesorios de viaje. El cierre ayuda a mantener todo reunido y la argolla lateral facilita llevarla en el bolso o mochila.\nCada pieza conserva rasgos únicos del empaque original reciclado, así que puede presentar pequeñas variaciones en sus detalles. Un accesorio funcional que transforma material recuperado en algo bonito y útil.\n\nCaracterísticas:\n- Elaborada artesanalmente con material reciclado\n- Diseño Menta Helada Colombina\n- Cierre funcional y argolla lateral\n- Ventana transparente\n- Ideal para maquillaje, accesorios y organización diaria\n- Pieza única con detalles propios del empaque reciclado\n\nEste accesorio es una creación reciclada e independiente; no es un producto oficial de Colombina.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "justify"
+    }
+  },
+  {
     "n": "Mini Monedero Reciclable Oreo BTS – Edición Especial",
     "c": "Accesorios",
     "p": 13000,
