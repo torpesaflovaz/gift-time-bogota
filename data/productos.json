@@ -7,7 +7,15 @@
     "status": "available",
     "stock": 1,
     "img": "assets/productos/producto-cosmetiquera-reciclable-froot-loops-1792102168723-vfolo.png",
-    "description": "Dale una segunda vida a los materiales con esta cosmetiquera reciclable elaborada a partir de empaque reutilizado de Froot Loops. Su diseño colorido, cierre superior y práctico tamaño la hacen ideal para guardar maquillaje, brochas, accesorios o pequeños esenciales diarios. Cada pieza aprovecha materiales existentes, por lo que puede presentar ligeras variaciones que la hacen única. Una opción funcional, original y más consciente con el planeta. ♻️"
+    "description": "Dale una segunda vida a los materiales con esta cosmetiquera reciclable elaborada a partir de empaque reutilizado de Froot Loops. Su diseño colorido, cierre superior y práctico tamaño la hacen ideal para guardar maquillaje, brochas, accesorios o pequeños esenciales diarios. \nCada pieza aprovecha materiales existentes, por lo que puede presentar ligeras variaciones que la hacen única. Una opción funcional, original y más consciente con el planeta. ♻️",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "justify"
+    }
   },
   {
     "n": "Stick Antifrizz Hair Wax 75 g",
@@ -33,7 +41,8 @@
       "assets/productos/producto-kit-ninas-magia-1791634578429-nb5hp.webp",
       "assets/productos/producto-kit-ninas-magia-1791634578430-qvbvm.webp",
       "assets/productos/producto-kit-ninas-magia-1791634578431-kna92.webp"
-    ]
+    ],
+    "hidden": true
   },
   {
     "n": "Kit Brochas Mini x6 Rugrats",
