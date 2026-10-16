@@ -1,5 +1,23 @@
 [
   {
+    "n": "Cosmetiquera Reciclable - Choco Melos",
+    "c": "Accesorios",
+    "p": 25000,
+    "o": 25000,
+    "status": "available",
+    "stock": 1,
+    "img": "assets/productos/producto-cosmetiquera-reciclable-choco-melos-1792170882480-1s74v.png",
+    "description": "Una cosmetiquera llena de detalles dulces y mucho corazón. Elaborada artesanalmente a partir de empaques reciclados, combina tonos rojos, corazones y un diseño inspirado en el chocolate para transformar material recuperado en un accesorio único. ♻️\n\nIdeal para guardar maquillaje, brochas, cables, audífonos, papelería, productos de cuidado personal o esos pequeños objetos que siempre quieres tener a la mano. Tiene cierre funcional y argolla lateral para acompañarte cómodamente en tu bolso o mochila.\n\nCada pieza conserva detalles propios del empaque original, por eso puede presentar pequeñas variaciones que la hacen aún más especial.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "justify"
+    }
+  },
+  {
     "n": "Cosmetiquera Reciclable - Choco Break Surtido Frutal",
     "c": "Accesorios",
     "p": 25000,
