@@ -56,25 +56,6 @@
     "hidden": true
   },
   {
-    "n": "Kit Brochas Mini x6 Rugrats",
-    "c": "Maquillaje",
-    "p": 36000,
-    "o": 40000,
-    "stock": 3,
-    "status": "available",
-    "img": "assets/productos/producto-rugrats-1.jpg",
-    "gallery": [
-      "assets/productos/producto-rugrats-1.jpg",
-      "assets/productos/producto-rugrats-2.jpg",
-      "assets/productos/producto-rugrats-3.jpg",
-      "assets/productos/producto-rugrats-4.jpg",
-      "assets/productos/producto-rugrats-5.jpg",
-      "assets/productos/producto-rugrats-6.jpg",
-      "assets/productos/producto-rugrats-7.jpg"
-    ],
-    "description": "Kit de 6 brochas mini inspirado en Rugrats, ideal para llevar en la cosmetiquera o el bolso. Cada brocha tiene su función marcada y sirve para aplicar y difuminar productos en crema o polvo; incluye brocha para ojos y cosmetiquera en forma de mochila."
-  },
-  {
     "n": "Cosmetiquera Reciclable Tipitin – Unicornio y Salvaje",
     "c": "Accesorios",
     "p": 15000,
@@ -107,6 +88,25 @@
         "stock": 1
       }
     ]
+  },
+  {
+    "n": "Kit Brochas Mini x6 Rugrats",
+    "c": "Maquillaje",
+    "p": 36000,
+    "o": 40000,
+    "stock": 3,
+    "status": "available",
+    "img": "assets/productos/producto-rugrats-1.jpg",
+    "gallery": [
+      "assets/productos/producto-rugrats-1.jpg",
+      "assets/productos/producto-rugrats-2.jpg",
+      "assets/productos/producto-rugrats-3.jpg",
+      "assets/productos/producto-rugrats-4.jpg",
+      "assets/productos/producto-rugrats-5.jpg",
+      "assets/productos/producto-rugrats-6.jpg",
+      "assets/productos/producto-rugrats-7.jpg"
+    ],
+    "description": "Kit de 6 brochas mini inspirado en Rugrats, ideal para llevar en la cosmetiquera o el bolso. Cada brocha tiene su función marcada y sirve para aplicar y difuminar productos en crema o polvo; incluye brocha para ojos y cosmetiquera en forma de mochila."
   },
   {
     "n": "Mascarilla Aloe Vera",
