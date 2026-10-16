@@ -215,9 +215,10 @@
     /* ---------- Cart ---------- */
     .overlay{position:fixed;inset:0;background:rgba(50,16,29,.43);z-index:20;opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}
     .overlay.show{opacity:1;visibility:visible}
-    .image-modal{position:fixed;inset:0;z-index:40;display:grid;place-items:center;padding:16px;background:rgba(28,8,16,.84);overflow-y:auto;-webkit-overflow-scrolling:touch}
+    .image-modal{position:fixed;inset:0;z-index:40;display:grid;place-items:center;padding:16px;background:rgba(28,8,16,.84);overflow-y:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:#f39aac transparent}
     .image-modal[hidden]{display:none}
-    .image-modal figure{position:relative;box-sizing:border-box;width:min(92vw,680px);max-height:calc(100dvh - 32px);margin:0;text-align:center;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;padding:0 4px 18px;-webkit-overflow-scrolling:touch}
+    .image-modal figure{position:relative;box-sizing:border-box;width:min(92vw,680px);max-height:calc(100dvh - 32px);margin:0;text-align:center;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;padding:0 4px 18px;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:#f39aac transparent}
+    .image-modal::-webkit-scrollbar,.image-modal figure::-webkit-scrollbar,.items::-webkit-scrollbar{width:6px;height:6px}.image-modal::-webkit-scrollbar-track,.image-modal figure::-webkit-scrollbar-track,.items::-webkit-scrollbar-track{background:transparent}.image-modal::-webkit-scrollbar-thumb,.image-modal figure::-webkit-scrollbar-thumb,.items::-webkit-scrollbar-thumb{background:#f39aac;border:2px solid transparent;background-clip:padding-box;border-radius:999px}.image-modal::-webkit-scrollbar-thumb:hover,.image-modal figure::-webkit-scrollbar-thumb:hover,.items::-webkit-scrollbar-thumb:hover{background-color:#e51a2a}
     .image-modal .modal-main-image{display:block;width:100%;max-width:100%;max-height:52dvh;object-fit:contain;border-radius:18px;background:#fff;box-shadow:0 20px 60px rgba(0,0,0,.4)}
     .image-modal figcaption{color:#fff;font-weight:bold;margin:12px 50px 0}
     .image-close{position:absolute;right:-12px;top:-12px;width:44px;height:44px;border:0;border-radius:50%;background:#fff;color:var(--red);font-size:2rem;line-height:1;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25)}
@@ -232,7 +233,7 @@
     .cart-top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:16px}
     .cart-top h2{font-family:Georgia,serif;color:var(--dark);margin:0}
     .close{border:0;background:none;font-size:1.9rem;line-height:1;cursor:pointer;width:44px;height:44px;border-radius:10px;color:var(--ink)}
-    .items{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+    .items{flex:1;overflow:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#f39aac transparent}
     .empty{text-align:center;color:#8b6470;padding:60px 15px}
     .item{display:grid;grid-template-columns:1fr auto;gap:10px;padding:15px 0;border-bottom:1px solid #f4d9e1}
     .item small{color:#926a77}
@@ -597,7 +598,7 @@
     }
     function renderCartRecommendations(){
       const section=$('cartRecommendations');
-      const list=cart.length?recommendedProducts(cart.map(x=>x.i),2,'cart'):[];
+      const list=cart.length?recommendedProducts(cart.map(x=>x.i),3,'cart'):[];
       section.hidden=!list.length;
       section.innerHTML=list.length?`<div class="cross-sell"><h3>Completa tu compra</h3><p>También te puede gustar.</p><div class="cross-sell-list">${recommendationMarkup(list)}</div></div>`:'';
     }
