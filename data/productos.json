@@ -388,9 +388,17 @@
     "p": 10000,
     "o": 10000,
     "status": "available",
-    "stock": 3,
+    "stock": 2,
     "img": "assets/productos/producto-jabon-de-rosas-con-ah-bioaqua-1791994077347-k5adm.jpeg",
     "description": "Limpieza profunda que elimina grasa, suciedad y residuos.\nSuaviza la textura gracias a los AHA de acción exfoliante suave.\nAporta hidratación inmediata sin sensación tirante.\nDeja un acabado luminoso y aspecto revitalizado.\nIdeal para pieles opacas o con textura irregular.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    },
     "featured": true
   },
   {
