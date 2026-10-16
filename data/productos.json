@@ -1,5 +1,39 @@
 [
   {
+    "n": "Cosmetiquera Reciclable Bianchi – Dulces recuerdos",
+    "c": "Accesorios",
+    "p": 15000,
+    "o": 15000,
+    "status": "available",
+    "stock": 2,
+    "img": "assets/productos/producto-cosmetiquera-reciclable-bianchi-dulces-recuerdos-1792168620312-zti4g.png",
+    "description": "Una pequeña dosis de dulzura con una historia bonita detrás. Esta cosmetiquera está elaborada artesanalmente a partir de empaques reciclados de Bianchi, convirtiendo un material que podía desecharse en un accesorio único y lleno de encanto.\n\nÚsala para guardar maquillaje, cables, audífonos, papelería, monedas, accesorios de viaje o esos pequeños esenciales que siempre quieres tener a la mano. Su cierre ayuda a mantener todo organizado y cada diseño tiene detalles propios, porque lo reciclado también puede ser especial. ♻️",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "justify"
+    },
+    "gallery": [
+      "assets/productos/producto-cosmetiquera-reciclable-bianchi-dulces-recuerdos-1792168620312-zti4g.png",
+      "assets/productos/producto-cosmetiquera-reciclable-bianchi-dulces-recuerdos-1792168620319-konsh.png",
+      "assets/productos/producto-cosmetiquera-reciclable-bianchi-dulces-recuerdos-1792168620323-cd0eu.png"
+    ],
+    "variantLabel": "Diseño",
+    "variants": [
+      {
+        "name": "Chocolate Blanco",
+        "stock": 1
+      },
+      {
+        "name": "Chocolate",
+        "stock": 1
+      }
+    ]
+  },
+  {
     "n": "Cosmetiquera Reciclable Froot Loops",
     "c": "Accesorios",
     "p": 15000,
