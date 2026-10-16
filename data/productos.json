@@ -1,5 +1,23 @@
 [
   {
+    "n": "Cosmetiquera Reciclable - Chocoramo Barrita Frutos Rojos",
+    "c": "Accesorios",
+    "p": 25000,
+    "o": 25000,
+    "status": "available",
+    "stock": 1,
+    "img": "assets/productos/producto-cosmetiquera-reciclable-chocoramo-barrita-frutos-rojos-1792170463689-kbduz.png",
+    "description": "Una cosmetiquera alegre y diferente, elaborada artesanalmente a partir de un empaque reciclado de Chocoramo Barrita Frutos Rojos. Sus colores vibrantes y detalles frutales hacen de cada pieza un accesorio único que transforma material recuperado en algo útil. ♻️\n\nIdeal para organizar maquillaje, brochas, cables, audífonos, papelería, productos de cuidado personal o accesorios de viaje. Tiene cierre funcional y argolla lateral para llevarla cómodamente en el bolso o mochila.\nCada unidad conserva detalles propios del empaque original, por lo que puede presentar pequeñas variaciones que la hacen especial.\n\nCreación reciclada e independiente; no es un producto oficial de Ramo.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "justify"
+    }
+  },
+  {
     "n": "Cosmetiquera Reciclable Jet Burbujas",
     "c": "Accesorios",
     "p": 25000,
