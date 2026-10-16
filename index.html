@@ -573,25 +573,31 @@
     };
     const productAvailable = (p,i) => !p.hidden && p.status !== 'outofstock' && (hasVariants(p) ? availableVariants(p,i).length > 0 : remain(p,i) !== 0);
 
-    function recommendedProducts(excluded=[], limit=3){
+    const recommendationHistory={image:[],cart:[]};
+    const shuffle=list=>{const mixed=[...list];for(let i=mixed.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[mixed[i],mixed[j]]=[mixed[j],mixed[i]];}return mixed;};
+    function recommendedProducts(excluded=[], limit=3, place='image'){
       const blocked=new Set(excluded), candidates=products.map((p,i)=>({p,i})).filter(({p,i})=>!blocked.has(i)&&productAvailable(p,i));
-      const byCategory=new Map();
-      candidates.forEach(item=>{const key=item.p.c||'Otros';if(!byCategory.has(key))byCategory.set(key,[]);byCategory.get(key).push(item);});
+      // Primero evita las recomendaciones mostradas justo antes; si no hay suficientes, vuelve a usarlas.
+      const recent=new Set(recommendationHistory[place]||[]), fresh=candidates.filter(item=>!recent.has(item.i));
+      const pool=fresh.length>=limit?fresh:candidates, byCategory=new Map();
+      shuffle(pool).forEach(item=>{const key=item.p.c||'Otros';if(!byCategory.has(key))byCategory.set(key,[]);byCategory.get(key).push(item);});
       const result=[];
-      [...byCategory.keys()].sort((a,b)=>a.localeCompare(b,'es')).forEach(category=>{if(result.length<limit)result.push(byCategory.get(category)[0]);});
-      return result.length<limit?[...result,...candidates.filter(item=>!result.includes(item)).slice(0,limit-result.length)]:result;
+      shuffle([...byCategory.keys()]).forEach(category=>{if(result.length<limit)result.push(byCategory.get(category)[0]);});
+      if(result.length<limit) result.push(...shuffle(pool.filter(item=>!result.includes(item))).slice(0,limit-result.length));
+      recommendationHistory[place]=result.map(item=>item.i);
+      return result;
     }
     function recommendationMarkup(list){
       return list.map(({p,i})=>`<article class="cross-sell-card"><img src="${esc(p.img)}" alt="${esc(p.n)}"><div><strong>${esc(p.n)}</strong><small>${fmt(p.p)}</small></div>${hasVariants(p)?`<button type="button" data-cross-view="${i}">Ver opciones</button>`:`<button type="button" data-cross-add="${i}">Agregar</button>`}</article>`).join('');
     }
     function renderImageRecommendations(currentIndex){
-      const list=recommendedProducts([currentIndex],3), section=$('imageRecommendations');
+      const list=recommendedProducts([currentIndex],3,'image'), section=$('imageRecommendations');
       section.hidden=!list.length;
       section.innerHTML=list.length?`<h3>Combínalo con</h3><p>Productos que pueden ir perfecto con tu elección.</p><div class="cross-sell-list">${recommendationMarkup(list)}</div>`:'';
     }
     function renderCartRecommendations(){
       const section=$('cartRecommendations');
-      const list=cart.length?recommendedProducts(cart.map(x=>x.i),2):[];
+      const list=cart.length?recommendedProducts(cart.map(x=>x.i),2,'cart'):[];
       section.hidden=!list.length;
       section.innerHTML=list.length?`<div class="cross-sell"><h3>Completa tu compra</h3><p>También te puede gustar.</p><div class="cross-sell-list">${recommendationMarkup(list)}</div></div>`:'';
     }
