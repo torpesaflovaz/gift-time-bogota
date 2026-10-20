@@ -625,9 +625,17 @@
     "p": 11000,
     "o": 11000,
     "status": "available",
-    "stock": 2,
+    "stock": 4,
     "img": "assets/productos/producto-parches-antiacne-invisibles-1791995199149-unwwu.jpeg",
     "description": "Solución rápida, discreta y efectiva para granitos inesperados 💗\n\nEstos parches ayudan a absorber impurezas, proteger el brote y mejorar visiblemente su apariencia sin resecar la piel. Su diseño ultra delgado se adapta perfectamente al rostro y puedes usarlos incluso durante el día.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    },
     "featured": true
   },
   {
