@@ -96,10 +96,18 @@
     "c": "Cuidado",
     "p": 16000,
     "o": 16000,
-    "status": "outofstock",
-    "stock": null,
+    "status": "available",
+    "stock": 3,
     "img": "assets/productos/producto-mascarilla-capilar-bioaqua-rice-raw-pulp-reparadora-y-nutritiva-1791993823210-y0vnv.jpeg",
-    "description": "Esta mascarilla capilar con extracto de arroz ayuda a reparar el daño, hidratar profundamente y mejorar la suavidad del cabello. Su fórmula nutre desde la raíz hasta las puntas, dejando el cabello más fuerte, manejable y con un aspecto saludable."
+    "description": "Esta mascarilla capilar con extracto de arroz ayuda a reparar el daño, hidratar profundamente y mejorar la suavidad del cabello. Su fórmula nutre desde la raíz hasta las puntas, dejando el cabello más fuerte, manejable y con un aspecto saludable.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    }
   },
   {
     "n": "Cosmetiquera Reciclable - Choco Break Surtido Frutal",
