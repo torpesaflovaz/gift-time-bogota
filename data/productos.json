@@ -1,5 +1,25 @@
 [
   {
+    "n": "Bioaqua Vitamina C- Crema Hidratante Iluminadora (50 g)",
+    "c": "Cuidado",
+    "p": 15000,
+    "o": 15000,
+    "status": "available",
+    "stock": 3,
+    "img": "assets/productos/producto-bioaqua-vitamina-c-crema-hidratante-iluminadora-50-g-1792521535501-ok0ht.jpeg",
+    "description": "Crema facial con vitamina C que ayuda a desacelerar la oxidación, mejorar la luminosidad y mantener la piel más lisa, uniforme y saludable.\n\n✨ Beneficios\n🛡️ Antioxidante: ayuda a prevenir el envejecimiento prematuro.\n😊 Reduce líneas de expresión y mejora la textura.\n🧬 Activa la síntesis de colágeno para mayor firmeza.\n🔧 Ayuda a reparar daños y refuerza la barrera cutánea.\n🌸 Minimiza irritación y potencia la absorción de otras cremas.\n🌟 Deja la piel lisa, limpia y reluciente; contribuye a reducir manchas.\nNormal Mixta Opaca/Con manchas\nContenido neto: 50 g.\n🔁 Modo de uso\nAM/PM: Con rostro limpio, aplica una cantidad adecuada en rostro y cuello y masajea suavemente hasta absorber. En la mañana finaliza con protector solar.\n🔍 Ingredientes destacados\nVitamina C (antioxidante e iluminadora), humectantes como glicerina/ácido hialurónico para retener la humedad y extractos emolientes que suavizan la piel.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    },
+    "featured": true,
+    "isNew": true
+  },
+  {
     "n": "Labios glossy con efecto glow y diseño tipo bombón",
     "c": "Maquillaje",
     "p": 16000,
