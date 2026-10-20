@@ -1,5 +1,24 @@
 [
   {
+    "n": "Exfoliante Facial & Corporal de Caracol + Colágeno – Limpieza Profunda 500g",
+    "c": "Cuidado",
+    "p": 20000,
+    "o": 20000,
+    "status": "available",
+    "stock": 3,
+    "img": "assets/productos/producto-exfoliante-facial-corporal-de-caracol-colageno-limpieza-profunda-500g-1792521635937-znw5d.jpeg",
+    "description": "Diseñado para limpiar profundamente y eliminar impurezas, grasa y células muertas de la piel. Su fórmula enriquecida con colágeno y extracto de caracol aporta una exfoliación efectiva que deja la piel suave, renovada y fresca, mejorando el cutis con cada uso.\n\n500g Con Colágeno Extracto de Caracol Todo tipo de piel\n💎 Beneficios\nElimina suciedad, grasa e impurezas acumuladas.\nExfoliación profunda que remueve células muertas.\nDeja la piel suave, limpia y fresca tras cada uso.\nMejora la apariencia del cutis, aportando hidratación y elasticidad.\nApto para todo tipo de piel, incluso sensible.\n🕒 Cómo usar\nDespués de limpiar, seque la piel.\nAplique la cantidad adecuada en el rostro o cuerpo.\nMasajee suavemente con movimientos circulares.\nDeje actuar por 10 minutos.\nEnjuague con abundante agua",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    },
+    "isNew": true
+  },
+  {
     "n": "Bioaqua Vitamina C- Crema Hidratante Iluminadora (50 g)",
     "c": "Cuidado",
     "p": 15000,
