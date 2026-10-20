@@ -1,5 +1,24 @@
 [
   {
+    "n": "Labios glossy con efecto glow y diseño tipo bombón",
+    "c": "Maquillaje",
+    "p": 16000,
+    "o": 16000,
+    "status": "available",
+    "stock": 3,
+    "img": "assets/productos/producto-labios-glossy-con-efecto-glow-y-diseno-tipo-bombon-1792521463978-po7h4.jpeg",
+    "description": "Un gloss que ilumina tus labios mientras llevas un accesorio único y llamativo.\n\nSu acabado brillante con destellos aporta un efecto glossy que hace que los labios se vean más hidratados, suaves y luminosos desde la primera aplicación.\n\nEl diseño con charms tipo bombón y corazón lo convierte en un producto visualmente atractivo, ideal para llevar contigo o regalar.\n\nResultados visibles desde la primera aplicación\nLabios con brillo intenso tipo gloss.\nEfecto glow con destellos.\nHidratación inmediata.\nTextura ligera y cómoda.\nApariencia más luminosa y atractiva.\nDetalles del producto\nBrillo labial con glitter — efecto glow.\nDiseño tipo bombón y corazón — estilo único.\nFormato con llavero — práctico y portátil.\nContenido: 8 ml\nIncluye: 1 brillo labial + charms decorativos\n\nModo de uso\nAplicar directamente sobre los labios.\nReaplicar durante el día según se desee.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    },
+    "isNew": true
+  },
+  {
     "n": "Espuma Limpiadora Facial Centella Asiática Bioaqua",
     "c": "Cuidado",
     "p": 20000,
