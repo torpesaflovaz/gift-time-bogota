@@ -676,7 +676,14 @@
     "stock": 4,
     "img": "assets/productos/producto-combo-mascarillas-piel-luminosa-por-3-1791994352693-nbghn.jpeg",
     "description": "Aporta luminosidad y ayuda a unificar el tono.\nProporciona calma y confort.\nMejora la textura y el aspecto descansado.\nHidratación y suavidad inmediata.\nRutina completa: limpieza, reparación y efecto glow.",
-    "isNew": true
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    }
   },
   {
     "n": "Velo Facial con Granada y Vitamina E",
