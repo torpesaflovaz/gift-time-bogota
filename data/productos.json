@@ -606,9 +606,17 @@
     "p": 22000,
     "o": 22000,
     "status": "available",
-    "stock": 2,
+    "stock": 4,
     "img": "assets/productos/producto-shampoo-seco-manzana-verde-1791995301065-rj7m9.jpeg",
     "description": "Refresca tu cabello al instante sin necesidad de lavar.\n\nEl Dry Shampoo de Disaar ayuda a absorber el exceso de grasa del cuero cabelludo, dejando el cabello con apariencia limpia, ligera y con volumen en segundos. Ideal para retoques rápidos durante el día o cuando no tienes tiempo de lavar tu cabello.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    },
     "featured": true
   },
   {
