@@ -1,5 +1,24 @@
 [
   {
+    "n": "BIOAQUA Rose Hyaluronic Acid – Mascarilla en Velo.",
+    "c": "Cuidado",
+    "p": 2000,
+    "o": 2000,
+    "status": "available",
+    "stock": 6,
+    "img": "assets/productos/producto-bioaqua-rose-hyaluronic-acid-mascarilla-en-velo-1792521138127-el2hu.jpeg",
+    "description": "Una caricia de rosas para tu piel: hidrata intensamente, suaviza la textura y mejora la elasticidad en 15–20 minutos.\n\n✨ Beneficios clave\n💧 Hidratación profunda y duradera con ácido hialurónico.\n🌸 Calma la piel y ayuda a reducir rojeces.\n🔍 Minimiza poros y mejora la textura.\n🧖♀️ Efecto anti-edad: mayor firmeza y elasticidad.\n\nResultado: rostro más fresco, radiante y uniforme.\n\n🔁 Modo de uso\nLimpia tu rostro y sécalo suavemente.\nColoca la mascarilla y ajústala al contorno del rostro.\nDeja actuar 15–20 minutos.\nRetira y masajea el sérum restante sin enjuagar.\n\nUsa 2–3 veces por semana para resultados visibles.\n\n🔍 Ingredientes destacados\nÁcido hialurónico (hidratación y relleno), extracto de rosa (calmante y antioxidante), glicerina (humectante).",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    },
+    "isNew": true
+  },
+  {
     "n": "Velo Facial Niacinamida+ Sandía -Sadoer",
     "c": "Cuidado",
     "p": 2000,
