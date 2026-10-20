@@ -1,5 +1,24 @@
 [
   {
+    "n": "Espuma Limpiadora Facial Centella Asiática Bioaqua",
+    "c": "Cuidado",
+    "p": 20000,
+    "o": 20000,
+    "status": "available",
+    "stock": 2,
+    "img": "assets/productos/producto-espuma-limpiadora-facial-centella-asiatica-bioaqua-1792521380320-m3qei.jpeg",
+    "description": "La Espuma Limpiadora Facial Centella Asiática Bioaqua limpia suavemente la piel mientras ayuda a eliminar impurezas, exceso de grasa y residuos de maquillaje. Su fórmula enriquecida con centella asiática aporta una sensación de frescura, hidratación y confort, dejando el rostro limpio, suave y con una apariencia saludable sin sensación de resequedad.\n\nBeneficios\nLimpia profundamente la piel eliminando impurezas y exceso de grasa.\nAyuda a remover residuos de maquillaje y contaminación.\nBrinda una sensación refrescante y calmante durante la limpieza.\nContribuye a mantener la hidratación natural de la piel.\nDeja el rostro suave, limpio y con una apariencia fresca.\n\nModo de uso\nHumedece el rostro con agua. Aplica una pequeña cantidad de espuma sobre la piel y masajea suavemente con movimientos circulares durante 30 a 60 segundos. Enjuaga con abundante agua y continúa con tu rutina de cuidado facial. Se recomienda utilizar en la mañana y en la noche.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    },
+    "isNew": true
+  },
+  {
     "n": "Borla Triangular de Terciopelo – Sellado Preciso Pack x 2",
     "c": "Accesorios",
     "p": 8000,
