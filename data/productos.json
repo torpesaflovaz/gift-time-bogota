@@ -1,5 +1,25 @@
 [
   {
+    "n": "Velo Facial Niacinamida+ Sandía -Sadoer",
+    "c": "Cuidado",
+    "p": 2000,
+    "o": 2000,
+    "status": "available",
+    "stock": 8,
+    "img": "assets/productos/producto-velo-facial-niacinamida-sandia-sadoer-1792521032209-bm911.jpeg",
+    "description": "Baño de frescura y glow al instante: mascarilla en tela infusionada con extracto de sandía y niacinamida que hidrata profundamente, mejora la elasticidad y deja la piel radiante y uniforme.\n\n✨ Beneficios\nHidratación intensa que calma y refresca la piel.\nAyuda a unificar el tono e iluminar el rostro.\nCon niacinamida para una piel más suave y luminosa.\nIdeal para pieles apagadas o deshidratadas.\nTodo tipo de piel Hidratación & Luminosidad Uso ocasional.\n\n🔁 Modo de uso\n1) Limpia y seca tu rostro.\n2) Coloca el velo ajustándolo a las facciones.\n3) Déjalo actuar 15–20 min.\n4) Retira y masajea el exceso de suero hasta su completa absorción. No necesita enjuague.\n\n🔍 Ingredientes destacados\nExtracto de sandía (hidratante y calmante), niacinamida (uniformidad y luminosidad), glicerina y humectantes que ayudan a retener la humedad.*",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    },
+    "featured": true,
+    "isNew": true
+  },
+  {
     "n": "Brillo labial con destellos — acabado glossy.",
     "c": "Maquillaje",
     "p": 16000,
