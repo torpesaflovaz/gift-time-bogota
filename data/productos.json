@@ -644,9 +644,17 @@
     "p": 2000,
     "o": 2000,
     "status": "available",
-    "stock": 4,
+    "stock": 9,
     "img": "assets/productos/producto-velo-facial-sakura-colageno-1791994546182-cry86.jpeg",
-    "description": "Revitaliza tu piel en minutos: mascarilla en tela infusionada con colágeno y extracto de flor de sakura que hidrata profundamente, mejora la firmeza y aporta un glow natural inmediato."
+    "description": "Revitaliza tu piel en minutos: mascarilla en tela infusionada con colágeno y extracto de flor de sakura que hidrata profundamente, mejora la firmeza y aporta un glow natural inmediato.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    }
   },
   {
     "n": "Tonico Facial Niacinamida+Sandia 40% Hidratacion & Luminosiad",
