@@ -1,5 +1,24 @@
 [
   {
+    "n": "Kit de Cuidado Corporal Sadoer Coconut Hydrate Hidratante y Suavizante",
+    "c": "Cuidado",
+    "p": 28000,
+    "o": 28000,
+    "status": "available",
+    "stock": 3,
+    "img": "assets/productos/producto-kit-de-cuidado-corporal-sadoer-coconut-hydrate-hidratante-y-suavizante-1792520784301-jvlqh.jpeg",
+    "description": "Un kit completo con aroma a coco para hidratar, nutrir y consentir la piel.\n\nEste kit de cuidado corporal Sadoer con fragancia de coco incluye productos esenciales para hidratar, suavizar y mejorar la textura de la piel. Su presentación tipo lujo lo convierte en una opción ideal para regalar o para complementar tu rutina diaria de cuidado personal.\n\nIncluye: Loción corporal + crema de manos + bálsamo labial\nCaracterísticas\nAroma a coco suave y duradero.\nTexturas ligeras de rápida absorción.\nIdeal para cuidado completo de cuerpo y manos.\nPresentación tipo lujo, perfecta para regalo.\nBeneficios\nHidrata profundamente la piel.\nAyuda a suavizar y mejorar la textura.\nDeja la piel con sensación sedosa.\nAporta un aroma tropical agradable.\nTipo de piel\nApto para todo tipo de piel.\n\nModo de uso\nAplicar los productos según necesidad sobre la piel limpia. Usar diariamente para mantener la piel hidratada, suave y con un aroma agradable.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    },
+    "isNew": true
+  },
+  {
     "n": "Mini Monedero Reciclable Oreo BTS – Edición Especial",
     "c": "Accesorios",
     "p": 12000,
