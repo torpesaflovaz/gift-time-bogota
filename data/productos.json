@@ -633,11 +633,20 @@
   {
     "n": "Kit Brochas Bob Esponja",
     "c": "Maquillaje",
-    "p": 50000,
+    "p": 48000,
     "o": 60000,
-    "stock": 2,
     "status": "available",
+    "stock": 2,
     "img": "assets/productos/producto-brochas-1.jpg",
+    "description": "Kit de brochas tamaño completo inspirado en Bob Esponja. Incluye brochas para rostro, una brocha doble para ojos y cosmetiquera semitransparente; las cerdas suaves ayudan a una aplicación uniforme y cómoda.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    },
     "gallery": [
       "assets/productos/producto-brochas-1.jpg",
       "assets/productos/producto-brochas-2.jpg",
@@ -647,8 +656,7 @@
       "assets/productos/producto-brochas-6.jpg",
       "assets/productos/producto-brochas-7.jpg",
       "assets/productos/producto-brochas-8.jpg"
-    ],
-    "description": "Kit de brochas tamaño completo inspirado en Bob Esponja. Incluye brochas para rostro, una brocha doble para ojos y cosmetiquera semitransparente; las cerdas suaves ayudan a una aplicación uniforme y cómoda."
+    ]
   },
   {
     "n": "Dúo Exfoliante + Mascarilla Labios Bob Esponja",
