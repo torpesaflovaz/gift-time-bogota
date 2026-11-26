@@ -58,7 +58,7 @@
   {
     "n": "Labios glossy con efecto glow y diseño tipo bombón",
     "c": "Maquillaje",
-    "p": 16000,
+    "p": 11200,
     "o": 16000,
     "status": "available",
     "stock": 3,
@@ -71,8 +71,7 @@
       "underline": false,
       "color": "#fce8ee",
       "align": "left"
-    },
-    "isNew": true
+    }
   },
   {
     "n": "Espuma Limpiadora Facial Centella Asiática Bioaqua",
