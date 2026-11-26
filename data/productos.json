@@ -131,7 +131,7 @@
   {
     "n": "Velo Facial Niacinamida+ Sandía -Sadoer",
     "c": "Cuidado",
-    "p": 2000,
+    "p": 1700,
     "o": 2000,
     "status": "available",
     "stock": 8,
@@ -145,8 +145,7 @@
       "color": "#fce8ee",
       "align": "left"
     },
-    "featured": true,
-    "isNew": true
+    "featured": true
   },
   {
     "n": "Brillo labial con destellos — acabado glossy.",
