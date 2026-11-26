@@ -1014,13 +1014,20 @@
   {
     "n": "Pestañina Waterproof Pink Flash Volume",
     "c": "Maquillaje",
-    "p": 17000,
+    "p": 14450,
     "o": 17000,
     "status": "available",
     "stock": 3,
     "img": "assets/productos/producto-pestanina-waterproof-pink-flash-volume-1791993987835-dxdsu.jpeg",
     "description": "Brinda volumen intenso sin apelmazar.\nDefine cada pestaña gracias a su cepillo de precisión.\nContiene microfibras para un efecto de pestañas más largas y con cuerpo.\nFórmula ligera que no deja grumos.\nLarga duración con acabado natural.\nIdeal para un look romántico y femenino.",
-    "isNew": true
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    }
   },
   {
     "n": "Kit Duo Pestañina + Fortalecedora Gold Eyes",
