@@ -844,12 +844,20 @@
   {
     "n": "Brillo Happy Berry",
     "c": "Maquillaje",
-    "p": 13000,
+    "p": 12000,
     "o": 15000,
-    "stock": 1,
     "status": "available",
+    "stock": 1,
     "img": "assets/productos/producto-happy-berry.jpg",
-    "description": "Gloss de brillo intenso y tono rosa muy sutil. Se desliza suavemente y aporta sensación de suavidad en los labios."
+    "description": "Gloss de brillo intenso y tono rosa muy sutil. Se desliza suavemente y aporta sensación de suavidad en los labios.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    }
   },
   {
     "n": "Mscarilla Térmica de Vapor para Ojos - Lavanda",
