@@ -1032,12 +1032,20 @@
   {
     "n": "Kit Duo Pestañina + Fortalecedora Gold Eyes",
     "c": "Maquillaje",
-    "p": 15000,
+    "p": 13500,
     "o": 15000,
     "status": "available",
     "stock": 1,
     "img": "assets/productos/producto-kit-duo-pestanina-fortalecedora-gold-eyes-1791991864377-hww9r.jpeg",
-    "description": "Kit para definir las pestañas. Incluye pestañina fortalecedora de fórmula ligera, útil también para fijar suavemente las cejas o como prebase."
+    "description": "Kit para definir las pestañas. Incluye pestañina fortalecedora de fórmula ligera, útil también para fijar suavemente las cejas o como prebase.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    }
   },
   {
     "n": "TORRE DE RUBOR, ILUMINADOR Y CONTORNO CAT FACE",
