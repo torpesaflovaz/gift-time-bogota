@@ -977,12 +977,20 @@
   {
     "n": "Velo Facial con Granada y Vitamina E",
     "c": "Cuidado",
-    "p": 2000,
+    "p": 1700,
     "o": 2000,
     "status": "available",
     "stock": 6,
     "img": "assets/productos/producto-velo-facial-con-granada-y-vitamina-e-1791994240971-gwyn3.jpeg",
     "description": "Hidratación intensa que deja la piel suave y fresca.\nEfecto revitalizante para un rostro luminoso y saludable.\nAcción anti-edad: ayuda a suavizar líneas finas y aporta elasticidad.\nPráctica y fácil de usar: ideal para tu momento de self-care en casa.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    },
     "featured": true
   },
   {
