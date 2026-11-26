@@ -792,12 +792,20 @@
   {
     "n": "Corrector Rosado Barbie",
     "c": "Maquillaje",
-    "p": 12000,
+    "p": 10500,
     "o": 15000,
     "status": "available",
     "stock": 2,
     "img": "assets/productos/producto-corrector-rosado-barbie-1791636025396-f68k5.jpg",
     "description": "Corrector en tono rosado para complementar tu maquillaje y ayudar a dar un aspecto más uniforme a la piel.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    },
     "gallery": [
       "assets/productos/producto-corrector-rosado-barbie-1791636025396-f68k5.jpg",
       "assets/productos/producto-corrector-rosado-barbie-1791636025399-8ofr4.jpg",
