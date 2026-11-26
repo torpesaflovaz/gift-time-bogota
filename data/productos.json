@@ -1042,11 +1042,19 @@
   {
     "n": "TORRE DE RUBOR, ILUMINADOR Y CONTORNO CAT FACE",
     "c": "Maquillaje",
-    "p": 15000,
+    "p": 12000,
     "o": 15000,
     "status": "available",
     "stock": 1,
     "img": "assets/productos/producto-torre-de-rubor-iluminador-y-contorno-cat-face-1791992443238-0qqxj.jpeg",
-    "description": "3 infaltables en un compacto y práctico empaque de pisos.\nAsí es el nuevo Cat Face, contiene un rubor en tono rosita durazno para tus mejillas, un iluminador en tono oro rosa perfecto para utilizar como iluminador y un bronzer en crema en tono universal."
+    "description": "3 infaltables en un compacto y práctico empaque de pisos.\nAsí es el nuevo Cat Face, contiene un rubor en tono rosita durazno para tus mejillas, un iluminador en tono oro rosa perfecto para utilizar como iluminador y un bronzer en crema en tono universal.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    }
   }
 ]
