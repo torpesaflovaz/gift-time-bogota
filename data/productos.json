@@ -816,12 +816,20 @@
   {
     "n": "Corrector Líquido Rebel Girl",
     "c": "Maquillaje",
-    "p": 10000,
+    "p": 8500,
     "o": 10000,
-    "stock": 2,
     "status": "available",
+    "stock": 2,
     "img": "assets/productos/producto-corrector-rebel-girl.jpg",
-    "description": "Corrector hidratante de cobertura media a alta y acabado mate. Es cremoso, ligero y ayuda a lograr una cobertura uniforme. Disponible en tonos 2 y 3; confirma tu tono por WhatsApp."
+    "description": "Corrector hidratante de cobertura media a alta y acabado mate. Es cremoso, ligero y ayuda a lograr una cobertura uniforme. Disponible en tonos 2 y 3; confirma tu tono por WhatsApp.",
+    "descriptionStyle": {
+      "size": "medium",
+      "bold": false,
+      "italic": false,
+      "underline": false,
+      "color": "#fce8ee",
+      "align": "left"
+    }
   },
   {
     "n": "Crema Reparadora Nocturna",
